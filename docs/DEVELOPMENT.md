@@ -20,13 +20,36 @@ That script writes:
 
 Hand-maintained public docs include:
 
+- `AGENTS.md`
+- `CHANGELOG.md`
+- `CONTEXT.md`
 - `README.md`
+- `PRIVACY.md`
+- `SECURITY.md`
+- `docs/AUDIT.md`
 - `docs/EXAMPLES.md`
+- `docs/HARNESS_SUPPORT.md`
 - `docs/INSTALL.md`
 - `docs/PLUGIN_REFERENCE.md`
 - `docs/SYMLINKS.md`
 - `docs/DEVELOPMENT.md`
 - `docs/SOURCE_BOUNDARIES.md`
+
+Hand-maintained harness metadata includes:
+
+- `.codex-plugin/plugin.json`
+- `.claude-plugin/plugin.json`
+- `.claude-plugin/marketplace.json`
+- `.cursor-plugin/plugin.json`
+- `.cursor-plugin/marketplace.json`
+- `.agents/plugins/marketplace.json`
+- `gemini-extension.json`
+- `GEMINI.md`
+- `.opencode/INSTALL.md`
+- `.opencode/plugins/naval.js`
+- `.pi/extensions/naval.ts`
+- `package.json`
+- `skills.sh.json`
 
 ## Validate
 
@@ -70,8 +93,7 @@ python3 scripts/validate_public.py
 python3 scripts/check_coverage.py
 ```
 
-The public validator expects the hand-maintained docs above to exist, so install and usage
-documentation stays part of the release surface.
+The public validator expects the hand-maintained docs and harness metadata above to exist, so install and usage documentation stays part of the release surface.
 
 ## Add A Workflow
 

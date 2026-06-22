@@ -1,0 +1,23 @@
+{
+  "name": "naval",
+  "version": "0.1.0",
+  "description": "Unofficial n-prefixed skills for applying ideas from The Almanack of Naval Ravikant.",
+  "private": true,
+  "type": "module",
+  "main": ".opencode/plugins/naval.js",
+  "pi": {
+    "extensions": [
+      "./.pi/extensions/naval.ts"
+    ],
+    "skills": [
+      "./skills"
+    ]
+  },
+  "homepage": "https://github.com/thepraggyverse/naval",
+  "repository": "https://github.com/thepraggyverse/naval",
+  "license": "MIT",
+  "scripts": {
+    "validate": "python3 scripts/validate_public.py && python3 scripts/check_coverage.py",
+    "install:local": "python3 scripts/install_local.py --marketplace --symlink-skills"
+  }
+}

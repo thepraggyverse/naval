@@ -22,6 +22,10 @@ DEFAULT_SKILL_HOMES = [
     Path.home() / ".agents" / "skills",
     Path.home() / ".codex" / "skills",
     Path.home() / ".claude" / "skills",
+    Path.home() / ".copilot" / "skills",
+    Path.home() / ".cursor" / "skills",
+    Path.home() / ".gemini" / "skills",
+    Path.home() / ".config" / "opencode" / "skills",
     Path.home() / ".openclaw" / "skills",
     Path.home() / ".openclaw" / "acpx" / "codex-home" / "skills",
 ]

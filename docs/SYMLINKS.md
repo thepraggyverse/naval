@@ -15,11 +15,15 @@ Symlinks are useful when a tool does not load Codex plugins directly but can dis
 ~/.agents/skills
 ~/.codex/skills
 ~/.claude/skills
+~/.copilot/skills
+~/.cursor/skills
+~/.gemini/skills
+~/.config/opencode/skills
 ~/.openclaw/skills
 ~/.openclaw/acpx/codex-home/skills
 ```
 
-This matches a shared-home pattern where `.agents/skills` is often the durable common location, while Codex, Claude, and OpenClaw homes can also see the same skill names.
+This matches a shared-home pattern where `.agents/skills` is often the durable common location, while Codex, Claude, Copilot, Cursor, Gemini, OpenCode, and OpenClaw homes can also see the same skill names.
 
 ## What Gets Linked
 
@@ -60,6 +64,14 @@ python3 scripts/install_local.py --symlink-skills --dry-run
 python3 scripts/install_local.py \
   --symlink-skills \
   --skill-home ~/.codex/skills
+```
+
+Project-local Kiro example:
+
+```bash
+python3 scripts/install_local.py \
+  --symlink-skills \
+  --skill-home /path/to/project/.kiro/skills
 ```
 
 ## Remove Symlinks

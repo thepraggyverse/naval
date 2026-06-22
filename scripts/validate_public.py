@@ -41,6 +41,40 @@ def validate_plugin_json() -> None:
             fail(f"plugin interface missing {key}")
 
 
+def validate_harness_metadata(skill_names: set[str]) -> None:
+    json_files = [
+        ".claude-plugin/plugin.json",
+        ".claude-plugin/marketplace.json",
+        ".cursor-plugin/plugin.json",
+        ".cursor-plugin/marketplace.json",
+        ".agents/plugins/marketplace.json",
+        "gemini-extension.json",
+        "package.json",
+        "skills.sh.json",
+    ]
+    for rel in json_files:
+        json.loads(read_text(ROOT / rel))
+
+    for rel in [
+        ".opencode/plugins/naval.js",
+        ".pi/extensions/naval.ts",
+        "GEMINI.md",
+    ]:
+        if not (ROOT / rel).exists():
+            fail(f"missing {rel}")
+
+    skills_sh = json.loads(read_text(ROOT / "skills.sh.json"))
+    seen: set[str] = set()
+    for group in skills_sh.get("groupings", []):
+        for name in group.get("skills", []):
+            if name not in skill_names:
+                fail(f"skills.sh.json references unknown skill {name}")
+            seen.add(name)
+    missing = skill_names - seen
+    if missing:
+        fail(f"skills.sh.json missing skills: {', '.join(sorted(missing))}")
+
+
 def parse_frontmatter(text: str) -> dict[str, str]:
     match = re.match(r"^---\n(.*?)\n---\n", text, re.DOTALL)
     if not match:
@@ -88,6 +122,10 @@ def validate_skills() -> int:
     return count
 
 
+def skill_names() -> set[str]:
+    return {path.name for path in (ROOT / "skills").glob("n-*")}
+
+
 def validate_references() -> None:
     required = [
         "book-map.md",
@@ -105,10 +143,18 @@ def validate_references() -> None:
 
 def validate_docs() -> None:
     required = [
+        "AGENTS.md",
+        "CLAUDE.md",
+        "CHANGELOG.md",
+        "CONTEXT.md",
         "README.md",
         "LICENSE",
         "CONTRIBUTING.md",
+        "PRIVACY.md",
+        "SECURITY.md",
+        "docs/AUDIT.md",
         "docs/EXAMPLES.md",
+        "docs/HARNESS_SUPPORT.md",
         "docs/INSTALL.md",
         "docs/PLUGIN_REFERENCE.md",
         "docs/SYMLINKS.md",
@@ -124,6 +170,7 @@ def validate_docs() -> None:
 def main() -> int:
     validate_plugin_json()
     skill_count = validate_skills()
+    validate_harness_metadata(skill_names())
     validate_references()
     validate_docs()
     print(f"Public validation passed: {skill_count} n-prefixed skills")

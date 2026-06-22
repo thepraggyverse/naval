@@ -1,0 +1,118 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Wealth",
+      "description": "Skills for specific knowledge, accountability, ownership, leverage, status games, work as play, and compounding wealth.",
+      "skills": [
+        "n-wealth-map",
+        "n-wealth-vs-money-status",
+        "n-specific-knowledge",
+        "n-authenticity-positioning",
+        "n-long-term-games",
+        "n-integrity-partner-filter",
+        "n-accountability-risk",
+        "n-equity-ownership",
+        "n-leverage-stack",
+        "n-build-or-sell",
+        "n-judgment-compensation",
+        "n-time-value-focus",
+        "n-status-game-detector",
+        "n-big-life-decisions",
+        "n-work-as-play",
+        "n-retirement-freedom-design",
+        "n-luck-engineering",
+        "n-reputation-networking",
+        "n-patience-compounding",
+        "n-risk-of-ruin"
+      ]
+    },
+    {
+      "title": "Judgment",
+      "description": "Skills for clear thinking, reality checks, identity shedding, decision rules, mental models, inversion, truth tests, and learning foundations.",
+      "skills": [
+        "n-judgment-builder",
+        "n-clear-thinking",
+        "n-reality-ego-audit",
+        "n-identity-shedding",
+        "n-decision-rules",
+        "n-mental-models",
+        "n-inversion-filter",
+        "n-falsifiability-truth",
+        "n-foundational-learning",
+        "n-reading-system"
+      ]
+    },
+    {
+      "title": "Happiness",
+      "description": "Skills for desire, presence, peace, envy, happiness habits, acceptance, and death awareness.",
+      "skills": [
+        "n-happiness-baseline",
+        "n-desire-audit",
+        "n-presence-practice",
+        "n-peace-over-joy",
+        "n-success-game-exit",
+        "n-envy-antidote",
+        "n-happiness-habits",
+        "n-accept-change-leave",
+        "n-death-awareness"
+      ]
+    },
+    {
+      "title": "Health & Agency",
+      "description": "Skills for health-first planning, diet, exercise, meditation, habits, systems, anger, expectations, employment freedom, and modern addiction defense.",
+      "skills": [
+        "n-self-responsibility",
+        "n-be-yourself",
+        "n-health-first",
+        "n-diet-simplifier",
+        "n-exercise-priority",
+        "n-meditation-system",
+        "n-mental-debugging",
+        "n-habit-change",
+        "n-systems-not-goals",
+        "n-grow-yourself",
+        "n-freedom-from-expectations",
+        "n-anger-release",
+        "n-employment-freedom",
+        "n-uncontrolled-thinking",
+        "n-modern-addiction-defense"
+      ]
+    },
+    {
+      "title": "Philosophy & Reading",
+      "description": "Skills for meaning, values, rational inner work, long-term wisdom, present action, reading paths, formulas, rules, and source trails.",
+      "skills": [
+        "n-meaning-maker",
+        "n-values-filter",
+        "n-rational-buddhism",
+        "n-wisdom-long-term",
+        "n-present-moment",
+        "n-reading-curriculum",
+        "n-life-formulas",
+        "n-rules",
+        "n-next-sources"
+      ]
+    },
+    {
+      "title": "Routing, Reviews & Safety",
+      "description": "Skills for routing, coverage, principle-to-action conversion, daily and weekly reviews, scorecards, quote safety, coaching, flashcards, and book club discussion.",
+      "skills": [
+        "n-router",
+        "n-source-fidelity",
+        "n-biographical-context",
+        "n-coverage-auditor",
+        "n-principle-to-action",
+        "n-daily-review",
+        "n-weekly-compound-review",
+        "n-opportunity-scorecard",
+        "n-relationship-scorecard",
+        "n-quote-safety",
+        "n-socratic-coach",
+        "n-flashcards",
+        "n-book-club"
+      ]
+    }
+  ]
+}

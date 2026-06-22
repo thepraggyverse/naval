@@ -2,6 +2,8 @@
 
 This document covers installing `naval` as a local Codex plugin and, optionally, exposing every `n-*` skill through local agent skill homes.
 
+For Claude Code, Cursor, Copilot, Gemini CLI, OpenCode, Pi, Kiro, Qwen, Droid, and other harness-specific paths, see [HARNESS_SUPPORT.md](HARNESS_SUPPORT.md).
+
 ## Requirements
 
 | Requirement | Why |
@@ -93,6 +95,10 @@ By default this targets:
 ~/.agents/skills
 ~/.codex/skills
 ~/.claude/skills
+~/.copilot/skills
+~/.cursor/skills
+~/.gemini/skills
+~/.config/opencode/skills
 ~/.openclaw/skills
 ~/.openclaw/acpx/codex-home/skills
 ```
@@ -201,6 +207,8 @@ python3 scripts/check_coverage.py
 ```
 
 If a local agent caches plugin versions, update the cachebuster in `.codex-plugin/plugin.json` with Codex's plugin helper during development, then reinstall or start a fresh thread so the agent reloads skills.
+
+Harness-managed installs should use that host's own update flow. See [HARNESS_SUPPORT.md](HARNESS_SUPPORT.md#updating-local-installs) for details.
 
 ## Troubleshooting
 

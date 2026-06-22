@@ -1,0 +1,23 @@
+{
+  "name": "naval",
+  "version": "0.1.0",
+  "description": "Unofficial n-prefixed skills for applying ideas from The Almanack of Naval Ravikant.",
+  "author": {
+    "name": "Praggy",
+    "url": "https://github.com/thepraggyverse"
+  },
+  "homepage": "https://github.com/thepraggyverse/naval",
+  "repository": "https://github.com/thepraggyverse/naval",
+  "license": "MIT",
+  "keywords": [
+    "naval",
+    "naval-ravikant",
+    "almanack",
+    "agent-skills",
+    "wealth",
+    "judgment",
+    "happiness",
+    "reading",
+    "productivity"
+  ]
+}

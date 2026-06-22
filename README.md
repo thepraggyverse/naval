@@ -1,20 +1,26 @@
-# Naval [![Validate](https://github.com/thepraggyverse/naval/actions/workflows/validate.yml/badge.svg)](https://github.com/thepraggyverse/naval/actions/workflows/validate.yml)
+# Unofficial Naval Skills [![Validate](https://github.com/thepraggyverse/naval/actions/workflows/validate.yml/badge.svg)](https://github.com/thepraggyverse/naval/actions/workflows/validate.yml)
 
-`naval` is a Codex plugin that turns *The Almanack of Naval Ravikant* into a searchable pack of `n-` prefixed skills.
+`naval` is an unofficial plugin and skill pack for applying ideas from *The Almanack of Naval Ravikant*.
 
-It is not a quote dump and it does not include the full book text. It is an operating system for applying the book's major ideas to decisions, audits, experiments, reviews, and daily practice.
+It gives agents 76 searchable `n-*` skills for wealth, judgment, happiness, health, values, reading, decisions, scorecards, daily reviews, weekly reviews, source fidelity, and quote safety.
 
-## Philosophy
+This repository does not include the full book text. It contains source-safe skill instructions, workflows, and reference maps.
 
-The book is useful because its ideas are portable: wealth as ownership and leverage, judgment as clear seeing, happiness as peace, health as a foundation, and reading as a compounding system.
+It is not affiliated with Naval Ravikant, Eric Jorgenson, Navalmanack, or any publisher.
 
-This plugin packages those ideas as small tools instead of one giant prompt. Each `n-*` skill has a narrow job, shared references keep the coverage coherent, and practical workflows turn principles into action.
+## What The Skills Do
 
-The goal is simple:
+Each skill gives the agent a specific job. The pack is split this way so the agent can load the right instructions for the user's situation instead of one giant prompt.
 
-```text
-read the idea -> choose the right lens -> make a decision -> create a practice -> review the result
-```
+| Skill Type | What It Does | Examples |
+|---|---|---|
+| Router | Chooses the best Naval skill when the request is vague. | `n-router` |
+| Wealth skills | Apply ideas about specific knowledge, accountability, ownership, leverage, long-term games, and risk. | `n-wealth-map`, `n-specific-knowledge`, `n-leverage-stack` |
+| Judgment skills | Improve decisions with clear thinking, inversion, mental models, truth tests, and long-term consequences. | `n-decision-rules`, `n-clear-thinking`, `n-mental-models` |
+| Happiness skills | Work through desire, envy, peace, presence, acceptance, and happiness habits. | `n-desire-audit`, `n-envy-antidote`, `n-presence-practice` |
+| Health and agency skills | Build practical systems for health, exercise, diet, meditation, habits, and attention. | `n-health-first`, `n-meditation-system`, `n-habit-change` |
+| Reading and philosophy skills | Build reading paths, values filters, meaning checks, and source trails. | `n-reading-curriculum`, `n-values-filter`, `n-next-sources` |
+| Review and safety skills | Run daily/weekly reviews, score opportunities, check relationships, and keep quote use safe. | `n-weekly-compound-review`, `n-opportunity-scorecard`, `n-quote-safety` |
 
 ## The Loop
 
@@ -106,17 +112,31 @@ python3 scripts/install_local.py --marketplace --symlink-skills
 
 Then search for `n-` in your agent or Codex skill picker.
 
+## Harness Support
+
+| Harness | Best Path | Details |
+|---|---|---|
+| Codex App / CLI | Native Codex plugin or local marketplace | [docs/INSTALL.md](docs/INSTALL.md) |
+| Claude Code | Claude plugin marketplace metadata | [docs/HARNESS_SUPPORT.md](docs/HARNESS_SUPPORT.md) |
+| Cursor | Cursor plugin metadata or direct skills | [docs/HARNESS_SUPPORT.md](docs/HARNESS_SUPPORT.md) |
+| GitHub Copilot | Source plugin or direct skills | [docs/HARNESS_SUPPORT.md](docs/HARNESS_SUPPORT.md) |
+| Gemini CLI | Native Gemini extension | [docs/HARNESS_SUPPORT.md](docs/HARNESS_SUPPORT.md) |
+| OpenCode | OpenCode plugin entrypoint | [.opencode/INSTALL.md](.opencode/INSTALL.md) |
+| Pi | Pi extension metadata | [docs/HARNESS_SUPPORT.md](docs/HARNESS_SUPPORT.md) |
+| Kiro, OpenClaw, other SKILL.md loaders | Direct `SKILL.md` symlinks or copies | [docs/SYMLINKS.md](docs/SYMLINKS.md) |
+
 ## Components
 
 | Type | Count | What It Does | Where |
 |---|---:|---|---|
-| Plugin manifest | 1 | Makes the pack installable as `naval`. | [.codex-plugin/plugin.json](.codex-plugin/plugin.json) |
+| Harness metadata | multiple | Makes the pack visible to plugin-capable harnesses. | `.codex-plugin/`, `.claude-plugin/`, `.cursor-plugin/`, `.agents/plugins/`, `gemini-extension.json`, `.opencode/`, `.pi/`, `package.json` |
 | Skills | 76 | Small callable `n-*` behaviors for applying book concepts. | [skills/](skills/) |
 | Router | 1 | Routes vague requests to the right primary and secondary skills. | [skills/n-router/SKILL.md](skills/n-router/SKILL.md) |
 | Catalog | 1 | Lists every skill with area, use case, and example prompt. | [references/skill-catalog.md](references/skill-catalog.md) |
 | Coverage matrix | 1 | Maps book sections to skills so gaps are visible. | [references/coverage-matrix.yaml](references/coverage-matrix.yaml) |
 | Workflows | 10 | Reusable scorecards and review protocols. | [references/workflows/](references/workflows/) |
 | Chapter summaries | 7 | Paraphrased coverage anchors by book area. | [references/chapter-summaries/](references/chapter-summaries/) |
+| Discovery metadata | 1 | Groups the skills for skills.sh-style browsers. | [skills.sh.json](skills.sh.json) |
 | Installer | 1 | Updates the local marketplace and/or symlinks skills. | [scripts/install_local.py](scripts/install_local.py) |
 | Validators | 2 | Check public structure, skill count, references, and coverage. | [scripts/validate_public.py](scripts/validate_public.py), [scripts/check_coverage.py](scripts/check_coverage.py) |
 
@@ -254,7 +274,9 @@ See [docs/INSTALL.md](docs/INSTALL.md) and [docs/SYMLINKS.md](docs/SYMLINKS.md) 
 
 | Document | What It Covers |
 |---|---|
+| [docs/AUDIT.md](docs/AUDIT.md) | Reference-project audit and adopted patterns. |
 | [docs/EXAMPLES.md](docs/EXAMPLES.md) | Detailed example prompts, skill routes, and output shapes. |
+| [docs/HARNESS_SUPPORT.md](docs/HARNESS_SUPPORT.md) | Claude, Codex, Cursor, Copilot, Gemini, OpenCode, Pi, Kiro, and direct skill install paths. |
 | [docs/INSTALL.md](docs/INSTALL.md) | Plugin install, local marketplace, updates, validation, and custom paths. |
 | [docs/SYMLINKS.md](docs/SYMLINKS.md) | How direct `n-*` skill symlinks work across agent homes. |
 | [docs/PLUGIN_REFERENCE.md](docs/PLUGIN_REFERENCE.md) | Architecture, component map, and plugin-vs-skill tradeoffs. |
@@ -285,7 +307,7 @@ python3 scripts/build_naval_pack.py
 
 ## Limitations
 
-- This is an interpretation and workflow layer, not an official edition of the book.
+- This is an unofficial skill pack, not an official edition of the book.
 - It does not include the full book text.
 - It should not be used as legal, medical, financial, or mental-health advice.
 - Exact quotation work should use `n-quote-safety` and, when needed, verification against an authorized source.

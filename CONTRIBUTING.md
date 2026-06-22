@@ -28,6 +28,10 @@ python3 scripts/check_coverage.py
 
 Then inspect the generated files you changed.
 
+Read [AGENTS.md](AGENTS.md) before larger changes. It describes generated files, harness metadata, validation, and the public source boundary.
+
+If a change affects install paths, plugin metadata, skill counts, or public descriptions, update the relevant docs and manifests in the same change.
+
 ## Naming
 
 All user-facing skills must use the `n-` prefix:

@@ -1,0 +1,31 @@
+{
+  "name": "naval",
+  "owner": {
+    "name": "Praggy",
+    "url": "https://github.com/thepraggyverse"
+  },
+  "metadata": {
+    "description": "Unofficial Naval skills plugin marketplace.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "naval",
+      "description": "Unofficial n-prefixed skills for applying ideas from The Almanack of Naval Ravikant.",
+      "author": {
+        "name": "Praggy",
+        "url": "https://github.com/thepraggyverse"
+      },
+      "homepage": "https://github.com/thepraggyverse/naval",
+      "tags": [
+        "naval",
+        "agent-skills",
+        "wealth",
+        "judgment",
+        "happiness",
+        "reading"
+      ],
+      "source": "./"
+    }
+  ]
+}
