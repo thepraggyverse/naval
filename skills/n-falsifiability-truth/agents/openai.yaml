@@ -1,4 +1,4 @@
 interface:
   display_name: "N Falsifiability Truth"
   short_description: "N Falsifiability Truth: Test whether claims have predictive"
-  default_prompt: "Is this claim actually testable?"
+  default_prompt: "Use $n-falsifiability-truth to test whether claims have predictive power and can be falsified."

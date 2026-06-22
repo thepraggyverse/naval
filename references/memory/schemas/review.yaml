@@ -1,0 +1,16 @@
+# Review Memory Schema
+
+required:
+  artifact_type: review
+  created: YYYY-MM-DD
+  source_skill: n-daily-review or n-weekly-compound-review
+  privacy: public-safe | personal | private
+  tags: [short, searchable, terms]
+  review_period: daily | weekly | custom
+optional:
+  status: active | superseded
+  superseded_by: path-or-id
+  confidence: high | medium | low
+  next_review: YYYY-MM-DD
+body:
+  sections: [Context, Signals, Compounding Gains, Leaks, Commitments, Avoid]

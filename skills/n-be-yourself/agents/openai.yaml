@@ -1,4 +1,4 @@
 interface:
   display_name: "N Be Yourself"
   short_description: "N Be Yourself: Find original contribution by being oneself with"
-  default_prompt: "Help me stop copying others."
+  default_prompt: "Use $n-be-yourself to find original contribution by being oneself with intensity."

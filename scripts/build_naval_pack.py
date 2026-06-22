@@ -345,9 +345,321 @@ Rules:
 """,
 }
 
+MEMORY_SCHEMAS = {
+    "review": """# Review Memory Schema
+
+required:
+  artifact_type: review
+  created: YYYY-MM-DD
+  source_skill: n-daily-review or n-weekly-compound-review
+  privacy: public-safe | personal | private
+  tags: [short, searchable, terms]
+  review_period: daily | weekly | custom
+optional:
+  status: active | superseded
+  superseded_by: path-or-id
+  confidence: high | medium | low
+  next_review: YYYY-MM-DD
+body:
+  sections: [Context, Signals, Compounding Gains, Leaks, Commitments, Avoid]
+""",
+    "decision": """# Decision Memory Schema
+
+required:
+  artifact_type: decision
+  created: YYYY-MM-DD
+  source_skill: n-decision-rules or related n-* skill
+  privacy: public-safe | personal | private
+  tags: [short, searchable, terms]
+  decision: concise decision statement
+optional:
+  status: active | superseded
+  superseded_by: path-or-id
+  confidence: high | medium | low
+  review_after: YYYY-MM-DD
+body:
+  sections: [Context, Options, Naval Lens, Decision, Reversal Conditions]
+""",
+    "scorecard": """# Scorecard Memory Schema
+
+required:
+  artifact_type: scorecard
+  created: YYYY-MM-DD
+  source_skill: n-opportunity-scorecard or n-relationship-scorecard
+  privacy: public-safe | personal | private
+  tags: [short, searchable, terms]
+  subject: what was scored
+optional:
+  status: active | superseded
+  score_total: number-or-summary
+  confidence: high | medium | low
+body:
+  sections: [Subject, Scores, Strongest Signal, Weakest Constraint, Experiment]
+""",
+    "experiment": """# Experiment Memory Schema
+
+required:
+  artifact_type: experiment
+  created: YYYY-MM-DD
+  source_skill: n-principle-to-action or related n-* skill
+  privacy: public-safe | personal | private
+  tags: [short, searchable, terms]
+  experiment: concise experiment statement
+optional:
+  status: active | complete | superseded
+  starts: YYYY-MM-DD
+  ends: YYYY-MM-DD
+  confidence: high | medium | low
+body:
+  sections: [Hypothesis, Action, Measurement, Stop Rule, Result]
+""",
+    "practice": """# Practice Memory Schema
+
+required:
+  artifact_type: practice
+  created: YYYY-MM-DD
+  source_skill: n-meditation-system or related n-* skill
+  privacy: public-safe | personal | private
+  tags: [short, searchable, terms]
+  practice: concise practice name
+optional:
+  status: active | paused | superseded
+  cadence: daily | weekly | custom
+  confidence: high | medium | low
+body:
+  sections: [Why, Protocol, Trigger, Friction, Adjustment]
+""",
+    "learning": """# Learning Memory Schema
+
+required:
+  artifact_type: learning
+  created: YYYY-MM-DD
+  source_skill: n-save-learning or related n-* skill
+  privacy: public-safe | personal | private
+  tags: [short, searchable, terms]
+  confidence: high | medium | low
+optional:
+  status: active | superseded
+  superseded_by: path-or-id
+body:
+  sections: [Learning, Context, Why It Matters, Future Use]
+""",
+    "quote-note": """# Quote Note Memory Schema
+
+required:
+  artifact_type: quote-note
+  created: YYYY-MM-DD
+  source_skill: n-quote-safety or n-source-fidelity
+  privacy: public-safe | personal | private
+  tags: [short, searchable, terms]
+  quote_mode: paraphrase | short-excerpt | needs-verification
+optional:
+  status: active | superseded
+  source_pointer: page-section-or-url
+body:
+  sections: [Use Case, Safe Wording, Attribution, Verification Need]
+""",
+}
+
+
+MEMORY_TEMPLATES = {
+    "review": """---
+artifact_type: review
+created: YYYY-MM-DD
+source_skill: n-daily-review
+privacy: personal
+tags: []
+review_period: daily
+confidence: medium
+---
+
+# Review: YYYY-MM-DD
+
+## Context
+
+## Signals
+
+## Compounding Gains
+
+## Leaks
+
+## Commitments
+
+## Avoid
+""",
+    "decision": """---
+artifact_type: decision
+created: YYYY-MM-DD
+source_skill: n-decision-rules
+privacy: personal
+tags: []
+decision: ""
+confidence: medium
+---
+
+# Decision: Short Title
+
+## Context
+
+## Options
+
+## Naval Lens
+
+## Decision
+
+## Reversal Conditions
+""",
+    "scorecard": """---
+artifact_type: scorecard
+created: YYYY-MM-DD
+source_skill: n-opportunity-scorecard
+privacy: personal
+tags: []
+subject: ""
+score_total: ""
+confidence: medium
+---
+
+# Scorecard: Short Title
+
+## Subject
+
+## Scores
+
+## Strongest Signal
+
+## Weakest Constraint
+
+## Experiment
+""",
+    "experiment": """---
+artifact_type: experiment
+created: YYYY-MM-DD
+source_skill: n-principle-to-action
+privacy: personal
+tags: []
+experiment: ""
+status: active
+confidence: medium
+---
+
+# Experiment: Short Title
+
+## Hypothesis
+
+## Action
+
+## Measurement
+
+## Stop Rule
+
+## Result
+""",
+    "practice": """---
+artifact_type: practice
+created: YYYY-MM-DD
+source_skill: n-meditation-system
+privacy: personal
+tags: []
+practice: ""
+status: active
+cadence: daily
+confidence: medium
+---
+
+# Practice: Short Title
+
+## Why
+
+## Protocol
+
+## Trigger
+
+## Friction
+
+## Adjustment
+""",
+    "learning": """---
+artifact_type: learning
+created: YYYY-MM-DD
+source_skill: n-save-learning
+privacy: personal
+tags: []
+confidence: medium
+status: active
+---
+
+# Learning: Short Title
+
+## Learning
+
+## Context
+
+## Why It Matters
+
+## Future Use
+""",
+    "quote-note": """---
+artifact_type: quote-note
+created: YYYY-MM-DD
+source_skill: n-quote-safety
+privacy: public-safe
+tags: []
+quote_mode: paraphrase
+source_pointer: ""
+---
+
+# Quote Note: Short Title
+
+## Use Case
+
+## Safe Wording
+
+## Attribution
+
+## Verification Need
+""",
+}
+
+
+MEMORY_README = """# Naval Memory References
+
+These files define the optional memory layer used by `n-setup`, `n-save-learning`, `n-memory-refresh`, and review skills that save output.
+
+The memory layer is opt-in. Skills must ask before writing private reflections, scorecards, reviews, or quote notes. Public repositories should store only public-safe or intentionally reviewed artifacts.
+
+## Artifact Types
+
+- `review`: daily, weekly, or custom reflection.
+- `decision`: a remembered choice and reversal conditions.
+- `scorecard`: an opportunity or relationship scorecard.
+- `experiment`: a time-boxed test of a principle.
+- `practice`: a repeatable habit or inner-work protocol.
+- `learning`: a reusable insight from a completed session.
+- `quote-note`: a paraphrase, short excerpt note, or verification reminder.
+
+## Storage Convention
+
+Use the configured memory root. The default project-local root is `docs/naval/`.
+
+```text
+docs/naval/
+  reviews/
+  decisions/
+  scorecards/
+  experiments/
+  practices/
+  learnings/
+  quotes/
+```
+
+Use `references/memory/templates/` for starting shapes and `references/memory/schemas/` for required frontmatter.
+"""
+
 
 SKILLS = [
     ("n-router", "Naval Router", "meta", "Route vague user situations to the right Naval skill and reference path.", "Use Naval to analyze this career decision."),
+    ("n-setup", "Naval Setup", "meta", "Configure optional Naval memory output paths, privacy defaults, and direct-install reference guidance.", "Set up Naval memory for this repo."),
     ("n-source-fidelity", "Naval Source Fidelity", "front-matter", "Keep interpretations faithful to the book, avoid over-quoting, and flag when exact phrasing needs verification.", "Check this Naval idea before I cite it."),
     ("n-biographical-context", "Naval Biographical Context", "front-matter", "Use Naval's background and timeline to explain why a principle appears in the book.", "What life context explains this Naval idea?"),
     ("n-wealth-map", "Naval Wealth Map", "wealth", "Create an end-to-end wealth strategy using specific knowledge, accountability, ownership, leverage, and patience.", "Build me a Naval-style wealth plan."),
@@ -415,6 +727,8 @@ SKILLS = [
     ("n-next-sources", "Naval Next Sources", "reading", "Point users to deeper Naval resources, podcasts, essays, and source trails.", "Where should I go deeper on this topic?"),
     ("n-coverage-auditor", "Naval Coverage Auditor", "meta", "Check whether all book sections are represented by skills and references.", "Audit whether the Naval plugin missed anything."),
     ("n-principle-to-action", "Naval Principle To Action", "meta", "Convert a principle into a concrete behavior, experiment, or operating rule.", "Turn this Naval principle into action."),
+    ("n-save-learning", "Naval Save Learning", "meta", "Save one to three approved reusable learnings from a completed Naval session.", "Save what we learned from this Naval session."),
+    ("n-memory-refresh", "Naval Memory Refresh", "meta", "Refresh saved Naval memory entries for stale, contradictory, duplicate, or low-value guidance.", "Refresh my saved Naval learnings."),
     ("n-daily-review", "Naval Daily Review", "meta", "Run a daily health, work, desire, focus, and freedom review.", "Run my daily Naval review."),
     ("n-weekly-compound-review", "Naval Weekly Compound Review", "meta", "Review weekly compounding across wealth, judgment, health, happiness, relationships, and values.", "Run my weekly compound review."),
     ("n-opportunity-scorecard", "Naval Opportunity Scorecard", "meta", "Score jobs, startups, projects, products, content, and investments.", "Score this opportunity Naval-style."),
@@ -580,7 +894,192 @@ def skill_catalog() -> str:
     return "\n".join(lines) + "\n"
 
 
+def setup_skill_md() -> str:
+    return wrap(
+        f"""---
+name: n-setup
+description: {yaml_quote("Configure optional Naval memory output paths, privacy defaults, and direct-install reference guidance. Use when the user asks to set up Naval memory, choose where reviews/learnings should be saved, configure .naval/config.local.yaml, or prepare copied/direct skill installs.")}
+---
+
+# Naval Setup
+
+Configure the optional Naval memory layer for the current repo or workspace.
+
+## Read First
+
+- `../../references/memory/README.md`
+- `../../references/memory/templates/review.md`
+- `../../references/memory/schemas/review.yaml`
+
+If these files are unavailable, the install likely copied a skill without the sibling `references/` folder. Tell the user to copy or symlink `references/` beside the parent of the copied `skills/` folder before continuing.
+
+## Workflow
+
+1. Inspect the current repo root and check for `.naval/config.local.yaml`, `.naval/config.local.example.yaml`, `.gitignore`, and an existing `docs/naval/` folder.
+2. Explain that persistence is optional and private by default. Naval reviews can contain personal reflections; never save them without explicit approval.
+3. Ask where outputs should live, one question at a time:
+   - no persistence
+   - project-local `docs/naval/`
+   - custom folder
+   - personal notes or vault
+4. Ask for the default privacy level: `public-safe`, `personal`, or `private`.
+5. Draft `.naval/config.local.yaml` and show it before writing.
+6. Write only after approval. If writing a local config, ensure `.naval/*.local.yaml` is covered by `.gitignore`; ask before editing `.gitignore`.
+7. Offer to create the selected memory root and these folders only after approval: `reviews/`, `decisions/`, `scorecards/`, `experiments/`, `practices/`, `learnings/`, `quotes/`.
+
+## Config Shape
+
+```yaml
+memory_enabled: true
+memory_root: docs/naval
+privacy_default: personal
+require_save_confirmation: true
+direct_install_requires_references: true
+```
+
+Use `memory_enabled: false` for no persistence.
+
+## Output
+
+Return:
+
+- Config path
+- Memory root
+- Privacy default
+- Folders created or skipped
+- Whether `.naval/*.local.yaml` is gitignored
+- Next skills to use, usually `n-daily-review`, `n-weekly-compound-review`, or `n-save-learning`
+"""
+    )
+
+
+def save_learning_skill_md() -> str:
+    return wrap(
+        f"""---
+name: n-save-learning
+description: {yaml_quote("Save one to three approved reusable learnings from a completed Naval session with YAML frontmatter, privacy checks, duplicate search, and optional docs/naval storage. Use when the user says save what we learned, compound this Naval session, remember this, or capture a review insight.")}
+---
+
+# Naval Save Learning
+
+Save only the reusable insight, not a transcript or generic activity log.
+
+## Read First
+
+- `../../references/memory/README.md`
+- `../../references/memory/templates/learning.md`
+- `../../references/memory/schemas/learning.yaml`
+
+If these files are unavailable, the install likely copied a skill without the sibling `references/` folder. Tell the user to copy or symlink `references/` beside the parent of the copied `skills/` folder before continuing.
+
+## Workflow
+
+1. Resolve memory config:
+   - Prefer `.naval/config.local.yaml` in the current repo.
+   - If config exists with `memory_enabled: false`, treat persistence as disabled. Do not search or write under `memory_root` unless the user explicitly asks for a one-off save path or chooses to run `n-setup` to enable memory.
+   - If no config exists, ask whether to continue with no write, write once to a user-provided path, or run `n-setup`.
+2. Extract at most 1-3 learnings from the completed session. Look for:
+   - a corrected assumption
+   - a reusable decision rule
+   - an experiment that should be repeated
+   - a practice that worked
+   - a scorecard signal that should guide future choices
+3. Discard material that was merely discussed. Do not save private details unless they are necessary and the user approves the privacy level.
+4. Draft each learning with:
+   - title
+   - type: insight, correction, playbook, pattern, or practice
+   - tags for future retrieval
+   - confidence: high, medium, or low
+   - privacy: public-safe, personal, or private
+   - why it matters later
+5. If persistence remains disabled, return the drafted learnings as unsaved output and stop before duplicate search or writes.
+6. Search the approved memory root before writing. Check `learnings/`, `reviews/`, `decisions/`, `scorecards/`, `experiments/`, and `practices/` for duplicate or superseded entries.
+7. Present the draft and duplicate findings. Ask for approval before creating or updating any file.
+8. Write approved learnings to `<memory_root>/learnings/YYYY-MM-DD-short-title.md` using `references/memory/templates/learning.md`.
+
+## Do Not
+
+- Do not auto-save.
+- Do not save the full conversation.
+- Do not store private reflections in a public repo unless the user explicitly chooses that.
+- Do not create five or more learnings from one session; filter harder.
+
+## Output
+
+Return:
+
+- Saved files or skipped reason
+- Duplicate or supersession handling
+- Privacy level used
+- Tags that will help future retrieval
+"""
+    )
+
+
+def memory_refresh_skill_md() -> str:
+    return wrap(
+        f"""---
+name: n-memory-refresh
+description: {yaml_quote("Refresh saved Naval memory entries for stale, contradictory, duplicate, superseded, or low-value guidance. Use when the user asks to audit docs/naval, clean saved learnings, refresh Naval memory, or resolve contradictions in saved reviews and scorecards.")}
+---
+
+# Naval Memory Refresh
+
+Keep the optional Naval memory layer useful, current, and small.
+
+## Read First
+
+- `../../references/memory/README.md`
+- `../../references/memory/schemas/learning.yaml`
+- `../../references/memory/schemas/review.yaml`
+- `../../references/memory/schemas/decision.yaml`
+
+If these files are unavailable, the install likely copied a skill without the sibling `references/` folder. Tell the user to copy or symlink `references/` beside the parent of the copied `skills/` folder before continuing.
+
+## Workflow
+
+1. Resolve the configured memory root from `.naval/config.local.yaml`, or ask for the folder to inspect.
+2. Inventory markdown files under:
+   - `reviews/`
+   - `decisions/`
+   - `scorecards/`
+   - `experiments/`
+   - `practices/`
+   - `learnings/`
+   - `quotes/`
+3. Read frontmatter first. Group by tags, source skill, artifact type, and subject.
+4. Classify each candidate:
+   - Keep: still useful and accurate
+   - Update: useful but references, tags, status, or wording drifted
+   - Supersede: replaced by a newer, better entry
+   - Consolidate: duplicates another entry
+   - Recommend deletion: low-value, obsolete, or unsafe to retain
+5. Be conservative. Ask before editing, deleting, or marking private material superseded.
+6. Prefer marking `status: superseded` with `superseded_by` over deleting unless the user asks for deletion.
+7. Produce a short refresh report. Save it only if the user approves.
+
+## Output
+
+Return:
+
+- Memory root inspected
+- Counts by artifact type
+- Applied changes
+- Recommended changes needing approval
+- Contradictions found
+- Next cleanup target
+"""
+    )
+
+
 def skill_md(slug: str, title: str, category: str, focus: str, example: str) -> str:
+    if slug == "n-setup":
+        return setup_skill_md()
+    if slug == "n-save-learning":
+        return save_learning_skill_md()
+    if slug == "n-memory-refresh":
+        return memory_refresh_skill_md()
+
     chapters = CATEGORY_REFERENCES[category]
     workflows = CATEGORY_WORKFLOWS[category]
     chapter_lines = "\n".join(f"- `../../references/chapter-summaries/{name}.md`" for name in chapters)
@@ -596,10 +1095,22 @@ def skill_md(slug: str, title: str, category: str, focus: str, example: str) -> 
         "front-matter": "safe paraphrase, citation caveat, or source check",
         "meta": "router result, review, scorecard, or generated study artifact",
     }[category]
-    description = (
-        f"Use when applying The Almanack of Naval Ravikant to {focus.lower()} "
-        f"Trigger for user requests involving Naval, n-, {title.lower()}, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
-    )
+    description = f"Apply The Almanack of Naval Ravikant to {focus.lower()} Use when the user asks for {slug}, says \"{example}\", or wants this Naval lens."
+    persistence_section = ""
+    if slug in {"n-daily-review", "n-weekly-compound-review"}:
+        review_kind = "daily" if slug == "n-daily-review" else "weekly"
+        persistence_section = f"""
+## Optional Persistence
+
+After producing the review, check whether the user asked to save it or whether `.naval/config.local.yaml` enables memory. If saving is relevant:
+
+1. Read `../../references/memory/templates/review.md` and `../../references/memory/schemas/review.yaml`.
+2. Ask before writing. Never auto-save private reflections.
+3. Use the configured memory root, usually `docs/naval/`.
+4. Save to `<memory_root>/reviews/YYYY-MM-DD-{review_kind}-review.md`.
+5. Set `artifact_type: review`, `source_skill: {slug}`, `review_period: {review_kind}`, and a privacy level.
+6. If no config exists, offer `n-setup` instead of inventing a storage location.
+"""
     return wrap(
         f"""---
 name: {slug}
@@ -620,6 +1131,8 @@ description: {yaml_quote(description)}
 {chapter_lines}
 {workflow_lines}
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `{slug}` directly.
@@ -635,6 +1148,7 @@ description: {yaml_quote(description)}
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+{persistence_section}
 
 ## Output
 
@@ -671,11 +1185,12 @@ Assistant: Apply this skill, cite the relevant reference section, and end with o
 
 
 def openai_yaml(slug: str, title: str, focus: str, example: str) -> str:
+    prompt_focus = focus.rstrip(".")
     return wrap(
         f"""interface:
   display_name: {yaml_quote(display_name(slug, title))}
   short_description: {yaml_quote(short_description(display_name(slug, title), focus))}
-  default_prompt: {yaml_quote(example)}
+  default_prompt: {yaml_quote(f"Use ${slug} to {prompt_focus[0].lower() + prompt_focus[1:]}.")}
 """
     )
 
@@ -727,7 +1242,7 @@ def coverage_matrix() -> str:
         "philosophy_present": ["n-present-moment"],
         "recommended_reading": ["n-reading-curriculum", "n-next-sources"],
         "naval_writing": ["n-life-formulas", "n-rules", "n-principle-to-action"],
-        "meta_review": ["n-coverage-auditor", "n-daily-review", "n-weekly-compound-review", "n-opportunity-scorecard", "n-flashcards", "n-socratic-coach"],
+        "meta_review": ["n-setup", "n-save-learning", "n-memory-refresh", "n-coverage-auditor", "n-daily-review", "n-weekly-compound-review", "n-opportunity-scorecard", "n-flashcards", "n-socratic-coach"],
     }
     lines = ["# Coverage Matrix", "", "book_sections:"]
     for section, skills in section_map.items():
@@ -816,11 +1331,16 @@ def main() -> None:
     write(REFERENCES_DIR / "concept-graph.json", json.dumps(CONCEPT_GRAPH, indent=2) + "\n")
     write(REFERENCES_DIR / "router-guide.md", ROUTER_GUIDE)
     write(REFERENCES_DIR / "skill-catalog.md", skill_catalog())
+    write(REFERENCES_DIR / "memory" / "README.md", MEMORY_README)
 
     for name, content in CHAPTER_SUMMARIES.items():
         write(REFERENCES_DIR / "chapter-summaries" / f"{name}.md", content)
     for name, content in WORKFLOWS.items():
         write(REFERENCES_DIR / "workflows" / f"{name}.md", content)
+    for name, content in MEMORY_SCHEMAS.items():
+        write(REFERENCES_DIR / "memory" / "schemas" / f"{name}.yaml", content)
+    for name, content in MEMORY_TEMPLATES.items():
+        write(REFERENCES_DIR / "memory" / "templates" / f"{name}.md", content)
 
     write(ROOT / "scripts" / "check_coverage.py", check_coverage_script(), executable=True)
 

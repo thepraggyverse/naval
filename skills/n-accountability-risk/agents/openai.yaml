@@ -1,4 +1,4 @@
 interface:
   display_name: "N Accountability Risk"
   short_description: "N Accountability Risk: Decide when to put reputation, name,"
-  default_prompt: "Should I take public accountability for this?"
+  default_prompt: "Use $n-accountability-risk to decide when to put reputation, name, capital, and responsibility behind an action."

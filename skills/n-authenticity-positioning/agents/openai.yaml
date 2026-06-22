@@ -1,4 +1,4 @@
 interface:
   display_name: "N Authenticity Positioning"
   short_description: "N Authenticity Positioning: Escape competition by positioning"
-  default_prompt: "How do I make this product more authentically mine?"
+  default_prompt: "Use $n-authenticity-positioning to escape competition by positioning around what is natural, rare, and hard to copy."

@@ -1,4 +1,4 @@
 interface:
   display_name: "N Integrity Partner Filter"
   short_description: "N Integrity Partner Filter: Assess collaborators for integrity,"
-  default_prompt: "Should I work with this person?"
+  default_prompt: "Use $n-integrity-partner-filter to assess collaborators for integrity, optimism, energy, and long-term fit."

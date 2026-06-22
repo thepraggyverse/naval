@@ -9,14 +9,17 @@ Root `AGENTS.md` is contributor guidance for this repository. Runtime behavior f
 ```bash
 python3 scripts/validate_public.py
 python3 scripts/check_coverage.py
-python3 /Users/praggy/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py .
+python3 scripts/validate_direct_install.py
+npm run export:direct
+python3 scripts/validate_direct_install.py --agent-root dist/naval-direct-install
+python3 ~/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py .
 ```
 
 Validate every skill when changing generated skills or skill metadata:
 
 ```bash
 for d in skills/n-*; do
-  python3 /Users/praggy/.codex/skills/.system/skill-creator/scripts/quick_validate.py "$d"
+  python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py "$d"
 done
 ```
 
@@ -25,10 +28,12 @@ done
 Changes may affect one or more of these surfaces:
 
 - `skills/n-*` runtime skill instructions
-- `references/` shared source-safe book maps, workflows, and catalogs
+- `references/` shared source-safe book maps, workflows, catalogs, and optional memory schemas/templates
+- `.naval/config.local.example.yaml` as the public example for opt-in local memory config
 - `.codex-plugin/`, `.claude-plugin/`, `.cursor-plugin/`, `.agents/plugins/`, `gemini-extension.json`, `.opencode/`, `.pi/`, and `package.json` harness metadata
 - `README.md`, `docs/`, `AGENTS.md`, `CONTEXT.md`, `PRIVACY.md`, `SECURITY.md`, and `CHANGELOG.md`
 - `scripts/` install, generation, and validation helpers
+- `dist/` generated direct-copy bundles from `npm run export:direct` should stay untracked
 
 Do not assume a change is documentation-only if it changes manifest text, install paths, skill descriptions, skill count, or coverage.
 
@@ -42,6 +47,7 @@ This repository is public. Do not add:
 - API keys, credentials, tokens, account identifiers, or private URLs
 - generated runtime caches
 - local absolute paths except in explicit examples
+- `.naval/*.local.yaml` files with private memory settings
 
 Use paraphrased operating knowledge. Exact quote work belongs behind `n-quote-safety` and should prefer short attributed excerpts or paraphrase.
 
@@ -63,6 +69,9 @@ Generated outputs include:
 - `references/router-guide.md`
 - `references/chapter-summaries/*.md`
 - `references/workflows/*.md`
+- `references/memory/README.md`
+- `references/memory/schemas/*.yaml`
+- `references/memory/templates/*.md`
 - `scripts/check_coverage.py`
 
 If you edit generated files by hand, either move the change into `scripts/build_naval_pack.py` or be explicit that the edit is intentionally temporary.
@@ -86,6 +95,8 @@ When adding or removing skills, update:
 - `skills.sh.json`
 - harness manifests if descriptions, names, or package metadata change
 - validation expectations in `scripts/validate_public.py`
+- direct-copy bundle expectations in `scripts/export_direct_install.py`
+- direct-copy reference expectations in `scripts/validate_direct_install.py`
 
 ## Validation Before Commit
 
@@ -94,21 +105,24 @@ Run:
 ```bash
 python3 scripts/validate_public.py
 python3 scripts/check_coverage.py
-python3 /Users/praggy/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py .
+python3 scripts/validate_direct_install.py
+npm run export:direct
+python3 scripts/validate_direct_install.py --agent-root dist/naval-direct-install
+python3 ~/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py .
 ```
 
 For skill changes:
 
 ```bash
 for d in skills/n-*; do
-  python3 /Users/praggy/.codex/skills/.system/skill-creator/scripts/quick_validate.py "$d"
+  python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py "$d"
 done
 ```
 
 For local plugin development, update the Codex cachebuster before handing off:
 
 ```bash
-python3 /Users/praggy/.codex/skills/.system/plugin-creator/scripts/update_plugin_cachebuster.py .
+python3 ~/.codex/skills/.system/plugin-creator/scripts/update_plugin_cachebuster.py .
 ```
 
 ## Commit Style

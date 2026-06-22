@@ -1,0 +1,15 @@
+# Scorecard Memory Schema
+
+required:
+  artifact_type: scorecard
+  created: YYYY-MM-DD
+  source_skill: n-opportunity-scorecard or n-relationship-scorecard
+  privacy: public-safe | personal | private
+  tags: [short, searchable, terms]
+  subject: what was scored
+optional:
+  status: active | superseded
+  score_total: number-or-summary
+  confidence: high | medium | low
+body:
+  sections: [Subject, Scores, Strongest Signal, Weakest Constraint, Experiment]

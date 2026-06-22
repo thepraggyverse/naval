@@ -1,4 +1,4 @@
 interface:
   display_name: "N Reading System"
   short_description: "N Reading System: Design curiosity-led reading habits,"
-  default_prompt: "Design my reading system."
+  default_prompt: "Use $n-reading-system to design curiosity-led reading habits, rereading, skimming, and dropping weak books."

@@ -1,4 +1,4 @@
 interface:
   display_name: "N Systems Not Goals"
   short_description: "N Systems Not Goals: Turn goals into environments and systems"
-  default_prompt: "Turn this goal into a system."
+  default_prompt: "Use $n-systems-not-goals to turn goals into environments and systems that make success likely."

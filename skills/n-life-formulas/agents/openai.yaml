@@ -1,4 +1,4 @@
 interface:
   display_name: "N Life Formulas"
   short_description: "N Life Formulas: Use Naval's formula-style writing for health,"
-  default_prompt: "Show the formula behind this area."
+  default_prompt: "Use $n-life-formulas to use Naval's formula-style writing for health, wealth, happiness, income, and learning."

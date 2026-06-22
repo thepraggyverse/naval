@@ -1,4 +1,4 @@
 interface:
   display_name: "N Quote Safety"
   short_description: "N Quote Safety: Keep quotations short, attributed, and"
-  default_prompt: "Make this Naval quote safe to use."
+  default_prompt: "Use $n-quote-safety to keep quotations short, attributed, and compliant while preferring paraphrase."

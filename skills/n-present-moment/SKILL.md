@@ -1,6 +1,6 @@
 ---
 name: n-present-moment
-description: "Use when applying The Almanack of Naval Ravikant to return to the present and act on perishable inspiration. Trigger for user requests involving Naval, n-, naval present moment, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
+description: "Apply The Almanack of Naval Ravikant to return to the present and act on perishable inspiration. Use when the user asks for n-present-moment, says \"What should I do immediately?\", or wants this Naval lens."
 ---
 
 # Naval Present Moment
@@ -17,6 +17,8 @@ Return to the present and act on perishable inspiration.
 - `../../references/chapter-summaries/philosophy.md`
 - `../../references/workflows/decision-scorecard.md`
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `n-present-moment` directly.
@@ -32,6 +34,7 @@ Return to the present and act on perishable inspiration.
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+
 
 ## Output
 

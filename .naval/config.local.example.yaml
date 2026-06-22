@@ -1,0 +1,22 @@
+# Naval local memory configuration.
+# Copy to .naval/config.local.yaml and edit for your own machine or repo.
+# The local config is intentionally gitignored by .naval/*.local.yaml.
+
+# Set false to keep Naval skills stateless.
+memory_enabled: false
+
+# Project-local default. Use an absolute path for a personal notes/vault folder.
+memory_root: docs/naval
+
+# public-safe: okay for a public repo after review
+# personal: local or private repo only
+# private: sensitive; prefer a personal vault outside the project
+privacy_default: personal
+
+# Naval skills must ask before writing reviews, decisions, scorecards, practices,
+# experiments, learnings, or quote notes.
+require_save_confirmation: true
+
+# Direct-copy installs must copy this repo's references/ folder beside the copied
+# skills/ folder so ../../references links resolve.
+direct_install_requires_references: true

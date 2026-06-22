@@ -1,4 +1,4 @@
 interface:
   display_name: "N Next Sources"
   short_description: "N Next Sources: Point users to deeper Naval resources,"
-  default_prompt: "Where should I go deeper on this topic?"
+  default_prompt: "Use $n-next-sources to point users to deeper Naval resources, podcasts, essays, and source trails."

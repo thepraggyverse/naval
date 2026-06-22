@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Memory Refresh"
+  short_description: "N Memory Refresh: Refresh saved Naval memory entries for stale,"
+  default_prompt: "Use $n-memory-refresh to refresh saved Naval memory entries for stale, contradictory, duplicate, or low-value guidance."

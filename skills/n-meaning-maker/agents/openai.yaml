@@ -1,4 +1,4 @@
 interface:
   display_name: "N Meaning Maker"
   short_description: "N Meaning Maker: Explore personal meaning without pretending"
-  default_prompt: "Help me find my current meaning."
+  default_prompt: "Use $n-meaning-maker to explore personal meaning without pretending there is a universal borrowed answer."

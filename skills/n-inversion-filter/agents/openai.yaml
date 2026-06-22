@@ -1,4 +1,4 @@
 interface:
   display_name: "N Inversion Filter"
   short_description: "N Inversion Filter: Find what will fail, what to avoid, and"
-  default_prompt: "How could this fail?"
+  default_prompt: "Use $n-inversion-filter to find what will fail, what to avoid, and which mistakes matter most."

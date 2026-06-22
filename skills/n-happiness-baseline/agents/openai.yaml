@@ -1,4 +1,4 @@
 interface:
   display_name: "N Happiness Baseline"
   short_description: "N Happiness Baseline: Train happiness as a baseline using"
-  default_prompt: "Help me raise my happiness baseline."
+  default_prompt: "Use $n-happiness-baseline to train happiness as a baseline using peace, habits, presence, and acceptance."

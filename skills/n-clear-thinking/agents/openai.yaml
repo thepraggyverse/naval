@@ -1,4 +1,4 @@
 interface:
   display_name: "N Clear Thinking"
   short_description: "N Clear Thinking: Simplify confused thinking down to basics,"
-  default_prompt: "Make my thinking clearer here."
+  default_prompt: "Use $n-clear-thinking to simplify confused thinking down to basics, first principles, and plain language."

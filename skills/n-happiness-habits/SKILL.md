@@ -1,6 +1,6 @@
 ---
 name: n-happiness-habits
-description: "Use when applying The Almanack of Naval Ravikant to build daily habits that support mood stability and long-term happiness. Trigger for user requests involving Naval, n-, naval happiness habits, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
+description: "Apply The Almanack of Naval Ravikant to build daily habits that support mood stability and long-term happiness. Use when the user asks for n-happiness-habits, says \"Create a happiness habit plan.\", or wants this Naval lens."
 ---
 
 # Naval Happiness Habits
@@ -17,6 +17,8 @@ Build daily habits that support mood stability and long-term happiness.
 - `../../references/chapter-summaries/happiness.md`
 - `../../references/workflows/desire-audit.md`
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `n-happiness-habits` directly.
@@ -32,6 +34,7 @@ Build daily habits that support mood stability and long-term happiness.
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+
 
 ## Output
 

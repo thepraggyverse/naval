@@ -1,4 +1,4 @@
 interface:
   display_name: "N Death Awareness"
   short_description: "N Death Awareness: Use mortality to clarify priorities and"
-  default_prompt: "Use mortality to clarify this decision."
+  default_prompt: "Use $n-death-awareness to use mortality to clarify priorities and reduce ego battles."

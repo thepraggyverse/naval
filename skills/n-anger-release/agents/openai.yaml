@@ -1,4 +1,4 @@
 interface:
   display_name: "N Anger Release"
   short_description: "N Anger Release: Treat anger as self-punishment and find a"
-  default_prompt: "Help me process this anger."
+  default_prompt: "Use $n-anger-release to treat anger as self-punishment and find a cleaner response."

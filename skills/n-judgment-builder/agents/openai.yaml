@@ -1,4 +1,4 @@
 interface:
   display_name: "N Judgment Builder"
   short_description: "N Judgment Builder: Improve decision quality in leveraged work"
-  default_prompt: "Improve my judgment on this bet."
+  default_prompt: "Use $n-judgment-builder to improve decision quality in leveraged work and life choices."

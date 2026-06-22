@@ -7,7 +7,7 @@ This document explains how `naval` is structured and why it is both a plugin and
 | Question | Answer |
 |---|---|
 | Is `naval` a plugin? | Yes. `.codex-plugin/plugin.json` makes the repository installable as a Codex plugin. |
-| Is it also skills? | Yes. The plugin exposes 76 `skills/n-*` folders, each with its own `SKILL.md`. |
+| Is it also skills? | Yes. The plugin exposes 79 `skills/n-*` folders, each with its own `SKILL.md`. |
 | Why both? | The plugin gives packaging, metadata, versioning, and marketplace visibility. Skills give small callable behaviors that search well and load only the relevant instructions. |
 | Why `n-`? | A short namespace makes the pack easy to find in skill search and avoids generic names like `wealth` or `reading`. |
 
@@ -18,7 +18,7 @@ User prompt
   -> search for n- or call n-router
   -> selected skills/n-*/SKILL.md
   -> targeted references from references/
-  -> scorecard, decision, practice, experiment, review, or reading path
+  -> scorecard, decision, practice, experiment, review, reading path, or approved saved learning
 ```
 
 ## Where Things Live
@@ -30,8 +30,10 @@ When installed as a local plugin, `naval` has two important homes:
 | `~/plugins/naval` | The source checkout, plugin manifest, skills, references, docs, and scripts. | This is the source of truth to edit, validate, update, commit, and pull. |
 | `~/.agents/plugins/marketplace.json` | The local marketplace entry that points Codex at `./plugins/naval`. | This makes `naval` visible as an installable local plugin. |
 | `~/.codex/skills/n-*` and other skill homes | Optional symlinks to `~/plugins/naval/skills/n-*`. | This lets tools that scan skill folders discover the same skills without plugin support. |
+| `.naval/config.local.yaml` | Optional local memory config created from `.naval/config.local.example.yaml`. | This keeps persistence opt-in and private. |
+| `docs/naval/` or a custom notes path | Optional saved reviews, decisions, scorecards, experiments, practices, learnings, and quote notes. | This gives durable outputs only after explicit user approval. |
 
-The repo does not write project-local runtime files such as `docs/brainstorms/` or `docs/solutions/`. Naval outputs are meant to be copied into the user's existing notes, plans, journals, or project docs when the user wants them preserved.
+The repo does not write project-local runtime files by default. Naval outputs stay in the chat unless `n-setup` configures an optional memory root and the user approves a save.
 
 ## Repository Map
 
@@ -52,9 +54,12 @@ The repo does not write project-local runtime files such as `docs/brainstorms/` 
 | `references/coverage-matrix.yaml` | Maps book sections to skills and references. | Generated. |
 | `references/chapter-summaries/` | Paraphrased coverage anchors by major area. | Generated. |
 | `references/workflows/` | Reusable scorecards and protocols. | Generated. |
+| `references/memory/` | Schemas and templates for optional saved outputs. | Generated. |
 | `scripts/install_local.py` | Marketplace registration and symlink installer. | Hand-maintained. |
+| `scripts/export_direct_install.py` | Builds a portable direct-copy bundle with sibling `skills/` and `references/`. | Hand-maintained. |
 | `scripts/validate_public.py` | Public repo structural validation. | Hand-maintained. |
 | `scripts/check_coverage.py` | Coverage validation. | Generated. |
+| `scripts/validate_direct_install.py` | Simulates or validates direct-copy roots and verifies sibling `references/` paths. | Hand-maintained. |
 
 ## Plugin Versus Direct Symlink
 
@@ -62,6 +67,7 @@ The repo does not write project-local runtime files such as `docs/brainstorms/` 
 |---|---|---|
 | Codex plugin | Codex UI visibility, plugin metadata, version-aware refresh, clean packaging. | Requires a plugin-aware host. |
 | Direct symlink | Agents that scan `SKILL.md` folders directly. | No plugin metadata or marketplace surface. |
+| Direct-copy bundle | Hosts that require uploaded or copied files. | Use `npm run export:direct` and validate the target root. |
 | Both | Local multi-agent setups. | Slightly more setup, but one repo stays the source of truth. |
 
 ## Skill Design Rules
@@ -87,6 +93,7 @@ The repo does not write project-local runtime files such as `docs/brainstorms/` 
 | Removal | `n-modern-addiction-defense`, `n-time-value-focus`, `n-desire-audit` |
 | Reading path | `n-reading-curriculum`, `n-reading-system`, `n-next-sources` |
 | Review | `n-daily-review`, `n-weekly-compound-review`, `n-coverage-auditor` |
+| Saved learning | `n-save-learning`, `n-memory-refresh` |
 
 ## Core Commands
 
@@ -95,11 +102,14 @@ These are the most useful entry points to remember:
 | Command | Use When | Typical Follow-Up |
 |---|---|---|
 | `n-router` | The situation is vague or spans multiple areas. | Follow the routed primary skill. |
+| `n-setup` | The user wants optional durable output folders or privacy defaults. | `n-save-learning`, `n-memory-refresh`. |
 | `n-wealth-map` | The user wants wealth, career, leverage, ownership, or freedom strategy. | `n-specific-knowledge`, `n-leverage-stack`, `n-equity-ownership`. |
 | `n-decision-rules` | The user has a hard choice. | `n-inversion-filter`, `n-risk-of-ruin`, `n-wisdom-long-term`. |
 | `n-opportunity-scorecard` | The user is evaluating a project, startup, job, product, or investment. | `n-long-term-games`, `n-work-as-play`, `n-accountability-risk`. |
 | `n-desire-audit` | The user is anxious, jealous, restless, or chasing a result. | `n-envy-antidote`, `n-accept-change-leave`, `n-presence-practice`. |
 | `n-health-first` | The user's body, energy, or mental baseline is blocking everything else. | `n-exercise-priority`, `n-diet-simplifier`, `n-meditation-system`. |
+| `n-save-learning` | A completed session produced reusable guidance worth keeping. | Search existing memory, then save 1-3 approved learnings. |
+| `n-memory-refresh` | Saved Naval memory may be stale, duplicated, contradictory, or too noisy. | Update, merge, supersede, or recommend deletion after approval. |
 | `n-weekly-compound-review` | The user wants reflection that improves the next week. | Route to whichever area leaked most. |
 | `n-quote-safety` | The user wants to publish or cite a Naval idea. | `n-source-fidelity`, `n-next-sources`. |
 
@@ -109,6 +119,8 @@ These are the most useful entry points to remember:
 |---|---|---|
 | Public structure | `python3 scripts/validate_public.py` | Missing docs, manifest issues, missing skill metadata, broken skill references. |
 | Coverage | `python3 scripts/check_coverage.py` | Missing skill coverage, invalid mapped references, unmapped `n-*` skills. |
+| Direct-copy export | `npm run export:direct` | Builds `dist/naval-direct-install` with sibling `skills/` and `references/`. |
+| Direct-copy portability | `python3 scripts/validate_direct_install.py --agent-root dist/naval-direct-install` | Missing skills, missing sibling `references/`, or broken `../../references/...` links. |
 | Plugin schema | `python3 ~/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py .` | Codex plugin manifest problems. |
 | Skill schema | `python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/n-router` | Individual skill frontmatter and structure issues. |
 

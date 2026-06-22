@@ -1,0 +1,14 @@
+# Quote Note Memory Schema
+
+required:
+  artifact_type: quote-note
+  created: YYYY-MM-DD
+  source_skill: n-quote-safety or n-source-fidelity
+  privacy: public-safe | personal | private
+  tags: [short, searchable, terms]
+  quote_mode: paraphrase | short-excerpt | needs-verification
+optional:
+  status: active | superseded
+  source_pointer: page-section-or-url
+body:
+  sections: [Use Case, Safe Wording, Attribution, Verification Need]

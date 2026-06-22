@@ -3,7 +3,9 @@ __pycache__/
 *.pyc
 .venv/
 node_modules/
+dist/
 .codex-cache/
 .claude-cache/
 .openclaw-cache/
 *.log
+.naval/*.local.yaml

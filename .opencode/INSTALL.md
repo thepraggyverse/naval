@@ -29,3 +29,13 @@ From a checkout, point OpenCode at the package path:
 ```
 
 Restart OpenCode after changing the package source.
+
+Validate a local checkout before linking it:
+
+```bash
+python3 scripts/validate_public.py
+python3 scripts/check_coverage.py
+python3 scripts/validate_direct_install.py
+```
+
+Optional saved reviews and learnings are configured through `n-setup`; memory remains off unless the user explicitly enables it.

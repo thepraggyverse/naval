@@ -1,4 +1,4 @@
 interface:
   display_name: "N Judgment Compensation"
   short_description: "N Judgment Compensation: Move from being paid for hours to"
-  default_prompt: "How do I become paid for judgment?"
+  default_prompt: "Use $n-judgment-compensation to move from being paid for hours to being paid for judgment under leverage."

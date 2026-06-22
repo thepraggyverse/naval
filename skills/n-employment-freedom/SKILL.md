@@ -1,6 +1,6 @@
 ---
 name: n-employment-freedom
-description: "Use when applying The Almanack of Naval Ravikant to reduce dependence on employment through burn-rate, ownership, and independence choices. Trigger for user requests involving Naval, n-, naval employment freedom, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
+description: "Apply The Almanack of Naval Ravikant to reduce dependence on employment through burn-rate, ownership, and independence choices. Use when the user asks for n-employment-freedom, says \"How do I become less dependent on employment?\", or wants this Naval lens."
 ---
 
 # Naval Employment Freedom
@@ -18,6 +18,8 @@ Reduce dependence on employment through burn-rate, ownership, and independence c
 - `../../references/workflows/meditation-protocol.md`
 - `../../references/workflows/daily-review.md`
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `n-employment-freedom` directly.
@@ -33,6 +35,7 @@ Reduce dependence on employment through burn-rate, ownership, and independence c
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+
 
 ## Output
 

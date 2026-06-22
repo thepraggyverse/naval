@@ -1,4 +1,4 @@
 interface:
   display_name: "N Freedom From Expectations"
   short_description: "N Freedom From Expectations: Set boundaries around"
-  default_prompt: "Where am I living by others' expectations?"
+  default_prompt: "Use $n-freedom-from-expectations to set boundaries around expectations, obligations, and others' imagined claims."

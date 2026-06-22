@@ -1,6 +1,6 @@
 ---
 name: n-foundational-learning
-description: "Use when applying The Almanack of Naval Ravikant to build foundations in math, science, economics, persuasion, and learning. Trigger for user requests involving Naval, n-, naval foundational learning, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
+description: "Apply The Almanack of Naval Ravikant to build foundations in math, science, economics, persuasion, and learning. Use when the user asks for n-foundational-learning, says \"Build me a foundation learning plan.\", or wants this Naval lens."
 ---
 
 # Naval Foundational Learning
@@ -17,6 +17,8 @@ Build foundations in math, science, economics, persuasion, and learning.
 - `../../references/chapter-summaries/judgment.md`
 - `../../references/workflows/decision-scorecard.md`
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `n-foundational-learning` directly.
@@ -32,6 +34,7 @@ Build foundations in math, science, economics, persuasion, and learning.
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+
 
 ## Output
 

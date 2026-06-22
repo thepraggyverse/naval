@@ -1,4 +1,4 @@
 interface:
   display_name: "N Foundational Learning"
   short_description: "N Foundational Learning: Build foundations in math, science,"
-  default_prompt: "Build me a foundation learning plan."
+  default_prompt: "Use $n-foundational-learning to build foundations in math, science, economics, persuasion, and learning."

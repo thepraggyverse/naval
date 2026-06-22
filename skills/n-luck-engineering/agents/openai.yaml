@@ -1,4 +1,4 @@
 interface:
   display_name: "N Luck Engineering"
   short_description: "N Luck Engineering: Create conditions for luck through motion,"
-  default_prompt: "How do I make luck find me?"
+  default_prompt: "Use $n-luck-engineering to create conditions for luck through motion, skill, reputation, and unique character."

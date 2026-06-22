@@ -1,4 +1,4 @@
 interface:
   display_name: "N Happiness Habits"
   short_description: "N Happiness Habits: Build daily habits that support mood"
-  default_prompt: "Create a happiness habit plan."
+  default_prompt: "Use $n-happiness-habits to build daily habits that support mood stability and long-term happiness."

@@ -1,4 +1,4 @@
 interface:
   display_name: "N Equity Ownership"
   short_description: "N Equity Ownership: Move from wage or service work toward"
-  default_prompt: "How do I get equity or upside here?"
+  default_prompt: "Use $n-equity-ownership to move from wage or service work toward ownership, IP, assets, and upside."

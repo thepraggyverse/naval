@@ -1,4 +1,4 @@
 interface:
   display_name: "N Coverage Auditor"
   short_description: "N Coverage Auditor: Check whether all book sections are"
-  default_prompt: "Audit whether the Naval plugin missed anything."
+  default_prompt: "Use $n-coverage-auditor to check whether all book sections are represented by skills and references."

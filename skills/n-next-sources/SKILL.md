@@ -1,6 +1,6 @@
 ---
 name: n-next-sources
-description: "Use when applying The Almanack of Naval Ravikant to point users to deeper naval resources, podcasts, essays, and source trails. Trigger for user requests involving Naval, n-, naval next sources, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
+description: "Apply The Almanack of Naval Ravikant to point users to deeper naval resources, podcasts, essays, and source trails. Use when the user asks for n-next-sources, says \"Where should I go deeper on this topic?\", or wants this Naval lens."
 ---
 
 # Naval Next Sources
@@ -17,6 +17,8 @@ Point users to deeper Naval resources, podcasts, essays, and source trails.
 - `../../references/chapter-summaries/reading.md`
 - `../../references/workflows/reading-curriculum.md`
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `n-next-sources` directly.
@@ -32,6 +34,7 @@ Point users to deeper Naval resources, podcasts, essays, and source trails.
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+
 
 ## Output
 

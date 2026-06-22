@@ -1,6 +1,6 @@
 ---
 name: n-success-game-exit
-description: "Use when applying The Almanack of Naval Ravikant to notice when the user has outgrown a game with big rewards. Trigger for user requests involving Naval, n-, naval success game exit, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
+description: "Apply The Almanack of Naval Ravikant to notice when the user has outgrown a game with big rewards. Use when the user asks for n-success-game-exit, says \"Have I outgrown this game?\", or wants this Naval lens."
 ---
 
 # Naval Success Game Exit
@@ -17,6 +17,8 @@ Notice when the user has outgrown a game with big rewards.
 - `../../references/chapter-summaries/happiness.md`
 - `../../references/workflows/desire-audit.md`
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `n-success-game-exit` directly.
@@ -32,6 +34,7 @@ Notice when the user has outgrown a game with big rewards.
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+
 
 ## Output
 

@@ -1,4 +1,4 @@
 interface:
   display_name: "N Risk Of Ruin"
   short_description: "N Risk Of Ruin: Identify legal, health, financial,"
-  default_prompt: "What could ruin me in this plan?"
+  default_prompt: "Use $n-risk-of-ruin to identify legal, health, financial, relationship, and reputation ruin risks."

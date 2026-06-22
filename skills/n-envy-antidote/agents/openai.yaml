@@ -1,4 +1,4 @@
 interface:
   display_name: "N Envy Antidote"
   short_description: "N Envy Antidote: Dissolve jealousy, comparison, and external"
-  default_prompt: "Help me dissolve envy around this person."
+  default_prompt: "Use $n-envy-antidote to dissolve jealousy, comparison, and external scorecards."

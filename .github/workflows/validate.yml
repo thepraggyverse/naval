@@ -16,3 +16,5 @@ jobs:
         run: python3 scripts/validate_public.py
       - name: Check coverage and references
         run: python3 scripts/check_coverage.py
+      - name: Validate direct-copy install references
+        run: python3 scripts/validate_direct_install.py

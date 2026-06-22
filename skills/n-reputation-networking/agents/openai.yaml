@@ -1,4 +1,4 @@
 interface:
   display_name: "N Reputation Networking"
   short_description: "N Reputation Networking: Replace shallow networking with craft,"
-  default_prompt: "How should I build relationships without networking?"
+  default_prompt: "Use $n-reputation-networking to replace shallow networking with craft, generosity, and visible reputation."

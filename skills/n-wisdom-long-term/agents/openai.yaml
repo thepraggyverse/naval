@@ -1,4 +1,4 @@
 interface:
   display_name: "N Wisdom Long Term"
   short_description: "N Wisdom Long Term: Evaluate long-term consequences as the"
-  default_prompt: "What are the long-term consequences?"
+  default_prompt: "Use $n-wisdom-long-term to evaluate long-term consequences as the basis of wisdom."

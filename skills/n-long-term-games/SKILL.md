@@ -1,6 +1,6 @@
 ---
 name: n-long-term-games
-description: "Use when applying The Almanack of Naval Ravikant to evaluate whether work, relationships, and markets can compound for years. Trigger for user requests involving Naval, n-, naval long term games, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
+description: "Apply The Almanack of Naval Ravikant to evaluate whether work, relationships, and markets can compound for years. Use when the user asks for n-long-term-games, says \"Is this a long-term game with long-term people?\", or wants this Naval lens."
 ---
 
 # Naval Long Term Games
@@ -18,6 +18,8 @@ Evaluate whether work, relationships, and markets can compound for years.
 - `../../references/workflows/wealth-scorecard.md`
 - `../../references/workflows/opportunity-scorecard.md`
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `n-long-term-games` directly.
@@ -33,6 +35,7 @@ Evaluate whether work, relationships, and markets can compound for years.
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+
 
 ## Output
 

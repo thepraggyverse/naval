@@ -1,4 +1,4 @@
 interface:
   display_name: "N Values Filter"
   short_description: "N Values Filter: Apply values: honesty, long-term thinking,"
-  default_prompt: "What values are being violated here?"
+  default_prompt: "Use $n-values-filter to apply values: honesty, long-term thinking, peer relationships, low anger, and freedom."

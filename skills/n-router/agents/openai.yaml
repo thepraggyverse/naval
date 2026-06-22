@@ -1,4 +1,4 @@
 interface:
   display_name: "N Router"
   short_description: "N Router: Route vague user situations to the right Naval skill"
-  default_prompt: "Use Naval to analyze this career decision."
+  default_prompt: "Use $n-router to route vague user situations to the right Naval skill and reference path."

@@ -1,4 +1,4 @@
 interface:
   display_name: "N Patience Compounding"
   short_description: "N Patience Compounding: Balance impatience with action against"
-  default_prompt: "Where do I need patience versus action?"
+  default_prompt: "Use $n-patience-compounding to balance impatience with action against patience for compounding results."

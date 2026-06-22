@@ -1,4 +1,4 @@
 interface:
   display_name: "N Mental Debugging"
   short_description: "N Mental Debugging: Watch thoughts, reactions, fear, desire,"
-  default_prompt: "Debug my internal monologue."
+  default_prompt: "Use $n-mental-debugging to watch thoughts, reactions, fear, desire, and ego as debuggable processes."

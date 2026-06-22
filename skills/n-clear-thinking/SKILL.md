@@ -1,6 +1,6 @@
 ---
 name: n-clear-thinking
-description: "Use when applying The Almanack of Naval Ravikant to simplify confused thinking down to basics, first principles, and plain language. Trigger for user requests involving Naval, n-, naval clear thinking, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
+description: "Apply The Almanack of Naval Ravikant to simplify confused thinking down to basics, first principles, and plain language. Use when the user asks for n-clear-thinking, says \"Make my thinking clearer here.\", or wants this Naval lens."
 ---
 
 # Naval Clear Thinking
@@ -17,6 +17,8 @@ Simplify confused thinking down to basics, first principles, and plain language.
 - `../../references/chapter-summaries/judgment.md`
 - `../../references/workflows/decision-scorecard.md`
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `n-clear-thinking` directly.
@@ -32,6 +34,7 @@ Simplify confused thinking down to basics, first principles, and plain language.
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+
 
 ## Output
 

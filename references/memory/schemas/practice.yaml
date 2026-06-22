@@ -1,0 +1,15 @@
+# Practice Memory Schema
+
+required:
+  artifact_type: practice
+  created: YYYY-MM-DD
+  source_skill: n-meditation-system or related n-* skill
+  privacy: public-safe | personal | private
+  tags: [short, searchable, terms]
+  practice: concise practice name
+optional:
+  status: active | paused | superseded
+  cadence: daily | weekly | custom
+  confidence: high | medium | low
+body:
+  sections: [Why, Protocol, Trigger, Friction, Adjustment]

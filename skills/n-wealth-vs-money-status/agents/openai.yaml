@@ -1,4 +1,4 @@
 interface:
   display_name: "N Wealth Vs Money Status"
   short_description: "N Wealth Vs Money Status: Separate wealth creation from income,"
-  default_prompt: "Am I chasing wealth, money, or status here?"
+  default_prompt: "Use $n-wealth-vs-money-status to separate wealth creation from income, cash, approval, prestige, and social hierarchy."

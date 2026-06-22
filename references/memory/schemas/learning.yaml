@@ -1,0 +1,14 @@
+# Learning Memory Schema
+
+required:
+  artifact_type: learning
+  created: YYYY-MM-DD
+  source_skill: n-save-learning or related n-* skill
+  privacy: public-safe | personal | private
+  tags: [short, searchable, terms]
+  confidence: high | medium | low
+optional:
+  status: active | superseded
+  superseded_by: path-or-id
+body:
+  sections: [Learning, Context, Why It Matters, Future Use]

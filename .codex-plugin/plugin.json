@@ -1,23 +1,23 @@
 {
   "name": "naval",
-  "version": "0.1.0+codex.20260622133605",
-  "description": "Unofficial n-prefixed skills for applying ideas from The Almanack of Naval Ravikant.",
+  "version": "0.1.0+codex.20260622184649",
+  "description": "Unofficial 79-skill Naval pack with setup, memory, reviews, and scorecards.",
   "author": {
     "name": "Praggy"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "Unofficial Naval Skills",
-    "shortDescription": "Searchable n-prefixed skills for Naval ideas.",
-    "longDescription": "Unofficial Naval Skills provides 76 n-prefixed skills that help agents apply ideas from The Almanack of Naval Ravikant. The skills cover wealth, judgment, happiness, health, values, reading, decisions, scorecards, daily reviews, weekly reviews, source fidelity, and quote safety. The pack includes shared references, a router, examples, install docs, and coverage checks. It does not include the full book text.",
+    "shortDescription": "79 n-prefixed skills for Naval workflows.",
+    "longDescription": "Unofficial Naval Skills provides 79 n-prefixed skills that help agents apply ideas from The Almanack of Naval Ravikant. The skills cover wealth, judgment, happiness, health, values, reading, decisions, scorecards, daily reviews, weekly reviews, optional memory setup, saved learnings, memory refresh, source fidelity, and quote safety. The pack includes shared references, a router, examples, install docs, direct-copy validation, and coverage checks. It does not include the full book text.",
     "developerName": "Praggy",
     "category": "Productivity",
     "capabilities": [],
     "websiteURL": "https://github.com/thepraggyverse/naval",
     "defaultPrompt": [
       "Use n-router to choose the right Naval skill.",
-      "Run n-opportunity-scorecard on this idea.",
-      "Run n-weekly-compound-review for my week."
+      "Use n-setup to configure optional Naval memory.",
+      "Run n-opportunity-scorecard on this idea."
     ]
   }
 }

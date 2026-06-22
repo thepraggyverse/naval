@@ -1,0 +1,16 @@
+# Experiment Memory Schema
+
+required:
+  artifact_type: experiment
+  created: YYYY-MM-DD
+  source_skill: n-principle-to-action or related n-* skill
+  privacy: public-safe | personal | private
+  tags: [short, searchable, terms]
+  experiment: concise experiment statement
+optional:
+  status: active | complete | superseded
+  starts: YYYY-MM-DD
+  ends: YYYY-MM-DD
+  confidence: high | medium | low
+body:
+  sections: [Hypothesis, Action, Measurement, Stop Rule, Result]

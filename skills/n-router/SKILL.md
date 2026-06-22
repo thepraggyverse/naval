@@ -1,6 +1,6 @@
 ---
 name: n-router
-description: "Use when applying The Almanack of Naval Ravikant to route vague user situations to the right naval skill and reference path. Trigger for user requests involving Naval, n-, naval router, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
+description: "Apply The Almanack of Naval Ravikant to route vague user situations to the right naval skill and reference path. Use when the user asks for n-router, says \"Use Naval to analyze this career decision.\", or wants this Naval lens."
 ---
 
 # Naval Router
@@ -26,6 +26,8 @@ Route vague user situations to the right Naval skill and reference path.
 - `../../references/workflows/relationship-scorecard.md`
 - `../../references/workflows/quote-safety.md`
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `n-router` directly.
@@ -41,6 +43,7 @@ Route vague user situations to the right Naval skill and reference path.
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+
 
 ## Output
 

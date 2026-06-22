@@ -1,4 +1,4 @@
 interface:
   display_name: "N Meditation System"
   short_description: "N Meditation System: Create a practical awareness, sitting,"
-  default_prompt: "Design a 60-day meditation protocol."
+  default_prompt: "Use $n-meditation-system to create a practical awareness, sitting, walking, or journaling meditation protocol."

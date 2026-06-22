@@ -1,4 +1,4 @@
 interface:
   display_name: "N Desire Audit"
   short_description: "N Desire Audit: Identify desires that create suffering and"
-  default_prompt: "What desire is making me unhappy?"
+  default_prompt: "Use $n-desire-audit to identify desires that create suffering and decide whether to keep, drop, change, accept, or leave."

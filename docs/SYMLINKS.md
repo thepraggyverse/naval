@@ -41,6 +41,38 @@ Example:
 ~/.codex/skills/n-specific-knowledge -> ~/plugins/naval/skills/n-specific-knowledge
 ```
 
+Generated skills load shared reference files through paths such as `../../references/...`. Symlinks preserve that relationship because the skill still points back into this checkout.
+
+If a harness copies skill folders instead of symlinking them, use the direct-copy exporter:
+
+```bash
+npm run export:direct
+python3 scripts/validate_direct_install.py --agent-root dist/naval-direct-install
+```
+
+The exported bundle has the required sibling layout:
+
+```text
+dist/naval-direct-install/
+  skills/
+    n-specific-knowledge/
+    n-router/
+    ...
+  references/
+    chapter-summaries/
+    memory/
+    workflows/
+    coverage-matrix.yaml
+    router-guide.md
+    skill-catalog.md
+```
+
+If you copy the bundle into another agent root, validate the final target too:
+
+```bash
+python3 scripts/validate_direct_install.py --agent-root <agent-root>
+```
+
 ## Collision Policy
 
 The installer is conservative:
@@ -89,3 +121,5 @@ rm ~/.codex/skills/n-specific-knowledge
 ```
 
 Repeat for the other homes as needed.
+
+Do not remove a shared `references/` copy until no copied `n-*` skill folders depend on it.

@@ -1,6 +1,6 @@
 ---
 name: n-risk-of-ruin
-description: "Use when applying The Almanack of Naval Ravikant to identify legal, health, financial, relationship, and reputation ruin risks. Trigger for user requests involving Naval, n-, naval risk of ruin, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
+description: "Apply The Almanack of Naval Ravikant to identify legal, health, financial, relationship, and reputation ruin risks. Use when the user asks for n-risk-of-ruin, says \"What could ruin me in this plan?\", or wants this Naval lens."
 ---
 
 # Naval Risk Of Ruin
@@ -18,6 +18,8 @@ Identify legal, health, financial, relationship, and reputation ruin risks.
 - `../../references/workflows/wealth-scorecard.md`
 - `../../references/workflows/opportunity-scorecard.md`
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `n-risk-of-ruin` directly.
@@ -33,6 +35,7 @@ Identify legal, health, financial, relationship, and reputation ruin risks.
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+
 
 ## Output
 

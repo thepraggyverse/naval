@@ -1,6 +1,6 @@
 ---
 name: n-weekly-compound-review
-description: "Use when applying The Almanack of Naval Ravikant to review weekly compounding across wealth, judgment, health, happiness, relationships, and values. Trigger for user requests involving Naval, n-, naval weekly compound review, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
+description: "Apply The Almanack of Naval Ravikant to review weekly compounding across wealth, judgment, health, happiness, relationships, and values. Use when the user asks for n-weekly-compound-review, says \"Run my weekly compound review.\", or wants this Naval lens."
 ---
 
 # Naval Weekly Compound Review
@@ -26,6 +26,8 @@ Review weekly compounding across wealth, judgment, health, happiness, relationsh
 - `../../references/workflows/relationship-scorecard.md`
 - `../../references/workflows/quote-safety.md`
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `n-weekly-compound-review` directly.
@@ -41,6 +43,18 @@ Review weekly compounding across wealth, judgment, health, happiness, relationsh
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+
+## Optional Persistence
+
+After producing the review, check whether the user asked to save it or whether `.naval/config.local.yaml` enables memory. If saving is relevant:
+
+1. Read `../../references/memory/templates/review.md` and `../../references/memory/schemas/review.yaml`.
+2. Ask before writing. Never auto-save private reflections.
+3. Use the configured memory root, usually `docs/naval/`.
+4. Save to `<memory_root>/reviews/YYYY-MM-DD-weekly-review.md`.
+5. Set `artifact_type: review`, `source_skill: n-weekly-compound-review`, `review_period: weekly`, and a privacy level.
+6. If no config exists, offer `n-setup` instead of inventing a storage location.
+
 
 ## Output
 

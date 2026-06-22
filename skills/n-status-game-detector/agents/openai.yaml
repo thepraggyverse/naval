@@ -1,4 +1,4 @@
 interface:
   display_name: "N Status Game Detector"
   short_description: "N Status Game Detector: Detect zero-sum approval, politics,"
-  default_prompt: "Is this actually a status game?"
+  default_prompt: "Use $n-status-game-detector to detect zero-sum approval, politics, prestige, and comparison traps."

@@ -1,4 +1,4 @@
 interface:
   display_name: "N Peace Over Joy"
   short_description: "N Peace Over Joy: Prefer stable peace over stimulation, bliss"
-  default_prompt: "Am I optimizing for peace or excitement?"
+  default_prompt: "Use $n-peace-over-joy to prefer stable peace over stimulation, bliss chasing, or externally dependent moods."

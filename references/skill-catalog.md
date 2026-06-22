@@ -5,6 +5,7 @@ Every callable skill uses the `n-` prefix for search. Use `n-router` when unsure
 | Skill | Area | Use When | Example |
 |---|---|---|---|
 | `n-router` | meta | Route vague user situations to the right Naval skill and reference path. | Use Naval to analyze this career decision. |
+| `n-setup` | meta | Configure optional Naval memory output paths, privacy defaults, and direct-install reference guidance. | Set up Naval memory for this repo. |
 | `n-source-fidelity` | front-matter | Keep interpretations faithful to the book, avoid over-quoting, and flag when exact phrasing needs verification. | Check this Naval idea before I cite it. |
 | `n-biographical-context` | front-matter | Use Naval's background and timeline to explain why a principle appears in the book. | What life context explains this Naval idea? |
 | `n-wealth-map` | wealth | Create an end-to-end wealth strategy using specific knowledge, accountability, ownership, leverage, and patience. | Build me a Naval-style wealth plan. |
@@ -72,6 +73,8 @@ Every callable skill uses the `n-` prefix for search. Use `n-router` when unsure
 | `n-next-sources` | reading | Point users to deeper Naval resources, podcasts, essays, and source trails. | Where should I go deeper on this topic? |
 | `n-coverage-auditor` | meta | Check whether all book sections are represented by skills and references. | Audit whether the Naval plugin missed anything. |
 | `n-principle-to-action` | meta | Convert a principle into a concrete behavior, experiment, or operating rule. | Turn this Naval principle into action. |
+| `n-save-learning` | meta | Save one to three approved reusable learnings from a completed Naval session. | Save what we learned from this Naval session. |
+| `n-memory-refresh` | meta | Refresh saved Naval memory entries for stale, contradictory, duplicate, or low-value guidance. | Refresh my saved Naval learnings. |
 | `n-daily-review` | meta | Run a daily health, work, desire, focus, and freedom review. | Run my daily Naval review. |
 | `n-weekly-compound-review` | meta | Review weekly compounding across wealth, judgment, health, happiness, relationships, and values. | Run my weekly compound review. |
 | `n-opportunity-scorecard` | meta | Score jobs, startups, projects, products, content, and investments. | Score this opportunity Naval-style. |

@@ -1,4 +1,4 @@
 interface:
   display_name: "N Presence Practice"
   short_description: "N Presence Practice: Reduce rumination and anticipation by"
-  default_prompt: "Help me return to the present."
+  default_prompt: "Use $n-presence-practice to reduce rumination and anticipation by returning attention to present reality."

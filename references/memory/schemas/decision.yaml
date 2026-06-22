@@ -1,0 +1,16 @@
+# Decision Memory Schema
+
+required:
+  artifact_type: decision
+  created: YYYY-MM-DD
+  source_skill: n-decision-rules or related n-* skill
+  privacy: public-safe | personal | private
+  tags: [short, searchable, terms]
+  decision: concise decision statement
+optional:
+  status: active | superseded
+  superseded_by: path-or-id
+  confidence: high | medium | low
+  review_after: YYYY-MM-DD
+body:
+  sections: [Context, Options, Naval Lens, Decision, Reversal Conditions]

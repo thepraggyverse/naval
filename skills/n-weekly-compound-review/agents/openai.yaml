@@ -1,4 +1,4 @@
 interface:
   display_name: "N Weekly Compound Review"
   short_description: "N Weekly Compound Review: Review weekly compounding across"
-  default_prompt: "Run my weekly compound review."
+  default_prompt: "Use $n-weekly-compound-review to review weekly compounding across wealth, judgment, health, happiness, relationships, and values."

@@ -1,4 +1,4 @@
 interface:
   display_name: "N Success Game Exit"
   short_description: "N Success Game Exit: Notice when the user has outgrown a game"
-  default_prompt: "Have I outgrown this game?"
+  default_prompt: "Use $n-success-game-exit to notice when the user has outgrown a game with big rewards."

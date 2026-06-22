@@ -7,12 +7,14 @@
 
 The skills themselves are plain `SKILL.md` folders under `skills/n-*`, so the fallback path works broadly even when native plugin support varies by host.
 
+For Codex, prefer the native plugin path. Direct symlinks are mainly for hosts that scan `SKILL.md` folders; on machines with very large global skill libraries, broad symlinks can contribute to Codex skill-list budget warnings even though explicit `$n-*` skill invocation still works.
+
 ## Support Matrix
 
 | Harness | Native Metadata | Recommended Install | Update |
 |---|---|---|---|
 | Codex App | `.codex-plugin/plugin.json`, `.agents/plugins/marketplace.json` | Local marketplace or custom marketplace source. | Pull repo, rerun installer, restart or start a new thread. |
-| Codex CLI | `.codex-plugin/plugin.json`, `.agents/plugins/marketplace.json` | `codex plugin marketplace add thepraggyverse/naval`, then install in `/plugins`. | Reopen `/plugins` after marketplace refresh, or rerun local installer. |
+| Codex CLI | `.codex-plugin/plugin.json`, `.agents/plugins/marketplace.json` | Local checkout: `python3 scripts/install_local.py --marketplace`, then `codex plugin add naval@personal --json`. Remote marketplace: register the repo, then install in `/plugins` if direct CLI install is unavailable. | Pull repo, rerun installer, reinstall or refresh plugin cache, restart or start a new thread. |
 | Claude Code | `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` | `/plugin marketplace add thepraggyverse/naval`, then `/plugin install naval`. | `/plugin marketplace update naval`, then `/plugin update naval`. |
 | Cursor | `.cursor-plugin/plugin.json`, `.cursor-plugin/marketplace.json` | Install from source if available, or use direct skills in `.cursor/skills` or `~/.cursor/skills`. | Pull or reinstall the source plugin; restart Cursor. |
 | GitHub Copilot | Claude-compatible plugin metadata plus direct skills. | Install plugin from source in VS Code, or use Copilot CLI plugin commands. | Reinstall/update plugin source; restart the agent session. |
@@ -38,6 +40,13 @@ python3 scripts/install_local.py --marketplace
 
 Restart Codex, open Plugins, and install **Unofficial Naval Skills**.
 
+If you use the Codex CLI against the default personal marketplace, install and enable it directly:
+
+```bash
+codex plugin add naval@personal --json
+codex plugin list | grep 'naval@personal'
+```
+
 For a custom marketplace source in the Codex app:
 
 | Field | Value |
@@ -55,6 +64,21 @@ codex plugin marketplace add thepraggyverse/naval
 ```
 
 Launch `codex`, open `/plugins`, choose the Naval marketplace, install `naval`, then restart or start a new thread.
+
+For local development from `~/plugins/naval`, the default personal marketplace path is simpler:
+
+```bash
+cd ~/plugins/naval
+python3 scripts/install_local.py --marketplace
+codex plugin add naval@personal --json
+codex plugin list | grep 'naval@personal'
+```
+
+Live smoke test:
+
+```bash
+codex exec --ephemeral --sandbox read-only -C "$PWD" 'Use $n-setup. Do not write files. In two concise bullets, name the local config file it manages and the default project-local memory root.'
+```
 
 For a non-default profile, keep every step on the same `CODEX_HOME`:
 
@@ -200,6 +224,12 @@ cd ~/plugins/naval
 python3 scripts/install_local.py --symlink-skills
 ```
 
+For a large existing agent setup, target only the harness that needs direct skills:
+
+```bash
+python3 scripts/install_local.py --symlink-skills --skill-home ~/.cursor/skills
+```
+
 Install into a specific project or harness home:
 
 ```bash
@@ -214,6 +244,38 @@ python3 scripts/install_local.py \
   --skill-home /path/to/project/.agents/skills
 ```
 
+Symlinks are preferred because every generated skill can resolve shared files through this checkout. If a host needs copied files instead of symlinks, build the portable direct-copy bundle:
+
+```bash
+npm run export:direct
+python3 scripts/validate_direct_install.py --agent-root dist/naval-direct-install
+```
+
+The exported bundle keeps `skills/` and `references/` as siblings:
+
+```text
+dist/naval-direct-install/
+  skills/
+    n-router/
+    n-setup/
+    n-save-learning/
+    n-memory-refresh/
+    ...
+  references/
+    chapter-summaries/
+    memory/
+    workflows/
+    coverage-matrix.yaml
+    router-guide.md
+    skill-catalog.md
+```
+
+Copy or upload those two sibling folders together. If you validate an already-installed target, point the validator at that agent root:
+
+```bash
+python3 scripts/validate_direct_install.py --agent-root <agent-root>
+```
+
 ## Updating Local Installs
 
 For local checkout installs:
@@ -222,11 +284,15 @@ For local checkout installs:
 cd ~/plugins/naval
 git pull --ff-only
 python3 scripts/install_local.py --marketplace --symlink-skills
+codex plugin add naval@personal --json
 python3 scripts/validate_public.py
 python3 scripts/check_coverage.py
+python3 scripts/validate_direct_install.py
 ```
 
 If a host caches plugin definitions, restart the app or start a fresh thread/session after updating.
+
+If you enabled optional memory with `n-setup`, keep `.naval/config.local.yaml` private and review saved files before committing any project-local `docs/naval/` output.
 
 ## Collision Handling
 

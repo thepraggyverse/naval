@@ -1,6 +1,6 @@
 ---
 name: n-relationship-scorecard
-description: "Use when applying The Almanack of Naval Ravikant to score collaborators, friends, partners, and teams for long-term compounding fit. Trigger for user requests involving Naval, n-, naval relationship scorecard, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
+description: "Apply The Almanack of Naval Ravikant to score collaborators, friends, partners, and teams for long-term compounding fit. Use when the user asks for n-relationship-scorecard, says \"Score this collaborator Naval-style.\", or wants this Naval lens."
 ---
 
 # Naval Relationship Scorecard
@@ -26,6 +26,8 @@ Score collaborators, friends, partners, and teams for long-term compounding fit.
 - `../../references/workflows/relationship-scorecard.md`
 - `../../references/workflows/quote-safety.md`
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `n-relationship-scorecard` directly.
@@ -41,6 +43,7 @@ Score collaborators, friends, partners, and teams for long-term compounding fit.
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+
 
 ## Output
 

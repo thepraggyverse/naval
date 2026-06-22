@@ -1,4 +1,4 @@
 interface:
   display_name: "N Source Fidelity"
   short_description: "N Source Fidelity: Keep interpretations faithful to the book,"
-  default_prompt: "Check this Naval idea before I cite it."
+  default_prompt: "Use $n-source-fidelity to keep interpretations faithful to the book, avoid over-quoting, and flag when exact phrasing needs verification."

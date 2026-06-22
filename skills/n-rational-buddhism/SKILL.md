@@ -1,6 +1,6 @@
 ---
 name: n-rational-buddhism
-description: "Use when applying The Almanack of Naval Ravikant to use testable inner work while rejecting unverifiable claims as operating truth. Trigger for user requests involving Naval, n-, naval rational buddhism, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
+description: "Apply The Almanack of Naval Ravikant to use testable inner work while rejecting unverifiable claims as operating truth. Use when the user asks for n-rational-buddhism, says \"Give me a rational inner-work frame.\", or wants this Naval lens."
 ---
 
 # Naval Rational Buddhism
@@ -17,6 +17,8 @@ Use testable inner work while rejecting unverifiable claims as operating truth.
 - `../../references/chapter-summaries/philosophy.md`
 - `../../references/workflows/decision-scorecard.md`
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `n-rational-buddhism` directly.
@@ -32,6 +34,7 @@ Use testable inner work while rejecting unverifiable claims as operating truth.
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+
 
 ## Output
 

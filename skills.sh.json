@@ -97,13 +97,16 @@
     },
     {
       "title": "Routing, Reviews & Safety",
-      "description": "Skills for routing, coverage, principle-to-action conversion, daily and weekly reviews, scorecards, quote safety, coaching, flashcards, and book club discussion.",
+      "description": "Skills for routing, setup, optional memory, coverage, principle-to-action conversion, daily and weekly reviews, scorecards, quote safety, coaching, flashcards, and book club discussion.",
       "skills": [
         "n-router",
+        "n-setup",
         "n-source-fidelity",
         "n-biographical-context",
         "n-coverage-auditor",
         "n-principle-to-action",
+        "n-save-learning",
+        "n-memory-refresh",
         "n-daily-review",
         "n-weekly-compound-review",
         "n-opportunity-scorecard",

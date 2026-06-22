@@ -1,4 +1,4 @@
 interface:
   display_name: "N Work As Play"
   short_description: "N Work As Play: Find work that feels like play to the user but"
-  default_prompt: "What work feels like play to me?"
+  default_prompt: "Use $n-work-as-play to find work that feels like play to the user but looks like work to others."

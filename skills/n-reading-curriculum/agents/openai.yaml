@@ -1,4 +1,4 @@
 interface:
   display_name: "N Reading Curriculum"
   short_description: "N Reading Curriculum: Build book paths across science, mental"
-  default_prompt: "Build me a Naval reading curriculum."
+  default_prompt: "Use $n-reading-curriculum to build book paths across science, mental models, philosophy, economics, and fiction."

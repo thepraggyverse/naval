@@ -1,4 +1,4 @@
 interface:
   display_name: "N Long Term Games"
   short_description: "N Long Term Games: Evaluate whether work, relationships, and"
-  default_prompt: "Is this a long-term game with long-term people?"
+  default_prompt: "Use $n-long-term-games to evaluate whether work, relationships, and markets can compound for years."

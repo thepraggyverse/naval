@@ -1,4 +1,4 @@
 interface:
   display_name: "N Flashcards"
   short_description: "N Flashcards: Turn principles into recall prompts, reflection"
-  default_prompt: "Make flashcards from this Naval topic."
+  default_prompt: "Use $n-flashcards to turn principles into recall prompts, reflection cards, or spaced repetition items."

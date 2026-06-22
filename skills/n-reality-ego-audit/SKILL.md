@@ -1,6 +1,6 @@
 ---
 name: n-reality-ego-audit
-description: "Use when applying The Almanack of Naval Ravikant to reveal where desire, ego, or fear is blocking reality. Trigger for user requests involving Naval, n-, naval reality ego audit, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
+description: "Apply The Almanack of Naval Ravikant to reveal where desire, ego, or fear is blocking reality. Use when the user asks for n-reality-ego-audit, says \"What am I refusing to see?\", or wants this Naval lens."
 ---
 
 # Naval Reality Ego Audit
@@ -17,6 +17,8 @@ Reveal where desire, ego, or fear is blocking reality.
 - `../../references/chapter-summaries/judgment.md`
 - `../../references/workflows/decision-scorecard.md`
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `n-reality-ego-audit` directly.
@@ -32,6 +34,7 @@ Reveal where desire, ego, or fear is blocking reality.
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+
 
 ## Output
 

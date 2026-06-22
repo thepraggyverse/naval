@@ -78,10 +78,11 @@ book_sections:
   naval_writing:
     skills: [n-life-formulas, n-rules, n-principle-to-action]
   meta_review:
-    skills: [n-coverage-auditor, n-daily-review, n-weekly-compound-review, n-opportunity-scorecard, n-flashcards, n-socratic-coach]
+    skills: [n-setup, n-save-learning, n-memory-refresh, n-coverage-auditor, n-daily-review, n-weekly-compound-review, n-opportunity-scorecard, n-flashcards, n-socratic-coach]
 
 all_skills:
   - n-router
+  - n-setup
   - n-source-fidelity
   - n-biographical-context
   - n-wealth-map
@@ -149,6 +150,8 @@ all_skills:
   - n-next-sources
   - n-coverage-auditor
   - n-principle-to-action
+  - n-save-learning
+  - n-memory-refresh
   - n-daily-review
   - n-weekly-compound-review
   - n-opportunity-scorecard

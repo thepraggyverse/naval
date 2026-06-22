@@ -1,4 +1,4 @@
 interface:
   display_name: "N Time Value Focus"
   short_description: "N Time Value Focus: Apply personal hourly-rate thinking,"
-  default_prompt: "What should I stop doing this week?"
+  default_prompt: "Use $n-time-value-focus to apply personal hourly-rate thinking, ruthless prioritization, and calendar clearing."

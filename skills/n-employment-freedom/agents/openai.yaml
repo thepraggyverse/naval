@@ -1,4 +1,4 @@
 interface:
   display_name: "N Employment Freedom"
   short_description: "N Employment Freedom: Reduce dependence on employment through"
-  default_prompt: "How do I become less dependent on employment?"
+  default_prompt: "Use $n-employment-freedom to reduce dependence on employment through burn-rate, ownership, and independence choices."

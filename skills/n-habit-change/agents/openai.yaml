@@ -1,4 +1,4 @@
 interface:
   display_name: "N Habit Change"
   short_description: "N Habit Change: Replace vague goals with identity, triggers,"
-  default_prompt: "Help me replace this habit."
+  default_prompt: "Use $n-habit-change to replace vague goals with identity, triggers, substitutes, tracking, and commitment."

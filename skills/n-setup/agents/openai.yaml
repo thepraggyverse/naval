@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Setup"
+  short_description: "N Setup: Configure optional Naval memory output paths, privacy"
+  default_prompt: "Use $n-setup to configure optional Naval memory output paths, privacy defaults, and direct-install reference guidance."

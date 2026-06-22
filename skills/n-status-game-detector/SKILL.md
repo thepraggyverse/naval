@@ -1,6 +1,6 @@
 ---
 name: n-status-game-detector
-description: "Use when applying The Almanack of Naval Ravikant to detect zero-sum approval, politics, prestige, and comparison traps. Trigger for user requests involving Naval, n-, naval status game detector, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
+description: "Apply The Almanack of Naval Ravikant to detect zero-sum approval, politics, prestige, and comparison traps. Use when the user asks for n-status-game-detector, says \"Is this actually a status game?\", or wants this Naval lens."
 ---
 
 # Naval Status Game Detector
@@ -18,6 +18,8 @@ Detect zero-sum approval, politics, prestige, and comparison traps.
 - `../../references/workflows/wealth-scorecard.md`
 - `../../references/workflows/opportunity-scorecard.md`
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `n-status-game-detector` directly.
@@ -33,6 +35,7 @@ Detect zero-sum approval, politics, prestige, and comparison traps.
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+
 
 ## Output
 

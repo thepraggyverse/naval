@@ -1,6 +1,6 @@
 ---
 name: n-biographical-context
-description: "Use when applying The Almanack of Naval Ravikant to use naval's background and timeline to explain why a principle appears in the book. Trigger for user requests involving Naval, n-, naval biographical context, life design, wealth, judgment, happiness, health, values, or book-derived operating principles."
+description: "Apply The Almanack of Naval Ravikant to use naval's background and timeline to explain why a principle appears in the book. Use when the user asks for n-biographical-context, says \"What life context explains this Naval idea?\", or wants this Naval lens."
 ---
 
 # Naval Biographical Context
@@ -17,6 +17,8 @@ Use Naval's background and timeline to explain why a principle appears in the bo
 - `../../references/chapter-summaries/front-matter.md`
 - `../../references/workflows/quote-safety.md`
 
+If these reference paths are unavailable, the install likely copied a skill without the sibling `references/` folder. Ask the user to copy or symlink `references/` beside the parent of the copied `skills/` folder, or reinstall through the plugin/symlink path.
+
 ## Use When
 
 - The user asks for `n-biographical-context` directly.
@@ -32,6 +34,7 @@ Use Naval's background and timeline to explain why a principle appears in the bo
 4. Separate signal from status, desire, fear, identity, and generic self-help.
 5. Convert the principle into a concrete decision, scorecard, experiment, practice, or next action.
 6. Include a short caveat when the topic touches health, finance, legal risk, or exact citation.
+
 
 ## Output
 

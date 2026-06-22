@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Save Learning"
+  short_description: "N Save Learning: Save one to three approved reusable learnings"
+  default_prompt: "Use $n-save-learning to save one to three approved reusable learnings from a completed Naval session."

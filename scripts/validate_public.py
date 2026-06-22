@@ -117,8 +117,8 @@ def validate_skills() -> int:
             if not target.exists():
                 fail(f"{skill_dir.name} references missing file {ref}")
         count += 1
-    if count != 76:
-        fail(f"expected 76 n-* skills, found {count}")
+    if count != 79:
+        fail(f"expected 79 n-* skills, found {count}")
     return count
 
 
@@ -139,6 +139,25 @@ def validate_references() -> None:
         if not path.exists():
             fail(f"missing references/{rel}")
     json.loads(read_text(ROOT / "references" / "concept-graph.json"))
+    for rel in [
+        "memory/README.md",
+        "memory/templates/review.md",
+        "memory/templates/decision.md",
+        "memory/templates/scorecard.md",
+        "memory/templates/experiment.md",
+        "memory/templates/practice.md",
+        "memory/templates/learning.md",
+        "memory/templates/quote-note.md",
+        "memory/schemas/review.yaml",
+        "memory/schemas/decision.yaml",
+        "memory/schemas/scorecard.yaml",
+        "memory/schemas/experiment.yaml",
+        "memory/schemas/practice.yaml",
+        "memory/schemas/learning.yaml",
+        "memory/schemas/quote-note.yaml",
+    ]:
+        if not (ROOT / "references" / rel).exists():
+            fail(f"missing references/{rel}")
 
 
 def validate_docs() -> None:
@@ -156,11 +175,15 @@ def validate_docs() -> None:
         "docs/EXAMPLES.md",
         "docs/HARNESS_SUPPORT.md",
         "docs/INSTALL.md",
+        "docs/NAVAL_MEMORY.md",
         "docs/PLUGIN_REFERENCE.md",
         "docs/SYMLINKS.md",
         "docs/DEVELOPMENT.md",
         "docs/SOURCE_BOUNDARIES.md",
         ".github/workflows/validate.yml",
+        ".naval/config.local.example.yaml",
+        "scripts/export_direct_install.py",
+        "scripts/validate_direct_install.py",
     ]
     for rel in required:
         if not (ROOT / rel).exists():

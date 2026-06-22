@@ -16,6 +16,9 @@ That script writes:
 - `references/router-guide.md`
 - `references/chapter-summaries/*.md`
 - `references/workflows/*.md`
+- `references/memory/README.md`
+- `references/memory/schemas/*.yaml`
+- `references/memory/templates/*.md`
 - `scripts/check_coverage.py`
 
 Hand-maintained public docs include:
@@ -30,6 +33,7 @@ Hand-maintained public docs include:
 - `docs/EXAMPLES.md`
 - `docs/HARNESS_SUPPORT.md`
 - `docs/INSTALL.md`
+- `docs/NAVAL_MEMORY.md`
 - `docs/PLUGIN_REFERENCE.md`
 - `docs/SYMLINKS.md`
 - `docs/DEVELOPMENT.md`
@@ -58,6 +62,14 @@ Run:
 ```bash
 python3 scripts/validate_public.py
 python3 scripts/check_coverage.py
+python3 scripts/validate_direct_install.py
+```
+
+For direct-copy packaging, build and validate the exported root:
+
+```bash
+npm run export:direct
+python3 scripts/validate_direct_install.py --agent-root dist/naval-direct-install
 ```
 
 If you have Codex's local validation helpers installed, you can also run:
@@ -73,6 +85,21 @@ for d in skills/n-*; do
   python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py "$d"
 done
 ```
+
+## Local Install Smoke
+
+After changing plugin metadata, update the Codex cachebuster, reinstall, and run one read-only live invocation:
+
+```bash
+python3 ~/.codex/skills/.system/plugin-creator/scripts/update_plugin_cachebuster.py .
+python3 scripts/install_local.py --marketplace --symlink-skills
+codex plugin add naval@personal --json
+codex exec --ephemeral --sandbox read-only -C "$PWD" 'Use $n-setup. Do not write files. In two concise bullets, name the local config file it manages and the default project-local memory root.'
+```
+
+The smoke should identify `.naval/config.local.yaml` and `docs/naval/`.
+
+Some developer machines have thousands of global skill folders. If `codex exec` warns that the skills context budget was exceeded, verify whether `$n-setup` still loads from the cached plugin path. For Codex-only testing, prefer the native plugin install and avoid broad all-home symlinks unless you are also testing direct-skill discovery.
 
 ## Add A Skill
 
@@ -91,9 +118,12 @@ Validate:
 ```bash
 python3 scripts/validate_public.py
 python3 scripts/check_coverage.py
+python3 scripts/validate_direct_install.py
 ```
 
 The public validator expects the hand-maintained docs and harness metadata above to exist, so install and usage documentation stays part of the release surface.
+
+`export_direct_install.py` builds a copied agent root with sibling `skills/` and `references/` folders. `validate_direct_install.py` can either simulate that layout or validate an exported/installed root with `--agent-root`. Keep both passing whenever generated skills add or change `../../references/...` paths.
 
 ## Add A Workflow
 
@@ -122,3 +152,5 @@ The repo is public. Do not add:
 - API keys
 - local absolute paths except inside examples that are clearly user-local
 - generated runtime caches
+- generated `dist/` direct-copy bundles
+- local `.naval/*.local.yaml` memory config files
