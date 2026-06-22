@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Identity Shedding"
+  short_description: "N Identity Shedding: Drop inherited labels, tribes, packages,"
+  default_prompt: "What identity is trapping my thinking?"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Opportunity Scorecard"
+  short_description: "N Opportunity Scorecard: Score jobs, startups, projects,"
+  default_prompt: "Score this opportunity Naval-style."

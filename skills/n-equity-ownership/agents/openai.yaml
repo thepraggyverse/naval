@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Equity Ownership"
+  short_description: "N Equity Ownership: Move from wage or service work toward"
+  default_prompt: "How do I get equity or upside here?"

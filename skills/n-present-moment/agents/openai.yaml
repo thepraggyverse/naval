@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Present Moment"
+  short_description: "N Present Moment: Return to the present and act on perishable"
+  default_prompt: "What should I do immediately?"

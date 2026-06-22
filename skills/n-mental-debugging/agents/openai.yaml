@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Mental Debugging"
+  short_description: "N Mental Debugging: Watch thoughts, reactions, fear, desire,"
+  default_prompt: "Debug my internal monologue."

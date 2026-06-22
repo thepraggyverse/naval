@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Judgment Compensation"
+  short_description: "N Judgment Compensation: Move from being paid for hours to"
+  default_prompt: "How do I become paid for judgment?"

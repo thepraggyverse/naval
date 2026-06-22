@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Values Filter"
+  short_description: "N Values Filter: Apply values: honesty, long-term thinking,"
+  default_prompt: "What values are being violated here?"

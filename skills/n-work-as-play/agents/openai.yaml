@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Work As Play"
+  short_description: "N Work As Play: Find work that feels like play to the user but"
+  default_prompt: "What work feels like play to me?"

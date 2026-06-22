@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Coverage Auditor"
+  short_description: "N Coverage Auditor: Check whether all book sections are"
+  default_prompt: "Audit whether the Naval plugin missed anything."

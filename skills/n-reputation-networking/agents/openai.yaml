@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Reputation Networking"
+  short_description: "N Reputation Networking: Replace shallow networking with craft,"
+  default_prompt: "How should I build relationships without networking?"

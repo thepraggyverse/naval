@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Relationship Scorecard"
+  short_description: "N Relationship Scorecard: Score collaborators, friends,"
+  default_prompt: "Score this collaborator Naval-style."

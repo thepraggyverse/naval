@@ -1,0 +1,159 @@
+# Coverage Matrix
+
+book_sections:
+  front_matter_disclaimer:
+    skills: [n-source-fidelity, n-quote-safety]
+  foreword:
+    skills: [n-biographical-context, n-router]
+  erics_note:
+    skills: [n-router, n-book-club]
+  timeline_background:
+    skills: [n-biographical-context]
+  wealth_understand_creation:
+    skills: [n-wealth-map, n-wealth-vs-money-status]
+  wealth_specific_knowledge:
+    skills: [n-specific-knowledge, n-authenticity-positioning]
+  wealth_long_term_games:
+    skills: [n-long-term-games, n-integrity-partner-filter, n-relationship-scorecard]
+  wealth_accountability:
+    skills: [n-accountability-risk]
+  wealth_equity:
+    skills: [n-equity-ownership]
+  wealth_leverage:
+    skills: [n-leverage-stack, n-build-or-sell]
+  wealth_judgment_compensation:
+    skills: [n-judgment-compensation]
+  wealth_focus:
+    skills: [n-time-value-focus, n-big-life-decisions]
+  wealth_status_games:
+    skills: [n-status-game-detector, n-wealth-vs-money-status]
+  wealth_work_as_play:
+    skills: [n-work-as-play, n-retirement-freedom-design]
+  wealth_luck:
+    skills: [n-luck-engineering, n-reputation-networking]
+  wealth_patience:
+    skills: [n-patience-compounding, n-risk-of-ruin]
+  judgment_core:
+    skills: [n-judgment-builder, n-wisdom-long-term]
+  judgment_clear_thinking:
+    skills: [n-clear-thinking, n-foundational-learning]
+  judgment_reality_identity:
+    skills: [n-reality-ego-audit, n-identity-shedding]
+  judgment_decision_making:
+    skills: [n-decision-rules, n-inversion-filter, n-falsifiability-truth]
+  judgment_mental_models:
+    skills: [n-mental-models]
+  judgment_reading:
+    skills: [n-reading-system, n-reading-curriculum]
+  happiness_learned_choice:
+    skills: [n-happiness-baseline]
+  happiness_presence_peace:
+    skills: [n-presence-practice, n-peace-over-joy]
+  happiness_desire:
+    skills: [n-desire-audit]
+  happiness_success_envy:
+    skills: [n-success-game-exit, n-envy-antidote]
+  happiness_habits_acceptance:
+    skills: [n-happiness-habits, n-accept-change-leave, n-death-awareness]
+  saving_self_responsibility:
+    skills: [n-self-responsibility]
+  saving_be_yourself:
+    skills: [n-be-yourself]
+  saving_health:
+    skills: [n-health-first, n-diet-simplifier, n-exercise-priority]
+  saving_meditation:
+    skills: [n-meditation-system, n-mental-debugging]
+  saving_build_grow:
+    skills: [n-habit-change, n-systems-not-goals, n-grow-yourself]
+  saving_freedom:
+    skills: [n-freedom-from-expectations, n-anger-release, n-employment-freedom, n-uncontrolled-thinking, n-modern-addiction-defense]
+  philosophy_meaning_values:
+    skills: [n-meaning-maker, n-values-filter]
+  philosophy_rational_buddhism:
+    skills: [n-rational-buddhism]
+  philosophy_present:
+    skills: [n-present-moment]
+  recommended_reading:
+    skills: [n-reading-curriculum, n-next-sources]
+  naval_writing:
+    skills: [n-life-formulas, n-rules, n-principle-to-action]
+  meta_review:
+    skills: [n-coverage-auditor, n-daily-review, n-weekly-compound-review, n-opportunity-scorecard, n-flashcards, n-socratic-coach]
+
+all_skills:
+  - n-router
+  - n-source-fidelity
+  - n-biographical-context
+  - n-wealth-map
+  - n-wealth-vs-money-status
+  - n-specific-knowledge
+  - n-authenticity-positioning
+  - n-long-term-games
+  - n-integrity-partner-filter
+  - n-accountability-risk
+  - n-equity-ownership
+  - n-leverage-stack
+  - n-build-or-sell
+  - n-judgment-compensation
+  - n-time-value-focus
+  - n-status-game-detector
+  - n-big-life-decisions
+  - n-work-as-play
+  - n-retirement-freedom-design
+  - n-luck-engineering
+  - n-reputation-networking
+  - n-patience-compounding
+  - n-risk-of-ruin
+  - n-judgment-builder
+  - n-clear-thinking
+  - n-reality-ego-audit
+  - n-identity-shedding
+  - n-decision-rules
+  - n-mental-models
+  - n-inversion-filter
+  - n-falsifiability-truth
+  - n-foundational-learning
+  - n-reading-system
+  - n-happiness-baseline
+  - n-desire-audit
+  - n-presence-practice
+  - n-peace-over-joy
+  - n-success-game-exit
+  - n-envy-antidote
+  - n-happiness-habits
+  - n-accept-change-leave
+  - n-death-awareness
+  - n-self-responsibility
+  - n-be-yourself
+  - n-health-first
+  - n-diet-simplifier
+  - n-exercise-priority
+  - n-meditation-system
+  - n-mental-debugging
+  - n-habit-change
+  - n-systems-not-goals
+  - n-grow-yourself
+  - n-freedom-from-expectations
+  - n-anger-release
+  - n-employment-freedom
+  - n-uncontrolled-thinking
+  - n-modern-addiction-defense
+  - n-meaning-maker
+  - n-values-filter
+  - n-rational-buddhism
+  - n-wisdom-long-term
+  - n-present-moment
+  - n-reading-curriculum
+  - n-life-formulas
+  - n-rules
+  - n-next-sources
+  - n-coverage-auditor
+  - n-principle-to-action
+  - n-daily-review
+  - n-weekly-compound-review
+  - n-opportunity-scorecard
+  - n-relationship-scorecard
+  - n-quote-safety
+  - n-socratic-coach
+  - n-flashcards
+  - n-book-club

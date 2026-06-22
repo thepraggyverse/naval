@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Socratic Coach"
+  short_description: "N Socratic Coach: Ask precise questions before advising when"
+  default_prompt: "Coach me through this without jumping to advice."

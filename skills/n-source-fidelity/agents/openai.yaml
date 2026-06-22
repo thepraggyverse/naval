@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Source Fidelity"
+  short_description: "N Source Fidelity: Keep interpretations faithful to the book,"
+  default_prompt: "Check this Naval idea before I cite it."

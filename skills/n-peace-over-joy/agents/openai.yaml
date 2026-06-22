@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Peace Over Joy"
+  short_description: "N Peace Over Joy: Prefer stable peace over stimulation, bliss"
+  default_prompt: "Am I optimizing for peace or excitement?"

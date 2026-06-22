@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Presence Practice"
+  short_description: "N Presence Practice: Reduce rumination and anticipation by"
+  default_prompt: "Help me return to the present."

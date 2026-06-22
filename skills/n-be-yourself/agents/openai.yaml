@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Be Yourself"
+  short_description: "N Be Yourself: Find original contribution by being oneself with"
+  default_prompt: "Help me stop copying others."

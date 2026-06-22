@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Meaning Maker"
+  short_description: "N Meaning Maker: Explore personal meaning without pretending"
+  default_prompt: "Help me find my current meaning."

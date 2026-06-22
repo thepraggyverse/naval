@@ -1,0 +1,18 @@
+{
+  "name": "naval",
+  "version": "0.1.0+codex.20260622130457",
+  "description": "A Naval Ravikant Almanack skill pack with n-prefixed skills for wealth, judgment, happiness, health, values, reading, and life-review workflows.",
+  "author": {
+    "name": "Praggy"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Naval",
+    "shortDescription": "n-prefixed Naval Almanack skills.",
+    "longDescription": "Naval packages The Almanack of Naval Ravikant into searchable n-prefixed Codex skills, shared references, router guidance, a browsable skill catalog, coverage checks, and practical workflows for turning the book's ideas into decisions, audits, experiments, and daily practice.",
+    "developerName": "Praggy",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Naval."
+  }
+}

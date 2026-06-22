@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Reality Ego Audit"
+  short_description: "N Reality Ego Audit: Reveal where desire, ego, or fear is"
+  default_prompt: "What am I refusing to see?"

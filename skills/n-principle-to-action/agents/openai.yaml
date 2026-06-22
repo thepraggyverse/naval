@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Principle To Action"
+  short_description: "N Principle To Action: Convert a principle into a concrete"
+  default_prompt: "Turn this Naval principle into action."

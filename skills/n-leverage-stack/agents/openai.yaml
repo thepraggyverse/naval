@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Leverage Stack"
+  short_description: "N Leverage Stack: Find code, media, capital, labor, brand,"
+  default_prompt: "What leverage can I add to this project?"

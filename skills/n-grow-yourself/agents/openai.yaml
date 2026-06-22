@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Grow Yourself"
+  short_description: "N Grow Yourself: Support self-change through self-image,"
+  default_prompt: "How do I become the kind of person who does this?"

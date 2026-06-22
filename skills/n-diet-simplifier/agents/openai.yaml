@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Diet Simplifier"
+  short_description: "N Diet Simplifier: Simplify diet by subtracting processed food"
+  default_prompt: "Simplify my diet Naval-style."

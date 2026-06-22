@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Employment Freedom"
+  short_description: "N Employment Freedom: Reduce dependence on employment through"
+  default_prompt: "How do I become less dependent on employment?"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Health First"
+  short_description: "N Health First: Reorder life around physical, mental, and"
+  default_prompt: "Reorder my life around health first."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Biographical Context"
+  short_description: "N Biographical Context: Use Naval's background and timeline to"
+  default_prompt: "What life context explains this Naval idea?"

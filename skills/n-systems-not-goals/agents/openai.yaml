@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Systems Not Goals"
+  short_description: "N Systems Not Goals: Turn goals into environments and systems"
+  default_prompt: "Turn this goal into a system."

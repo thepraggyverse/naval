@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Self Responsibility"
+  short_description: "N Self Responsibility: Stop outsourcing responsibility to"
+  default_prompt: "Where am I outsourcing responsibility?"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Integrity Partner Filter"
+  short_description: "N Integrity Partner Filter: Assess collaborators for integrity,"
+  default_prompt: "Should I work with this person?"

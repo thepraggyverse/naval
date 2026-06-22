@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Accept Change Leave"
+  short_description: "N Accept Change Leave: Force stuck situations into acceptance,"
+  default_prompt: "Should I accept, change, or leave this?"

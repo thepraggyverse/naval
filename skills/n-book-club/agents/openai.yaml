@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Book Club"
+  short_description: "N Book Club: Discuss chapters, exercises, takeaways, and"
+  default_prompt: "Run a book club discussion for the wealth section."

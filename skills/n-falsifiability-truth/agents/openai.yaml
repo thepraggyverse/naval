@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Falsifiability Truth"
+  short_description: "N Falsifiability Truth: Test whether claims have predictive"
+  default_prompt: "Is this claim actually testable?"

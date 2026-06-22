@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Reading System"
+  short_description: "N Reading System: Design curiosity-led reading habits,"
+  default_prompt: "Design my reading system."

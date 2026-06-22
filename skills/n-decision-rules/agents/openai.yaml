@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Decision Rules"
+  short_description: "N Decision Rules: Apply Naval's major decision heuristics to"
+  default_prompt: "Apply Naval's decision rules to this choice."

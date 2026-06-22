@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Luck Engineering"
+  short_description: "N Luck Engineering: Create conditions for luck through motion,"
+  default_prompt: "How do I make luck find me?"

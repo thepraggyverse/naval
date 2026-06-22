@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Habit Change"
+  short_description: "N Habit Change: Replace vague goals with identity, triggers,"
+  default_prompt: "Help me replace this habit."

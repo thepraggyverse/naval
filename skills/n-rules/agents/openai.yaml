@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Rules"
+  short_description: "N Rules: Apply compact Naval rules and maxims as reminders, not"
+  default_prompt: "Give me the relevant Naval rule."

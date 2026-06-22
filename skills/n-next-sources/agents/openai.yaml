@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Next Sources"
+  short_description: "N Next Sources: Point users to deeper Naval resources,"
+  default_prompt: "Where should I go deeper on this topic?"

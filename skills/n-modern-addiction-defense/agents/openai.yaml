@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Modern Addiction Defense"
+  short_description: "N Modern Addiction Defense: Audit screens, news, processed"
+  default_prompt: "Audit my environment for modern traps."

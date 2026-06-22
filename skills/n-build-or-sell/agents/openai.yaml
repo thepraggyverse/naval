@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Build Or Sell"
+  short_description: "N Build Or Sell: Choose whether to learn building, selling, or"
+  default_prompt: "Should I learn to build, sell, or both?"

@@ -1,0 +1,54 @@
+{
+  "wealth": [
+    "specific knowledge",
+    "accountability",
+    "ownership",
+    "leverage",
+    "judgment",
+    "long-term games",
+    "patience"
+  ],
+  "judgment": [
+    "clear thinking",
+    "reality",
+    "identity",
+    "mental models",
+    "decision rules",
+    "reading",
+    "falsifiability"
+  ],
+  "happiness": [
+    "desire",
+    "presence",
+    "peace",
+    "habits",
+    "acceptance",
+    "envy",
+    "death awareness"
+  ],
+  "self_work": [
+    "health",
+    "diet",
+    "exercise",
+    "meditation",
+    "habits",
+    "freedom",
+    "responsibility"
+  ],
+  "philosophy": [
+    "meaning",
+    "values",
+    "rational Buddhism",
+    "present moment",
+    "wisdom"
+  ],
+  "reading": [
+    "foundations",
+    "originals",
+    "science",
+    "economics",
+    "philosophy",
+    "fiction",
+    "rereading"
+  ]
+}

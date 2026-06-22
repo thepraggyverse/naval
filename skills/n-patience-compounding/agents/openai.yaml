@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Patience Compounding"
+  short_description: "N Patience Compounding: Balance impatience with action against"
+  default_prompt: "Where do I need patience versus action?"

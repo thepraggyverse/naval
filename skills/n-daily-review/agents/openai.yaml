@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Daily Review"
+  short_description: "N Daily Review: Run a daily health, work, desire, focus, and"
+  default_prompt: "Run my daily Naval review."

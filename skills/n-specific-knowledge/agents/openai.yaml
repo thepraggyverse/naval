@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Specific Knowledge"
+  short_description: "N Specific Knowledge: Identify hard-to-train strengths,"
+  default_prompt: "Help me identify my specific knowledge."

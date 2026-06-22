@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Mental Models"
+  short_description: "N Mental Models: Use compounding, incentives, evolution, game"
+  default_prompt: "Which mental models apply here?"

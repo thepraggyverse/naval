@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Time Value Focus"
+  short_description: "N Time Value Focus: Apply personal hourly-rate thinking,"
+  default_prompt: "What should I stop doing this week?"

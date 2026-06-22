@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Wealth Map"
+  short_description: "N Wealth Map: Create an end-to-end wealth strategy using"
+  default_prompt: "Build me a Naval-style wealth plan."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Status Game Detector"
+  short_description: "N Status Game Detector: Detect zero-sum approval, politics,"
+  default_prompt: "Is this actually a status game?"

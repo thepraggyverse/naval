@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Uncontrolled Thinking"
+  short_description: "N Uncontrolled Thinking: Turn the mind from master into tool by"
+  default_prompt: "Help me stop compulsive thinking."

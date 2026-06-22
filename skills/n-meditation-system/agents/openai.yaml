@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Meditation System"
+  short_description: "N Meditation System: Create a practical awareness, sitting,"
+  default_prompt: "Design a 60-day meditation protocol."

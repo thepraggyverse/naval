@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Happiness Habits"
+  short_description: "N Happiness Habits: Build daily habits that support mood"
+  default_prompt: "Create a happiness habit plan."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Reading Curriculum"
+  short_description: "N Reading Curriculum: Build book paths across science, mental"
+  default_prompt: "Build me a Naval reading curriculum."

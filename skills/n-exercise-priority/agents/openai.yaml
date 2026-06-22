@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Exercise Priority"
+  short_description: "N Exercise Priority: Make daily exercise consistent and"
+  default_prompt: "Make exercise non-negotiable."

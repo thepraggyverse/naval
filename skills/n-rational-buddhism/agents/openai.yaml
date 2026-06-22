@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Rational Buddhism"
+  short_description: "N Rational Buddhism: Use testable inner work while rejecting"
+  default_prompt: "Give me a rational inner-work frame."

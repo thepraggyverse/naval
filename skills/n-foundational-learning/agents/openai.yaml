@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Foundational Learning"
+  short_description: "N Foundational Learning: Build foundations in math, science,"
+  default_prompt: "Build me a foundation learning plan."

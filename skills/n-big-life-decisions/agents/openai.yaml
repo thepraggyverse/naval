@@ -1,0 +1,4 @@
+interface:
+  display_name: "N Big Life Decisions"
+  short_description: "N Big Life Decisions: Think through city, partner, job,"
+  default_prompt: "Help me decide whether to take this job."
