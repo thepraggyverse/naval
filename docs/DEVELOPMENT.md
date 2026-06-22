@@ -18,6 +18,16 @@ That script writes:
 - `references/workflows/*.md`
 - `scripts/check_coverage.py`
 
+Hand-maintained public docs include:
+
+- `README.md`
+- `docs/EXAMPLES.md`
+- `docs/INSTALL.md`
+- `docs/PLUGIN_REFERENCE.md`
+- `docs/SYMLINKS.md`
+- `docs/DEVELOPMENT.md`
+- `docs/SOURCE_BOUNDARIES.md`
+
 ## Validate
 
 Run:
@@ -59,6 +69,9 @@ Validate:
 python3 scripts/validate_public.py
 python3 scripts/check_coverage.py
 ```
+
+The public validator expects the hand-maintained docs above to exist, so install and usage
+documentation stays part of the release surface.
 
 ## Add A Workflow
 
