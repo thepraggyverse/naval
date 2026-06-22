@@ -35,6 +35,21 @@ n-source-fidelity / n-quote-safety / n-coverage-auditor
   -> keeps the pack faithful, safe, and complete
 ```
 
+Use whichever step fits the moment. If the user already knows the problem is about desire, start with `n-desire-audit`. If the situation is vague, start with `n-router`.
+
+## Core Workflows
+
+| Workflow | Start With | Then Use | Produces |
+|---|---|---|---|
+| Route a vague situation | `n-router` | The routed primary skill plus 1-3 secondary lenses. | Skill path, first question, output format. |
+| Build a wealth path | `n-wealth-map` | `n-specific-knowledge`, `n-leverage-stack`, `n-equity-ownership`, `n-patience-compounding`. | Wealth strategy, leverage moves, ownership experiments. |
+| Make a hard decision | `n-decision-rules` | `n-inversion-filter`, `n-risk-of-ruin`, `n-wisdom-long-term`. | Decision frame, avoid list, reversible next step. |
+| Evaluate an opportunity | `n-opportunity-scorecard` | `n-long-term-games`, `n-accountability-risk`, `n-work-as-play`. | Scorecard, red flags, test plan. |
+| Debug unhappiness | `n-desire-audit` | `n-envy-antidote`, `n-accept-change-leave`, `n-presence-practice`. | Desire map, cost, replacement practice. |
+| Rebuild health and agency | `n-health-first` | `n-exercise-priority`, `n-diet-simplifier`, `n-meditation-system`, `n-habit-change`. | Health baseline, habit system, daily practice. |
+| Learn and read better | `n-reading-curriculum` | `n-reading-system`, `n-foundational-learning`, `n-next-sources`. | Reading path, drop rules, weekly output. |
+| Compound the week | `n-weekly-compound-review` | Any skills surfaced by the review. | Wins, leaks, deletion, commitment, review date. |
+
 ## Quick Example
 
 Use `n-router` when you do not know the exact skill name:

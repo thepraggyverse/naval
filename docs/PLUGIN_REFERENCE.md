@@ -21,6 +21,18 @@ User prompt
   -> scorecard, decision, practice, experiment, review, or reading path
 ```
 
+## Where Things Live
+
+When installed as a local plugin, `naval` has two important homes:
+
+| Location | What Lives There | Why It Matters |
+|---|---|---|
+| `~/plugins/naval` | The source checkout, plugin manifest, skills, references, docs, and scripts. | This is the source of truth to edit, validate, update, commit, and pull. |
+| `~/.agents/plugins/marketplace.json` | The local marketplace entry that points Codex at `./plugins/naval`. | This makes `naval` visible as an installable local plugin. |
+| `~/.codex/skills/n-*` and other skill homes | Optional symlinks to `~/plugins/naval/skills/n-*`. | This lets tools that scan skill folders discover the same skills without plugin support. |
+
+The repo does not write project-local runtime files such as `docs/brainstorms/` or `docs/solutions/`. Naval outputs are meant to be copied into the user's existing notes, plans, journals, or project docs when the user wants them preserved.
+
 ## Repository Map
 
 | Path | Purpose | Edited By |
@@ -68,6 +80,21 @@ User prompt
 | Removal | `n-modern-addiction-defense`, `n-time-value-focus`, `n-desire-audit` |
 | Reading path | `n-reading-curriculum`, `n-reading-system`, `n-next-sources` |
 | Review | `n-daily-review`, `n-weekly-compound-review`, `n-coverage-auditor` |
+
+## Core Commands
+
+These are the most useful entry points to remember:
+
+| Command | Use When | Typical Follow-Up |
+|---|---|---|
+| `n-router` | The situation is vague or spans multiple areas. | Follow the routed primary skill. |
+| `n-wealth-map` | The user wants wealth, career, leverage, ownership, or freedom strategy. | `n-specific-knowledge`, `n-leverage-stack`, `n-equity-ownership`. |
+| `n-decision-rules` | The user has a hard choice. | `n-inversion-filter`, `n-risk-of-ruin`, `n-wisdom-long-term`. |
+| `n-opportunity-scorecard` | The user is evaluating a project, startup, job, product, or investment. | `n-long-term-games`, `n-work-as-play`, `n-accountability-risk`. |
+| `n-desire-audit` | The user is anxious, jealous, restless, or chasing a result. | `n-envy-antidote`, `n-accept-change-leave`, `n-presence-practice`. |
+| `n-health-first` | The user's body, energy, or mental baseline is blocking everything else. | `n-exercise-priority`, `n-diet-simplifier`, `n-meditation-system`. |
+| `n-weekly-compound-review` | The user wants reflection that improves the next week. | Route to whichever area leaked most. |
+| `n-quote-safety` | The user wants to publish or cite a Naval idea. | `n-source-fidelity`, `n-next-sources`. |
 
 ## Quality Checks
 
