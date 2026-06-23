@@ -11,3 +11,4 @@
 - Documented Codex CLI enablement with `codex plugin add naval@personal --json` and a live `$n-setup` smoke test.
 - Hardened direct-copy export with a generated-bundle marker so `--force` cannot delete arbitrary user directories.
 - Added guidance to prefer the native Codex plugin for Codex-only use and target direct symlinks to the harness homes that need them.
+- Added generated per-skill docs, an install smoke script, and a release checklist for tag/publish flow.

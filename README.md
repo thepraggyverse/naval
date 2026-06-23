@@ -93,9 +93,11 @@ cd ~/plugins/naval
 Validate it:
 
 ```bash
+python3 scripts/generate_skill_docs.py
 python3 scripts/validate_public.py
 python3 scripts/check_coverage.py
 python3 scripts/validate_direct_install.py
+python3 scripts/smoke_install.py
 ```
 
 Register it with the default personal Codex marketplace:
@@ -130,7 +132,7 @@ Then search for `n-` in your agent or Codex skill picker.
 Quick live smoke after installing:
 
 ```bash
-codex exec --ephemeral --sandbox read-only -C "$PWD" 'Use $n-setup. Do not write files. In two concise bullets, name the local config file it manages and the default project-local memory root.'
+python3 scripts/smoke_install.py --codex --live
 ```
 
 ## Optional Memory Layer
@@ -171,6 +173,7 @@ See [docs/NAVAL_MEMORY.md](docs/NAVAL_MEMORY.md) for the privacy contract, folde
 | Skills | 79 | Small callable `n-*` behaviors for applying book concepts. | [skills/](skills/) |
 | Router | 1 | Routes vague requests to the right primary and secondary skills. | [skills/n-router/SKILL.md](skills/n-router/SKILL.md) |
 | Catalog | 1 | Lists every skill with area, use case, and example prompt. | [references/skill-catalog.md](references/skill-catalog.md) |
+| Skill docs | 79 | Browsable GitHub pages for each skill. | [docs/skills/](docs/skills/) |
 | Coverage matrix | 1 | Maps book sections to skills so gaps are visible. | [references/coverage-matrix.yaml](references/coverage-matrix.yaml) |
 | Workflows | 10 | Reusable scorecards and review protocols. | [references/workflows/](references/workflows/) |
 | Memory schemas/templates | 14 | Optional saved-output contracts for reviews, decisions, scorecards, experiments, practices, learnings, and quote notes. | [references/memory/](references/memory/) |
@@ -178,7 +181,7 @@ See [docs/NAVAL_MEMORY.md](docs/NAVAL_MEMORY.md) for the privacy contract, folde
 | Discovery metadata | 1 | Groups the skills for skills.sh-style browsers. | [skills.sh.json](skills.sh.json) |
 | Installer | 1 | Updates the local marketplace and/or symlinks skills. | [scripts/install_local.py](scripts/install_local.py) |
 | Direct-copy exporter | 1 | Builds a portable `skills/` plus `references/` bundle for SKILL.md-only hosts. | [scripts/export_direct_install.py](scripts/export_direct_install.py) |
-| Validators | 3 | Check public structure, skill count, references, coverage, and copied-skill portability. | [scripts/validate_public.py](scripts/validate_public.py), [scripts/check_coverage.py](scripts/check_coverage.py), [scripts/validate_direct_install.py](scripts/validate_direct_install.py) |
+| Validators and smoke | 4 | Check public structure, skill count, references, coverage, copied-skill portability, generated docs, and install surfaces. | [scripts/validate_public.py](scripts/validate_public.py), [scripts/check_coverage.py](scripts/check_coverage.py), [scripts/validate_direct_install.py](scripts/validate_direct_install.py), [scripts/smoke_install.py](scripts/smoke_install.py) |
 
 ## Skill Areas
 
@@ -327,6 +330,8 @@ See [docs/INSTALL.md](docs/INSTALL.md) and [docs/SYMLINKS.md](docs/SYMLINKS.md) 
 | [docs/HARNESS_SUPPORT.md](docs/HARNESS_SUPPORT.md) | Claude, Codex, Cursor, Copilot, Gemini, OpenCode, Pi, Kiro, and direct skill install paths. |
 | [docs/INSTALL.md](docs/INSTALL.md) | Plugin install, local marketplace, updates, validation, and custom paths. |
 | [docs/NAVAL_MEMORY.md](docs/NAVAL_MEMORY.md) | Optional memory setup, privacy contract, folders, schemas, and direct-copy reference layout. |
+| [docs/RELEASE.md](docs/RELEASE.md) | Release checklist, validation, smoke, tagging, and GitHub release commands. |
+| [docs/skills/](docs/skills/) | Generated per-skill browsing pages. |
 | [docs/SYMLINKS.md](docs/SYMLINKS.md) | How direct `n-*` skill symlinks work across agent homes. |
 | [docs/PLUGIN_REFERENCE.md](docs/PLUGIN_REFERENCE.md) | Architecture, component map, and plugin-vs-skill tradeoffs. |
 | [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) | Regeneration, validation, adding skills, and public repo boundaries. |
@@ -335,9 +340,11 @@ See [docs/INSTALL.md](docs/INSTALL.md) and [docs/SYMLINKS.md](docs/SYMLINKS.md) 
 ## Local Development
 
 ```bash
+python3 scripts/generate_skill_docs.py
 python3 scripts/validate_public.py
 python3 scripts/check_coverage.py
 python3 scripts/validate_direct_install.py
+python3 scripts/smoke_install.py
 ```
 
 Build a direct-copy bundle for SKILL.md-only hosts:

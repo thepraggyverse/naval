@@ -77,7 +77,7 @@ codex plugin list | grep 'naval@personal'
 Live smoke test:
 
 ```bash
-codex exec --ephemeral --sandbox read-only -C "$PWD" 'Use $n-setup. Do not write files. In two concise bullets, name the local config file it manages and the default project-local memory root.'
+python3 scripts/smoke_install.py --codex --live
 ```
 
 For a non-default profile, keep every step on the same `CODEX_HOME`:
@@ -288,6 +288,7 @@ codex plugin add naval@personal --json
 python3 scripts/validate_public.py
 python3 scripts/check_coverage.py
 python3 scripts/validate_direct_install.py
+python3 scripts/smoke_install.py
 ```
 
 If a host caches plugin definitions, restart the app or start a fresh thread/session after updating.

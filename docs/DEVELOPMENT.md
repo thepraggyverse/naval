@@ -4,6 +4,7 @@ Most generated files are produced by:
 
 ```bash
 python3 scripts/build_naval_pack.py
+python3 scripts/generate_skill_docs.py
 ```
 
 That script writes:
@@ -19,6 +20,7 @@ That script writes:
 - `references/memory/README.md`
 - `references/memory/schemas/*.yaml`
 - `references/memory/templates/*.md`
+- `docs/skills/*.md`
 - `scripts/check_coverage.py`
 
 Hand-maintained public docs include:
@@ -35,6 +37,7 @@ Hand-maintained public docs include:
 - `docs/INSTALL.md`
 - `docs/NAVAL_MEMORY.md`
 - `docs/PLUGIN_REFERENCE.md`
+- `docs/RELEASE.md`
 - `docs/SYMLINKS.md`
 - `docs/DEVELOPMENT.md`
 - `docs/SOURCE_BOUNDARIES.md`
@@ -60,9 +63,11 @@ Hand-maintained harness metadata includes:
 Run:
 
 ```bash
+python3 scripts/generate_skill_docs.py
 python3 scripts/validate_public.py
 python3 scripts/check_coverage.py
 python3 scripts/validate_direct_install.py
+python3 scripts/smoke_install.py
 ```
 
 For direct-copy packaging, build and validate the exported root:
@@ -101,6 +106,12 @@ The smoke should identify `.naval/config.local.yaml` and `docs/naval/`.
 
 Some developer machines have thousands of global skill folders. If `codex exec` warns that the skills context budget was exceeded, verify whether `$n-setup` still loads from the cached plugin path. For Codex-only testing, prefer the native plugin install and avoid broad all-home symlinks unless you are also testing direct-skill discovery.
 
+The scripted equivalent is:
+
+```bash
+python3 scripts/smoke_install.py --codex --live
+```
+
 ## Add A Skill
 
 Edit `SKILLS` inside `scripts/build_naval_pack.py`.
@@ -111,14 +122,17 @@ Regenerate:
 
 ```bash
 python3 scripts/build_naval_pack.py
+python3 scripts/generate_skill_docs.py
 ```
 
 Validate:
 
 ```bash
+python3 scripts/generate_skill_docs.py
 python3 scripts/validate_public.py
 python3 scripts/check_coverage.py
 python3 scripts/validate_direct_install.py
+python3 scripts/smoke_install.py
 ```
 
 The public validator expects the hand-maintained docs and harness metadata above to exist, so install and usage documentation stays part of the release surface.

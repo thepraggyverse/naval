@@ -18,3 +18,9 @@ jobs:
         run: python3 scripts/check_coverage.py
       - name: Validate direct-copy install references
         run: python3 scripts/validate_direct_install.py
+      - name: Generate skill docs and check freshness
+        run: |
+          python3 scripts/generate_skill_docs.py
+          git diff --exit-code docs/skills
+      - name: Smoke source and direct-copy install
+        run: python3 scripts/smoke_install.py

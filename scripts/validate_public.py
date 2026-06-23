@@ -177,17 +177,24 @@ def validate_docs() -> None:
         "docs/INSTALL.md",
         "docs/NAVAL_MEMORY.md",
         "docs/PLUGIN_REFERENCE.md",
+        "docs/RELEASE.md",
         "docs/SYMLINKS.md",
         "docs/DEVELOPMENT.md",
         "docs/SOURCE_BOUNDARIES.md",
+        "docs/skills/README.md",
         ".github/workflows/validate.yml",
         ".naval/config.local.example.yaml",
         "scripts/export_direct_install.py",
+        "scripts/generate_skill_docs.py",
+        "scripts/smoke_install.py",
         "scripts/validate_direct_install.py",
     ]
     for rel in required:
         if not (ROOT / rel).exists():
             fail(f"missing {rel}")
+    skill_docs = sorted((ROOT / "docs" / "skills").glob("n-*.md"))
+    if len(skill_docs) != 79:
+        fail(f"expected 79 docs/skills pages, found {len(skill_docs)}")
 
 
 def main() -> int:

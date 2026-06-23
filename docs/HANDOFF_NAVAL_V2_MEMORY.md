@@ -116,7 +116,32 @@ codex exec --ephemeral --sandbox read-only -C "$PWD" 'Use $n-setup. Do not write
 
 The live run loaded `n-setup` from the cached plugin path and read its memory references. Warnings seen during the run were from unrelated installed plugins/MCP auth and this machine's very large global skill library; the Naval plugin itself loaded and answered correctly.
 
-After final docs cleanup, the latest installed Codex cache was `0.1.0+codex.20260622184649`. Source plugin validation, cached plugin validation, `codex plugin list`, direct-install validation, and a live `$n-setup` invocation all passed for that version.
+After final docs cleanup, the latest installed Codex cache was `0.1.0+codex.20260623103225`. Source plugin validation, cached plugin validation, `codex plugin list`, direct-install validation, and a live `$n-setup` invocation all passed for that version.
+
+## 2026-06-23 Release Polish
+
+Follow-up release-readiness additions:
+
+- `scripts/generate_skill_docs.py` generates browsable pages under `docs/skills/`.
+- `scripts/smoke_install.py` smoke-checks source skills, direct-copy export, optional Codex plugin install, default skill homes, and optional live `$n-setup`.
+- `docs/RELEASE.md` documents preflight, commit, tag, push, CI, and GitHub release commands.
+- `package.json` adds `docs:skills`, `smoke:install`, and `smoke:live`; `npm run validate` now includes the smoke script.
+- CI regenerates `docs/skills/`, checks the generated docs are fresh, and runs the source/direct-copy smoke.
+
+Latest release-polish proof:
+
+```bash
+python3 scripts/generate_skill_docs.py && git diff --exit-code docs/skills
+npm run validate
+python3 -m py_compile scripts/*.py
+python3 ~/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py .
+python3 scripts/install_local.py --marketplace --symlink-skills
+codex plugin add naval@personal --json
+python3 scripts/smoke_install.py --codex --skill-homes --live
+autoreview --mode local
+# autoreview clean: no accepted/actionable findings reported
+# overall: patch is correct (0.86)
+```
 
 ## Autoreview
 
