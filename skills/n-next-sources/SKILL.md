@@ -1,6 +1,6 @@
 ---
 name: n-next-sources
-description: "Apply The Almanack of Naval Ravikant to point users to deeper naval resources, podcasts, essays, and source trails. Use when the user asks for n-next-sources, says \"Where should I go deeper on this topic?\", or wants this Naval lens."
+description: "Naval next sources: Point users to deeper Naval resources, podcasts, essays, and source trails. Trigger when the user asks \"Where should I go deeper on this topic?\" or names n-next-sources."
 ---
 
 # Naval Next Sources

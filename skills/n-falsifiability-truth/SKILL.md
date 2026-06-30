@@ -1,6 +1,6 @@
 ---
 name: n-falsifiability-truth
-description: "Apply The Almanack of Naval Ravikant to test whether claims have predictive power and can be falsified. Use when the user asks for n-falsifiability-truth, says \"Is this claim actually testable?\", or wants this Naval lens."
+description: "Naval falsifiability truth: Test whether claims have predictive power and can be falsified. Trigger when the user asks \"Is this claim actually testable?\" or names n-falsifiability-truth."
 ---
 
 # Naval Falsifiability Truth

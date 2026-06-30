@@ -12,7 +12,7 @@ Help me stop copying others.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to find original contribution by being oneself with intensity. Use when the user asks for n-be-yourself, says "Help me stop copying others.", or wants this Naval lens.
+Naval be yourself: Find original contribution by being oneself with intensity. Trigger when the user asks "Help me stop copying others." or names n-be-yourself.
 
 ## How To Use
 

@@ -12,7 +12,7 @@ Score this opportunity Naval-style.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to score jobs, startups, projects, products, content, and investments. Use when the user asks for n-opportunity-scorecard, says "Score this opportunity Naval-style.", or wants this Naval lens.
+Naval opportunity scorecard: Score jobs, startups, projects, products, content, and investments. Trigger when the user asks "Score this opportunity Naval-style." or names n-opportunity-scorecard.
 
 ## How To Use
 

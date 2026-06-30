@@ -1,6 +1,6 @@
 ---
 name: n-clear-thinking
-description: "Apply The Almanack of Naval Ravikant to simplify confused thinking down to basics, first principles, and plain language. Use when the user asks for n-clear-thinking, says \"Make my thinking clearer here.\", or wants this Naval lens."
+description: "Naval clear thinking: Simplify confused thinking down to basics, first principles, and plain language. Trigger when the user asks \"Make my thinking clearer here.\" or names n-clear-thinking."
 ---
 
 # Naval Clear Thinking

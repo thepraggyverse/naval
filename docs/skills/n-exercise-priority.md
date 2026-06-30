@@ -12,7 +12,7 @@ Make exercise non-negotiable.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to make daily exercise consistent and priority-driven. Use when the user asks for n-exercise-priority, says "Make exercise non-negotiable.", or wants this Naval lens.
+Naval exercise priority: Make daily exercise consistent and priority-driven. Trigger when the user asks "Make exercise non-negotiable." or names n-exercise-priority.
 
 ## How To Use
 

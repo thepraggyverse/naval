@@ -1,6 +1,6 @@
 ---
 name: n-status-game-detector
-description: "Apply The Almanack of Naval Ravikant to detect zero-sum approval, politics, prestige, and comparison traps. Use when the user asks for n-status-game-detector, says \"Is this actually a status game?\", or wants this Naval lens."
+description: "Naval status game detector: Detect zero-sum approval, politics, prestige, and comparison traps. Trigger when the user asks \"Is this actually a status game?\" or names n-status-game-detector."
 ---
 
 # Naval Status Game Detector

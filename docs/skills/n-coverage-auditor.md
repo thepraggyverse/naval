@@ -12,7 +12,7 @@ Audit whether the Naval plugin missed anything.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to check whether all book sections are represented by skills and references. Use when the user asks for n-coverage-auditor, says "Audit whether the Naval plugin missed anything.", or wants this Naval lens.
+Naval coverage auditor: Check whether all book sections are represented by skills and references. Trigger when the user asks "Audit whether the Naval plugin missed anything." or names n-coverage-auditor.
 
 ## How To Use
 

@@ -12,7 +12,7 @@ Help me stop compulsive thinking.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to turn the mind from master into tool by reducing compulsive inner narration. Use when the user asks for n-uncontrolled-thinking, says "Help me stop compulsive thinking.", or wants this Naval lens.
+Naval uncontrolled thinking: Turn the mind from master into tool by reducing compulsive inner narration. Trigger when the user asks "Help me stop compulsive thinking." or names n-uncontrolled-thinking.
 
 ## How To Use
 

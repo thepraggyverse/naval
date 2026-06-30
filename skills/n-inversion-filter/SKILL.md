@@ -1,6 +1,6 @@
 ---
 name: n-inversion-filter
-description: "Apply The Almanack of Naval Ravikant to find what will fail, what to avoid, and which mistakes matter most. Use when the user asks for n-inversion-filter, says \"How could this fail?\", or wants this Naval lens."
+description: "Naval inversion filter: Find what will fail, what to avoid, and which mistakes matter most. Trigger when the user asks \"How could this fail?\" or names n-inversion-filter."
 ---
 
 # Naval Inversion Filter

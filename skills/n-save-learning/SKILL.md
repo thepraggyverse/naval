@@ -1,6 +1,6 @@
 ---
 name: n-save-learning
-description: "Save one to three approved reusable learnings from a completed Naval session with YAML frontmatter, privacy checks, duplicate search, and optional docs/naval storage. Use when the user says save what we learned, compound this Naval session, remember this, or capture a review insight."
+description: "Naval save learning: capture 1-3 approved reusable insights with privacy checks and YAML frontmatter. Trigger when the user says save, remember, compound this session, or capture an insight."
 ---
 
 # Naval Save Learning

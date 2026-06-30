@@ -12,7 +12,7 @@ How do I become the kind of person who does this?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to support self-change through self-image, learning, and internal readiness. Use when the user asks for n-grow-yourself, says "How do I become the kind of person who does this?", or wants this Naval lens.
+Naval grow yourself: Support self-change through self-image, learning, and internal readiness. Trigger when the user asks "How do I become the kind of person who does this?" or names n-grow-yourself.
 
 ## How To Use
 

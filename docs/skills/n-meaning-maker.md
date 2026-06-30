@@ -12,7 +12,7 @@ Help me find my current meaning.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to explore personal meaning without pretending there is a universal borrowed answer. Use when the user asks for n-meaning-maker, says "Help me find my current meaning.", or wants this Naval lens.
+Naval meaning maker: Explore personal meaning without pretending there is a universal borrowed answer. Trigger when the user asks "Help me find my current meaning." or names n-meaning-maker.
 
 ## How To Use
 

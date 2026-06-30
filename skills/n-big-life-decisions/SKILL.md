@@ -1,6 +1,6 @@
 ---
 name: n-big-life-decisions
-description: "Apply The Almanack of Naval Ravikant to think through city, partner, job, company, and life-direction choices. Use when the user asks for n-big-life-decisions, says \"Help me decide whether to take this job.\", or wants this Naval lens."
+description: "Naval big life decisions: Think through city, partner, job, company, and life-direction choices. Trigger when the user asks \"Help me decide whether to take this job.\" or names n-big-life-decisions."
 ---
 
 # Naval Big Life Decisions

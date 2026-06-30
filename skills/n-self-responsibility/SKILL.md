@@ -1,6 +1,6 @@
 ---
 name: n-self-responsibility
-description: "Apply The Almanack of Naval Ravikant to stop outsourcing responsibility to gurus, mentors, doctors, teachers, or tools. Use when the user asks for n-self-responsibility, says \"Where am I outsourcing responsibility?\", or wants this Naval lens."
+description: "Naval self responsibility: Stop outsourcing responsibility to gurus, mentors, doctors, teachers, or tools. Trigger when the user asks \"Where am I outsourcing responsibility?\" or names n-self-responsibility."
 ---
 
 # Naval Self Responsibility

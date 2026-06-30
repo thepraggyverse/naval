@@ -1,6 +1,6 @@
 ---
 name: n-quote-safety
-description: "Apply The Almanack of Naval Ravikant to keep quotations short, attributed, and compliant while preferring paraphrase. Use when the user asks for n-quote-safety, says \"Make this Naval quote safe to use.\", or wants this Naval lens."
+description: "Naval quote safety: Keep quotations short, attributed, and compliant while preferring paraphrase. Trigger when the user asks \"Make this Naval quote safe to use.\" or names n-quote-safety."
 ---
 
 # Naval Quote Safety

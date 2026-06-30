@@ -12,7 +12,7 @@ Build me a foundation learning plan.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to build foundations in math, science, economics, persuasion, and learning. Use when the user asks for n-foundational-learning, says "Build me a foundation learning plan.", or wants this Naval lens.
+Naval foundational learning: Build foundations in math, science, economics, persuasion, and learning. Trigger when the user asks "Build me a foundation learning plan." or names n-foundational-learning.
 
 ## How To Use
 

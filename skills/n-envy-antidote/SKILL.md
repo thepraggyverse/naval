@@ -1,6 +1,6 @@
 ---
 name: n-envy-antidote
-description: "Apply The Almanack of Naval Ravikant to dissolve jealousy, comparison, and external scorecards. Use when the user asks for n-envy-antidote, says \"Help me dissolve envy around this person.\", or wants this Naval lens."
+description: "Naval envy antidote: Dissolve jealousy, comparison, and external scorecards. Trigger when the user asks \"Help me dissolve envy around this person.\" or names n-envy-antidote."
 ---
 
 # Naval Envy Antidote

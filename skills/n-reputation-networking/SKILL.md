@@ -1,6 +1,6 @@
 ---
 name: n-reputation-networking
-description: "Apply The Almanack of Naval Ravikant to replace shallow networking with craft, generosity, and visible reputation. Use when the user asks for n-reputation-networking, says \"How should I build relationships without networking?\", or wants this Naval lens."
+description: "Naval reputation networking: Replace shallow networking with craft, generosity, and visible reputation. Trigger when the user asks \"How should I build relationships without networking?\" or names n-reputation-networking."
 ---
 
 # Naval Reputation Networking

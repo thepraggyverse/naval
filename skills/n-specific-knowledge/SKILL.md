@@ -1,6 +1,6 @@
 ---
 name: n-specific-knowledge
-description: "Apply The Almanack of Naval Ravikant to identify hard-to-train strengths, obsessions, taste, and authentic edges. Use when the user asks for n-specific-knowledge, says \"Help me identify my specific knowledge.\", or wants this Naval lens."
+description: "Naval specific knowledge: Identify hard-to-train strengths, obsessions, taste, and authentic edges. Trigger when the user asks \"Help me identify my specific knowledge.\" or names n-specific-knowledge."
 ---
 
 # Naval Specific Knowledge

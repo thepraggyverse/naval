@@ -12,7 +12,7 @@ What identity is trapping my thinking?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to drop inherited labels, tribes, packages, and stale self-images. Use when the user asks for n-identity-shedding, says "What identity is trapping my thinking?", or wants this Naval lens.
+Naval identity shedding: Drop inherited labels, tribes, packages, and stale self-images. Trigger when the user asks "What identity is trapping my thinking?" or names n-identity-shedding.
 
 ## How To Use
 

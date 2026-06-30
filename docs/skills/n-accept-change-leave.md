@@ -12,7 +12,7 @@ Should I accept, change, or leave this?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to force stuck situations into acceptance, change, or exit. Use when the user asks for n-accept-change-leave, says "Should I accept, change, or leave this?", or wants this Naval lens.
+Naval accept change leave: Force stuck situations into acceptance, change, or exit. Trigger when the user asks "Should I accept, change, or leave this?" or names n-accept-change-leave.
 
 ## How To Use
 

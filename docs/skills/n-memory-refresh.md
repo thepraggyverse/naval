@@ -12,7 +12,7 @@ Refresh my saved Naval learnings.
 
 ## What It Does
 
-Refresh saved Naval memory entries for stale, contradictory, duplicate, superseded, or low-value guidance. Use when the user asks to audit docs/naval, clean saved learnings, refresh Naval memory, or resolve contradictions in saved reviews and scorecards.
+Naval memory refresh: audit saved reviews, learnings, scorecards, and decisions. Trigger for n-memory-refresh, docs/naval cleanup, stale memory, duplicates, or contradictions.
 
 ## How To Use
 

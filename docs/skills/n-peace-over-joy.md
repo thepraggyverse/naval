@@ -12,7 +12,7 @@ Am I optimizing for peace or excitement?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to prefer stable peace over stimulation, bliss chasing, or externally dependent moods. Use when the user asks for n-peace-over-joy, says "Am I optimizing for peace or excitement?", or wants this Naval lens.
+Naval peace over joy: Prefer stable peace over stimulation, bliss chasing, or externally dependent moods. Trigger when the user asks "Am I optimizing for peace or excitement?" or names n-peace-over-joy.
 
 ## How To Use
 

@@ -12,7 +12,7 @@ Run a book club discussion for the wealth section.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to discuss chapters, exercises, takeaways, and reading reflections. Use when the user asks for n-book-club, says "Run a book club discussion for the wealth section.", or wants this Naval lens.
+Naval book club: Discuss chapters, exercises, takeaways, and reading reflections. Trigger when the user asks "Run a book club discussion for the wealth section." or names n-book-club.
 
 ## How To Use
 

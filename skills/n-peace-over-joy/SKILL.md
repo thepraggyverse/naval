@@ -1,6 +1,6 @@
 ---
 name: n-peace-over-joy
-description: "Apply The Almanack of Naval Ravikant to prefer stable peace over stimulation, bliss chasing, or externally dependent moods. Use when the user asks for n-peace-over-joy, says \"Am I optimizing for peace or excitement?\", or wants this Naval lens."
+description: "Naval peace over joy: Prefer stable peace over stimulation, bliss chasing, or externally dependent moods. Trigger when the user asks \"Am I optimizing for peace or excitement?\" or names n-peace-over-joy."
 ---
 
 # Naval Peace Over Joy

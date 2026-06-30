@@ -859,6 +859,17 @@ def short_description(title: str, focus: str) -> str:
     return text
 
 
+def model_description(slug: str, focus: str, example: str) -> str:
+    leading = slug.removeprefix("n-").replace("-", " ")
+    focus_text = focus.rstrip(".")
+    if len(focus_text) > 112:
+        focus_text = focus_text[:112].rsplit(" ", 1)[0].rstrip(",.;:")
+    description = f"Naval {leading}: {focus_text}. Trigger when the user asks \"{example}\" or names {slug}."
+    if len(description) > 220:
+        description = f"Naval {leading}. Trigger on \"{example}\" or {slug}."
+    return re.sub(r"\s+", " ", description).strip()
+
+
 def skill_lookup() -> dict[str, tuple[str, str, str, str]]:
     return {slug: (title, category, focus, example) for slug, title, category, focus, example in SKILLS}
 
@@ -898,7 +909,7 @@ def setup_skill_md() -> str:
     return wrap(
         f"""---
 name: n-setup
-description: {yaml_quote("Configure optional Naval memory output paths, privacy defaults, and direct-install reference guidance. Use when the user asks to set up Naval memory, choose where reviews/learnings should be saved, configure .naval/config.local.yaml, or prepare copied/direct skill installs.")}
+description: {yaml_quote("Naval setup: configure optional memory paths, privacy defaults, and direct-install reference guidance. Trigger for setup, .naval/config.local.yaml, saved-review locations, or copied skills.")}
 ---
 
 # Naval Setup
@@ -957,7 +968,7 @@ def save_learning_skill_md() -> str:
     return wrap(
         f"""---
 name: n-save-learning
-description: {yaml_quote("Save one to three approved reusable learnings from a completed Naval session with YAML frontmatter, privacy checks, duplicate search, and optional docs/naval storage. Use when the user says save what we learned, compound this Naval session, remember this, or capture a review insight.")}
+description: {yaml_quote("Naval save learning: capture 1-3 approved reusable insights with privacy checks and YAML frontmatter. Trigger when the user says save, remember, compound this session, or capture an insight.")}
 ---
 
 # Naval Save Learning
@@ -1020,7 +1031,7 @@ def memory_refresh_skill_md() -> str:
     return wrap(
         f"""---
 name: n-memory-refresh
-description: {yaml_quote("Refresh saved Naval memory entries for stale, contradictory, duplicate, superseded, or low-value guidance. Use when the user asks to audit docs/naval, clean saved learnings, refresh Naval memory, or resolve contradictions in saved reviews and scorecards.")}
+description: {yaml_quote("Naval memory refresh: audit saved reviews, learnings, scorecards, and decisions. Trigger for n-memory-refresh, docs/naval cleanup, stale memory, duplicates, or contradictions.")}
 ---
 
 # Naval Memory Refresh
@@ -1095,7 +1106,7 @@ def skill_md(slug: str, title: str, category: str, focus: str, example: str) -> 
         "front-matter": "safe paraphrase, citation caveat, or source check",
         "meta": "router result, review, scorecard, or generated study artifact",
     }[category]
-    description = f"Apply The Almanack of Naval Ravikant to {focus.lower()} Use when the user asks for {slug}, says \"{example}\", or wants this Naval lens."
+    description = model_description(slug, focus, example)
     persistence_section = ""
     if slug in {"n-daily-review", "n-weekly-compound-review"}:
         review_kind = "daily" if slug == "n-daily-review" else "weekly"

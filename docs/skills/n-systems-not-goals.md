@@ -12,7 +12,7 @@ Turn this goal into a system.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to turn goals into environments and systems that make success likely. Use when the user asks for n-systems-not-goals, says "Turn this goal into a system.", or wants this Naval lens.
+Naval systems not goals: Turn goals into environments and systems that make success likely. Trigger when the user asks "Turn this goal into a system." or names n-systems-not-goals.
 
 ## How To Use
 

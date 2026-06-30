@@ -12,7 +12,7 @@ Should I work with this person?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to assess collaborators for integrity, optimism, energy, and long-term fit. Use when the user asks for n-integrity-partner-filter, says "Should I work with this person?", or wants this Naval lens.
+Naval integrity partner filter: Assess collaborators for integrity, optimism, energy, and long-term fit. Trigger when the user asks "Should I work with this person?" or names n-integrity-partner-filter.
 
 ## How To Use
 

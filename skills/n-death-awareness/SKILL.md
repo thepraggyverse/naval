@@ -1,6 +1,6 @@
 ---
 name: n-death-awareness
-description: "Apply The Almanack of Naval Ravikant to use mortality to clarify priorities and reduce ego battles. Use when the user asks for n-death-awareness, says \"Use mortality to clarify this decision.\", or wants this Naval lens."
+description: "Naval death awareness: Use mortality to clarify priorities and reduce ego battles. Trigger when the user asks \"Use mortality to clarify this decision.\" or names n-death-awareness."
 ---
 
 # Naval Death Awareness

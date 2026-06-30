@@ -1,6 +1,6 @@
 ---
 name: n-rules
-description: "Apply The Almanack of Naval Ravikant to apply compact naval rules and maxims as reminders, not substitutes for reasoning. Use when the user asks for n-rules, says \"Give me the relevant Naval rule.\", or wants this Naval lens."
+description: "Naval rules: Apply compact Naval rules and maxims as reminders, not substitutes for reasoning. Trigger when the user asks \"Give me the relevant Naval rule.\" or names n-rules."
 ---
 
 # Naval Rules

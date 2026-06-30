@@ -1,6 +1,6 @@
 ---
 name: n-reality-ego-audit
-description: "Apply The Almanack of Naval Ravikant to reveal where desire, ego, or fear is blocking reality. Use when the user asks for n-reality-ego-audit, says \"What am I refusing to see?\", or wants this Naval lens."
+description: "Naval reality ego audit: Reveal where desire, ego, or fear is blocking reality. Trigger when the user asks \"What am I refusing to see?\" or names n-reality-ego-audit."
 ---
 
 # Naval Reality Ego Audit

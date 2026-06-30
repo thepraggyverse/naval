@@ -12,7 +12,7 @@ Run my daily Naval review.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to run a daily health, work, desire, focus, and freedom review. Use when the user asks for n-daily-review, says "Run my daily Naval review.", or wants this Naval lens.
+Naval daily review: Run a daily health, work, desire, focus, and freedom review. Trigger when the user asks "Run my daily Naval review." or names n-daily-review.
 
 ## How To Use
 

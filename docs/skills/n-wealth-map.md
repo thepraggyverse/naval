@@ -12,7 +12,7 @@ Build me a Naval-style wealth plan.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to create an end-to-end wealth strategy using specific knowledge, accountability, ownership, leverage, and patience. Use when the user asks for n-wealth-map, says "Build me a Naval-style wealth plan.", or wants this Naval lens.
+Naval wealth map: Create an end-to-end wealth strategy using specific knowledge, accountability, ownership, leverage, and patience. Trigger when the user asks "Build me a Naval-style wealth plan." or names n-wealth-map.
 
 ## How To Use
 

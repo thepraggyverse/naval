@@ -12,7 +12,7 @@ What should I do immediately?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to return to the present and act on perishable inspiration. Use when the user asks for n-present-moment, says "What should I do immediately?", or wants this Naval lens.
+Naval present moment: Return to the present and act on perishable inspiration. Trigger when the user asks "What should I do immediately?" or names n-present-moment.
 
 ## How To Use
 

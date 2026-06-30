@@ -12,7 +12,7 @@ How could this fail?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to find what will fail, what to avoid, and which mistakes matter most. Use when the user asks for n-inversion-filter, says "How could this fail?", or wants this Naval lens.
+Naval inversion filter: Find what will fail, what to avoid, and which mistakes matter most. Trigger when the user asks "How could this fail?" or names n-inversion-filter.
 
 ## How To Use
 

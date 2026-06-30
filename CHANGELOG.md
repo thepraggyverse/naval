@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Tightened generated `n-*` skill descriptions so model-invoked routing is shorter and more predictable.
+- Added `scripts/audit_skill_quality.py` and `npm run audit:skills` to check description length, trigger shape, direct-copy fallbacks, reference pointers, and checkable output artifacts.
+- Added the skill quality audit to `npm run validate` and GitHub Actions.
+- Added `docs/SKILL_QUALITY.md` and linked it from README, development docs, and plugin reference docs.
+
 ## 0.1.0 - 2026-06-22
 
 - Initial public release of the unofficial `naval` plugin and `n-*` skill pack.

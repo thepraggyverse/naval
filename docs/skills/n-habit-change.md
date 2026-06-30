@@ -12,7 +12,7 @@ Help me replace this habit.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to replace vague goals with identity, triggers, substitutes, tracking, and commitment. Use when the user asks for n-habit-change, says "Help me replace this habit.", or wants this Naval lens.
+Naval habit change: Replace vague goals with identity, triggers, substitutes, tracking, and commitment. Trigger when the user asks "Help me replace this habit." or names n-habit-change.
 
 ## How To Use
 

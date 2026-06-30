@@ -181,7 +181,7 @@ See [docs/NAVAL_MEMORY.md](docs/NAVAL_MEMORY.md) for the privacy contract, folde
 | Discovery metadata | 1 | Groups the skills for skills.sh-style browsers. | [skills.sh.json](skills.sh.json) |
 | Installer | 1 | Updates the local marketplace and/or symlinks skills. | [scripts/install_local.py](scripts/install_local.py) |
 | Direct-copy exporter | 1 | Builds a portable `skills/` plus `references/` bundle for SKILL.md-only hosts. | [scripts/export_direct_install.py](scripts/export_direct_install.py) |
-| Validators and smoke | 4 | Check public structure, skill count, references, coverage, copied-skill portability, generated docs, and install surfaces. | [scripts/validate_public.py](scripts/validate_public.py), [scripts/check_coverage.py](scripts/check_coverage.py), [scripts/validate_direct_install.py](scripts/validate_direct_install.py), [scripts/smoke_install.py](scripts/smoke_install.py) |
+| Validators and smoke | 5 | Check public structure, skill count, references, coverage, skill authoring quality, copied-skill portability, generated docs, and install surfaces. | [scripts/validate_public.py](scripts/validate_public.py), [scripts/check_coverage.py](scripts/check_coverage.py), [scripts/audit_skill_quality.py](scripts/audit_skill_quality.py), [scripts/validate_direct_install.py](scripts/validate_direct_install.py), [scripts/smoke_install.py](scripts/smoke_install.py) |
 
 ## Skill Areas
 
@@ -331,6 +331,7 @@ See [docs/INSTALL.md](docs/INSTALL.md) and [docs/SYMLINKS.md](docs/SYMLINKS.md) 
 | [docs/INSTALL.md](docs/INSTALL.md) | Plugin install, local marketplace, updates, validation, and custom paths. |
 | [docs/NAVAL_MEMORY.md](docs/NAVAL_MEMORY.md) | Optional memory setup, privacy contract, folders, schemas, and direct-copy reference layout. |
 | [docs/RELEASE.md](docs/RELEASE.md) | Release checklist, validation, smoke, tagging, and GitHub release commands. |
+| [docs/SKILL_QUALITY.md](docs/SKILL_QUALITY.md) | Skill authoring rules, description shape, output bar, and quality audit. |
 | [docs/skills/](docs/skills/) | Generated per-skill browsing pages. |
 | [docs/SYMLINKS.md](docs/SYMLINKS.md) | How direct `n-*` skill symlinks work across agent homes. |
 | [docs/PLUGIN_REFERENCE.md](docs/PLUGIN_REFERENCE.md) | Architecture, component map, and plugin-vs-skill tradeoffs. |
@@ -343,6 +344,7 @@ See [docs/INSTALL.md](docs/INSTALL.md) and [docs/SYMLINKS.md](docs/SYMLINKS.md) 
 python3 scripts/generate_skill_docs.py
 python3 scripts/validate_public.py
 python3 scripts/check_coverage.py
+python3 scripts/audit_skill_quality.py
 python3 scripts/validate_direct_install.py
 python3 scripts/smoke_install.py
 ```

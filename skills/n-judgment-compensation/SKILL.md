@@ -1,6 +1,6 @@
 ---
 name: n-judgment-compensation
-description: "Apply The Almanack of Naval Ravikant to move from being paid for hours to being paid for judgment under leverage. Use when the user asks for n-judgment-compensation, says \"How do I become paid for judgment?\", or wants this Naval lens."
+description: "Naval judgment compensation: Move from being paid for hours to being paid for judgment under leverage. Trigger when the user asks \"How do I become paid for judgment?\" or names n-judgment-compensation."
 ---
 
 # Naval Judgment Compensation

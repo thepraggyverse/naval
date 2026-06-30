@@ -12,7 +12,7 @@ Build me a Naval reading curriculum.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to build book paths across science, mental models, philosophy, economics, and fiction. Use when the user asks for n-reading-curriculum, says "Build me a Naval reading curriculum.", or wants this Naval lens.
+Naval reading curriculum: Build book paths across science, mental models, philosophy, economics, and fiction. Trigger when the user asks "Build me a Naval reading curriculum." or names n-reading-curriculum.
 
 ## How To Use
 

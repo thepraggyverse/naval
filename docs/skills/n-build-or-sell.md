@@ -12,7 +12,7 @@ Should I learn to build, sell, or both?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to choose whether to learn building, selling, or both for a tech or business path. Use when the user asks for n-build-or-sell, says "Should I learn to build, sell, or both?", or wants this Naval lens.
+Naval build or sell: Choose whether to learn building, selling, or both for a tech or business path. Trigger when the user asks "Should I learn to build, sell, or both?" or names n-build-or-sell.
 
 ## How To Use
 

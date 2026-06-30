@@ -12,7 +12,7 @@ Where am I living by others' expectations?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to set boundaries around expectations, obligations, and others' imagined claims. Use when the user asks for n-freedom-from-expectations, says "Where am I living by others' expectations?", or wants this Naval lens.
+Naval freedom from expectations: Set boundaries around expectations, obligations, and others' imagined claims. Trigger when the user asks "Where am I living by others' expectations?" or names n-freedom-from-expectations.
 
 ## How To Use
 

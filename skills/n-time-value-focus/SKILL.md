@@ -1,6 +1,6 @@
 ---
 name: n-time-value-focus
-description: "Apply The Almanack of Naval Ravikant to apply personal hourly-rate thinking, ruthless prioritization, and calendar clearing. Use when the user asks for n-time-value-focus, says \"What should I stop doing this week?\", or wants this Naval lens."
+description: "Naval time value focus: Apply personal hourly-rate thinking, ruthless prioritization, and calendar clearing. Trigger when the user asks \"What should I stop doing this week?\" or names n-time-value-focus."
 ---
 
 # Naval Time Value Focus

@@ -1,6 +1,6 @@
 ---
 name: n-retirement-freedom-design
-description: "Apply The Almanack of Naval Ravikant to design freedom through passive income, low burn, or loved work. Use when the user asks for n-retirement-freedom-design, says \"What is my real path to retirement?\", or wants this Naval lens."
+description: "Naval retirement freedom design: Design freedom through passive income, low burn, or loved work. Trigger when the user asks \"What is my real path to retirement?\" or names n-retirement-freedom-design."
 ---
 
 # Naval Retirement Freedom Design

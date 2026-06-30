@@ -1,6 +1,6 @@
 ---
 name: n-judgment-builder
-description: "Apply The Almanack of Naval Ravikant to improve decision quality in leveraged work and life choices. Use when the user asks for n-judgment-builder, says \"Improve my judgment on this bet.\", or wants this Naval lens."
+description: "Naval judgment builder: Improve decision quality in leveraged work and life choices. Trigger when the user asks \"Improve my judgment on this bet.\" or names n-judgment-builder."
 ---
 
 # Naval Judgment Builder

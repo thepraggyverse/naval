@@ -1,6 +1,6 @@
 ---
 name: n-accountability-risk
-description: "Apply The Almanack of Naval Ravikant to decide when to put reputation, name, capital, and responsibility behind an action. Use when the user asks for n-accountability-risk, says \"Should I take public accountability for this?\", or wants this Naval lens."
+description: "Naval accountability risk: Decide when to put reputation, name, capital, and responsibility behind an action. Trigger when the user asks \"Should I take public accountability for this?\" or names n-accountability-risk."
 ---
 
 # Naval Accountability Risk

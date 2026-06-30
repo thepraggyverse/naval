@@ -1,6 +1,6 @@
 ---
 name: n-anger-release
-description: "Apply The Almanack of Naval Ravikant to treat anger as self-punishment and find a cleaner response. Use when the user asks for n-anger-release, says \"Help me process this anger.\", or wants this Naval lens."
+description: "Naval anger release: Treat anger as self-punishment and find a cleaner response. Trigger when the user asks \"Help me process this anger.\" or names n-anger-release."
 ---
 
 # Naval Anger Release

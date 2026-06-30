@@ -12,7 +12,7 @@ Check this Naval idea before I cite it.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to keep interpretations faithful to the book, avoid over-quoting, and flag when exact phrasing needs verification. Use when the user asks for n-source-fidelity, says "Check this Naval idea before I cite it.", or wants this Naval lens.
+Naval source fidelity. Trigger on "Check this Naval idea before I cite it." or n-source-fidelity.
 
 ## How To Use
 

@@ -12,7 +12,7 @@ How do I make this product more authentically mine?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to escape competition by positioning around what is natural, rare, and hard to copy. Use when the user asks for n-authenticity-positioning, says "How do I make this product more authentically mine?", or wants this Naval lens.
+Naval authenticity positioning. Trigger on "How do I make this product more authentically mine?" or n-authenticity-positioning.
 
 ## How To Use
 

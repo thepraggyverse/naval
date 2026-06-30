@@ -12,7 +12,7 @@ Design my reading system.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to design curiosity-led reading habits, rereading, skimming, and dropping weak books. Use when the user asks for n-reading-system, says "Design my reading system.", or wants this Naval lens.
+Naval reading system: Design curiosity-led reading habits, rereading, skimming, and dropping weak books. Trigger when the user asks "Design my reading system." or names n-reading-system.
 
 ## How To Use
 

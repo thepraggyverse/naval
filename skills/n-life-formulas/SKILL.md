@@ -1,6 +1,6 @@
 ---
 name: n-life-formulas
-description: "Apply The Almanack of Naval Ravikant to use naval's formula-style writing for health, wealth, happiness, income, and learning. Use when the user asks for n-life-formulas, says \"Show the formula behind this area.\", or wants this Naval lens."
+description: "Naval life formulas: Use Naval's formula-style writing for health, wealth, happiness, income, and learning. Trigger when the user asks \"Show the formula behind this area.\" or names n-life-formulas."
 ---
 
 # Naval Life Formulas

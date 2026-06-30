@@ -12,7 +12,7 @@ Audit my environment for modern traps.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to audit screens, news, processed food, games, porn, stimulants, and dopamine traps. Use when the user asks for n-modern-addiction-defense, says "Audit my environment for modern traps.", or wants this Naval lens.
+Naval modern addiction defense: Audit screens, news, processed food, games, porn, stimulants, and dopamine traps. Trigger when the user asks "Audit my environment for modern traps." or names n-modern-addiction-defense.
 
 ## How To Use
 

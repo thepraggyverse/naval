@@ -1,6 +1,6 @@
 ---
 name: n-authenticity-positioning
-description: "Apply The Almanack of Naval Ravikant to escape competition by positioning around what is natural, rare, and hard to copy. Use when the user asks for n-authenticity-positioning, says \"How do I make this product more authentically mine?\", or wants this Naval lens."
+description: "Naval authenticity positioning. Trigger on \"How do I make this product more authentically mine?\" or n-authenticity-positioning."
 ---
 
 # Naval Authenticity Positioning

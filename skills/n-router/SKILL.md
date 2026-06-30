@@ -1,6 +1,6 @@
 ---
 name: n-router
-description: "Apply The Almanack of Naval Ravikant to route vague user situations to the right naval skill and reference path. Use when the user asks for n-router, says \"Use Naval to analyze this career decision.\", or wants this Naval lens."
+description: "Naval router: Route vague user situations to the right Naval skill and reference path. Trigger when the user asks \"Use Naval to analyze this career decision.\" or names n-router."
 ---
 
 # Naval Router

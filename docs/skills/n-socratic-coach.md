@@ -12,7 +12,7 @@ Coach me through this without jumping to advice.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to ask precise questions before advising when the user's situation is under-specified. Use when the user asks for n-socratic-coach, says "Coach me through this without jumping to advice.", or wants this Naval lens.
+Naval socratic coach: Ask precise questions before advising when the user's situation is under-specified. Trigger when the user asks "Coach me through this without jumping to advice." or names n-socratic-coach.
 
 ## How To Use
 

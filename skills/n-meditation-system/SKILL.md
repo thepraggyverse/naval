@@ -1,6 +1,6 @@
 ---
 name: n-meditation-system
-description: "Apply The Almanack of Naval Ravikant to create a practical awareness, sitting, walking, or journaling meditation protocol. Use when the user asks for n-meditation-system, says \"Design a 60-day meditation protocol.\", or wants this Naval lens."
+description: "Naval meditation system: Create a practical awareness, sitting, walking, or journaling meditation protocol. Trigger when the user asks \"Design a 60-day meditation protocol.\" or names n-meditation-system."
 ---
 
 # Naval Meditation System

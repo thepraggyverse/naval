@@ -1,6 +1,6 @@
 ---
 name: n-health-first
-description: "Apply The Almanack of Naval Ravikant to reorder life around physical, mental, and spiritual health before work. Use when the user asks for n-health-first, says \"Reorder my life around health first.\", or wants this Naval lens."
+description: "Naval health first: Reorder life around physical, mental, and spiritual health before work. Trigger when the user asks \"Reorder my life around health first.\" or names n-health-first."
 ---
 
 # Naval Health First

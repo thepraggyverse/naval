@@ -12,7 +12,7 @@ What life context explains this Naval idea?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to use naval's background and timeline to explain why a principle appears in the book. Use when the user asks for n-biographical-context, says "What life context explains this Naval idea?", or wants this Naval lens.
+Naval biographical context: Use Naval's background and timeline to explain why a principle appears in the book. Trigger when the user asks "What life context explains this Naval idea?" or names n-biographical-context.
 
 ## How To Use
 

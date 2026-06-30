@@ -12,7 +12,7 @@ Is this claim actually testable?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to test whether claims have predictive power and can be falsified. Use when the user asks for n-falsifiability-truth, says "Is this claim actually testable?", or wants this Naval lens.
+Naval falsifiability truth: Test whether claims have predictive power and can be falsified. Trigger when the user asks "Is this claim actually testable?" or names n-falsifiability-truth.
 
 ## How To Use
 

@@ -1,6 +1,6 @@
 ---
 name: n-weekly-compound-review
-description: "Apply The Almanack of Naval Ravikant to review weekly compounding across wealth, judgment, health, happiness, relationships, and values. Use when the user asks for n-weekly-compound-review, says \"Run my weekly compound review.\", or wants this Naval lens."
+description: "Naval weekly compound review. Trigger on \"Run my weekly compound review.\" or n-weekly-compound-review."
 ---
 
 # Naval Weekly Compound Review

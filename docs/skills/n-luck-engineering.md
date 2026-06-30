@@ -12,7 +12,7 @@ How do I make luck find me?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to create conditions for luck through motion, skill, reputation, and unique character. Use when the user asks for n-luck-engineering, says "How do I make luck find me?", or wants this Naval lens.
+Naval luck engineering: Create conditions for luck through motion, skill, reputation, and unique character. Trigger when the user asks "How do I make luck find me?" or names n-luck-engineering.
 
 ## How To Use
 

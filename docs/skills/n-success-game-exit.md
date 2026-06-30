@@ -12,7 +12,7 @@ Have I outgrown this game?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to notice when the user has outgrown a game with big rewards. Use when the user asks for n-success-game-exit, says "Have I outgrown this game?", or wants this Naval lens.
+Naval success game exit: Notice when the user has outgrown a game with big rewards. Trigger when the user asks "Have I outgrown this game?" or names n-success-game-exit.
 
 ## How To Use
 

@@ -1,6 +1,6 @@
 ---
 name: n-equity-ownership
-description: "Apply The Almanack of Naval Ravikant to move from wage or service work toward ownership, ip, assets, and upside. Use when the user asks for n-equity-ownership, says \"How do I get equity or upside here?\", or wants this Naval lens."
+description: "Naval equity ownership: Move from wage or service work toward ownership, IP, assets, and upside. Trigger when the user asks \"How do I get equity or upside here?\" or names n-equity-ownership."
 ---
 
 # Naval Equity Ownership

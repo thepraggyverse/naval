@@ -17,8 +17,9 @@
   "repository": "https://github.com/thepraggyverse/naval",
   "license": "MIT",
   "scripts": {
+    "audit:skills": "python3 scripts/audit_skill_quality.py",
     "docs:skills": "python3 scripts/generate_skill_docs.py",
-    "validate": "python3 scripts/validate_public.py && python3 scripts/check_coverage.py && python3 scripts/validate_direct_install.py && python3 scripts/smoke_install.py",
+    "validate": "python3 scripts/validate_public.py && python3 scripts/check_coverage.py && python3 scripts/audit_skill_quality.py && python3 scripts/validate_direct_install.py && python3 scripts/smoke_install.py",
     "export:direct": "python3 scripts/export_direct_install.py --output dist/naval-direct-install --force",
     "install:local": "python3 scripts/install_local.py --marketplace --symlink-skills",
     "smoke:install": "python3 scripts/smoke_install.py",

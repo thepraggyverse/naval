@@ -12,7 +12,7 @@ What are the long-term consequences?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to evaluate long-term consequences as the basis of wisdom. Use when the user asks for n-wisdom-long-term, says "What are the long-term consequences?", or wants this Naval lens.
+Naval wisdom long term: Evaluate long-term consequences as the basis of wisdom. Trigger when the user asks "What are the long-term consequences?" or names n-wisdom-long-term.
 
 ## How To Use
 

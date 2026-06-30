@@ -66,6 +66,7 @@ Run:
 python3 scripts/generate_skill_docs.py
 python3 scripts/validate_public.py
 python3 scripts/check_coverage.py
+python3 scripts/audit_skill_quality.py
 python3 scripts/validate_direct_install.py
 python3 scripts/smoke_install.py
 ```
@@ -146,6 +147,7 @@ Edit `WORKFLOWS` inside `scripts/build_naval_pack.py`, then add it to `CATEGORY_
 ## Keep Skills Lean
 
 Do not paste the whole book into a skill. Keep `SKILL.md` files small and route detailed knowledge to `references/`.
+See [SKILL_QUALITY.md](SKILL_QUALITY.md) for the description shape, output bar, and authoring audit.
 
 Every skill should end in one of:
 

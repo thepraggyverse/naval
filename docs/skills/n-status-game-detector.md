@@ -12,7 +12,7 @@ Is this actually a status game?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to detect zero-sum approval, politics, prestige, and comparison traps. Use when the user asks for n-status-game-detector, says "Is this actually a status game?", or wants this Naval lens.
+Naval status game detector: Detect zero-sum approval, politics, prestige, and comparison traps. Trigger when the user asks "Is this actually a status game?" or names n-status-game-detector.
 
 ## How To Use
 

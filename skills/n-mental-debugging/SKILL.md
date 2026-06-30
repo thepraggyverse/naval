@@ -1,6 +1,6 @@
 ---
 name: n-mental-debugging
-description: "Apply The Almanack of Naval Ravikant to watch thoughts, reactions, fear, desire, and ego as debuggable processes. Use when the user asks for n-mental-debugging, says \"Debug my internal monologue.\", or wants this Naval lens."
+description: "Naval mental debugging: Watch thoughts, reactions, fear, desire, and ego as debuggable processes. Trigger when the user asks \"Debug my internal monologue.\" or names n-mental-debugging."
 ---
 
 # Naval Mental Debugging

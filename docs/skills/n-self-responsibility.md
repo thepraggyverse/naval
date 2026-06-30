@@ -12,7 +12,7 @@ Where am I outsourcing responsibility?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to stop outsourcing responsibility to gurus, mentors, doctors, teachers, or tools. Use when the user asks for n-self-responsibility, says "Where am I outsourcing responsibility?", or wants this Naval lens.
+Naval self responsibility: Stop outsourcing responsibility to gurus, mentors, doctors, teachers, or tools. Trigger when the user asks "Where am I outsourcing responsibility?" or names n-self-responsibility.
 
 ## How To Use
 

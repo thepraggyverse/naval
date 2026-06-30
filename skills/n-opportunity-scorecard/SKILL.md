@@ -1,6 +1,6 @@
 ---
 name: n-opportunity-scorecard
-description: "Apply The Almanack of Naval Ravikant to score jobs, startups, projects, products, content, and investments. Use when the user asks for n-opportunity-scorecard, says \"Score this opportunity Naval-style.\", or wants this Naval lens."
+description: "Naval opportunity scorecard: Score jobs, startups, projects, products, content, and investments. Trigger when the user asks \"Score this opportunity Naval-style.\" or names n-opportunity-scorecard."
 ---
 
 # Naval Opportunity Scorecard

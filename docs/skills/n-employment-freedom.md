@@ -12,7 +12,7 @@ How do I become less dependent on employment?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to reduce dependence on employment through burn-rate, ownership, and independence choices. Use when the user asks for n-employment-freedom, says "How do I become less dependent on employment?", or wants this Naval lens.
+Naval employment freedom: Reduce dependence on employment through burn-rate, ownership, and independence choices. Trigger when the user asks "How do I become less dependent on employment?" or names n-employment-freedom.
 
 ## How To Use
 

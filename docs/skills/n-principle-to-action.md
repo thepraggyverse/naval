@@ -12,7 +12,7 @@ Turn this Naval principle into action.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to convert a principle into a concrete behavior, experiment, or operating rule. Use when the user asks for n-principle-to-action, says "Turn this Naval principle into action.", or wants this Naval lens.
+Naval principle to action: Convert a principle into a concrete behavior, experiment, or operating rule. Trigger when the user asks "Turn this Naval principle into action." or names n-principle-to-action.
 
 ## How To Use
 

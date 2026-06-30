@@ -1,6 +1,6 @@
 ---
 name: n-setup
-description: "Configure optional Naval memory output paths, privacy defaults, and direct-install reference guidance. Use when the user asks to set up Naval memory, choose where reviews/learnings should be saved, configure .naval/config.local.yaml, or prepare copied/direct skill installs."
+description: "Naval setup: configure optional memory paths, privacy defaults, and direct-install reference guidance. Trigger for setup, .naval/config.local.yaml, saved-review locations, or copied skills."
 ---
 
 # Naval Setup

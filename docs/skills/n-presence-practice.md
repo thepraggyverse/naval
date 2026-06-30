@@ -12,7 +12,7 @@ Help me return to the present.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to reduce rumination and anticipation by returning attention to present reality. Use when the user asks for n-presence-practice, says "Help me return to the present.", or wants this Naval lens.
+Naval presence practice: Reduce rumination and anticipation by returning attention to present reality. Trigger when the user asks "Help me return to the present." or names n-presence-practice.
 
 ## How To Use
 

@@ -12,7 +12,7 @@ Which mental models apply here?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to use compounding, incentives, evolution, game theory, complexity, inversion, and probability. Use when the user asks for n-mental-models, says "Which mental models apply here?", or wants this Naval lens.
+Naval mental models: Use compounding, incentives, evolution, game theory, complexity, inversion, and probability. Trigger when the user asks "Which mental models apply here?" or names n-mental-models.
 
 ## How To Use
 

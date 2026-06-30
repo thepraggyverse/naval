@@ -12,7 +12,7 @@ Help me decide whether to take this job.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to think through city, partner, job, company, and life-direction choices. Use when the user asks for n-big-life-decisions, says "Help me decide whether to take this job.", or wants this Naval lens.
+Naval big life decisions: Think through city, partner, job, company, and life-direction choices. Trigger when the user asks "Help me decide whether to take this job." or names n-big-life-decisions.
 
 ## How To Use
 

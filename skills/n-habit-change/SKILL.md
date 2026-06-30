@@ -1,6 +1,6 @@
 ---
 name: n-habit-change
-description: "Apply The Almanack of Naval Ravikant to replace vague goals with identity, triggers, substitutes, tracking, and commitment. Use when the user asks for n-habit-change, says \"Help me replace this habit.\", or wants this Naval lens."
+description: "Naval habit change: Replace vague goals with identity, triggers, substitutes, tracking, and commitment. Trigger when the user asks \"Help me replace this habit.\" or names n-habit-change."
 ---
 
 # Naval Habit Change

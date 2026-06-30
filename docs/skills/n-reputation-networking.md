@@ -12,7 +12,7 @@ How should I build relationships without networking?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to replace shallow networking with craft, generosity, and visible reputation. Use when the user asks for n-reputation-networking, says "How should I build relationships without networking?", or wants this Naval lens.
+Naval reputation networking: Replace shallow networking with craft, generosity, and visible reputation. Trigger when the user asks "How should I build relationships without networking?" or names n-reputation-networking.
 
 ## How To Use
 

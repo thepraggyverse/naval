@@ -12,7 +12,7 @@ Where do I need patience versus action?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to balance impatience with action against patience for compounding results. Use when the user asks for n-patience-compounding, says "Where do I need patience versus action?", or wants this Naval lens.
+Naval patience compounding: Balance impatience with action against patience for compounding results. Trigger when the user asks "Where do I need patience versus action?" or names n-patience-compounding.
 
 ## How To Use
 

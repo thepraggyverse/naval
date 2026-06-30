@@ -12,7 +12,7 @@ Run my weekly compound review.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to review weekly compounding across wealth, judgment, health, happiness, relationships, and values. Use when the user asks for n-weekly-compound-review, says "Run my weekly compound review.", or wants this Naval lens.
+Naval weekly compound review. Trigger on "Run my weekly compound review." or n-weekly-compound-review.
 
 ## How To Use
 

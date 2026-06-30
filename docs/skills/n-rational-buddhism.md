@@ -12,7 +12,7 @@ Give me a rational inner-work frame.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to use testable inner work while rejecting unverifiable claims as operating truth. Use when the user asks for n-rational-buddhism, says "Give me a rational inner-work frame.", or wants this Naval lens.
+Naval rational buddhism: Use testable inner work while rejecting unverifiable claims as operating truth. Trigger when the user asks "Give me a rational inner-work frame." or names n-rational-buddhism.
 
 ## How To Use
 

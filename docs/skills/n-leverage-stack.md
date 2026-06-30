@@ -12,7 +12,7 @@ What leverage can I add to this project?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to find code, media, capital, labor, brand, distribution, and automation leverage. Use when the user asks for n-leverage-stack, says "What leverage can I add to this project?", or wants this Naval lens.
+Naval leverage stack: Find code, media, capital, labor, brand, distribution, and automation leverage. Trigger when the user asks "What leverage can I add to this project?" or names n-leverage-stack.
 
 ## How To Use
 

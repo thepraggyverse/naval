@@ -1,6 +1,6 @@
 ---
 name: n-work-as-play
-description: "Apply The Almanack of Naval Ravikant to find work that feels like play to the user but looks like work to others. Use when the user asks for n-work-as-play, says \"What work feels like play to me?\", or wants this Naval lens."
+description: "Naval work as play: Find work that feels like play to the user but looks like work to others. Trigger when the user asks \"What work feels like play to me?\" or names n-work-as-play."
 ---
 
 # Naval Work As Play

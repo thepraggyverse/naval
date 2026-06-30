@@ -1,6 +1,6 @@
 ---
 name: n-flashcards
-description: "Apply The Almanack of Naval Ravikant to turn principles into recall prompts, reflection cards, or spaced repetition items. Use when the user asks for n-flashcards, says \"Make flashcards from this Naval topic.\", or wants this Naval lens."
+description: "Naval flashcards: Turn principles into recall prompts, reflection cards, or spaced repetition items. Trigger when the user asks \"Make flashcards from this Naval topic.\" or names n-flashcards."
 ---
 
 # Naval Flashcards

@@ -12,7 +12,7 @@ Simplify my diet Naval-style.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to simplify diet by subtracting processed food and appetite traps. Use when the user asks for n-diet-simplifier, says "Simplify my diet Naval-style.", or wants this Naval lens.
+Naval diet simplifier: Simplify diet by subtracting processed food and appetite traps. Trigger when the user asks "Simplify my diet Naval-style." or names n-diet-simplifier.
 
 ## How To Use
 

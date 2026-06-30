@@ -12,7 +12,7 @@ Help me raise my happiness baseline.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to train happiness as a baseline using peace, habits, presence, and acceptance. Use when the user asks for n-happiness-baseline, says "Help me raise my happiness baseline.", or wants this Naval lens.
+Naval happiness baseline: Train happiness as a baseline using peace, habits, presence, and acceptance. Trigger when the user asks "Help me raise my happiness baseline." or names n-happiness-baseline.
 
 ## How To Use
 

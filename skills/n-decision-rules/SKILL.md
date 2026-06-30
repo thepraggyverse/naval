@@ -1,6 +1,6 @@
 ---
 name: n-decision-rules
-description: "Apply The Almanack of Naval Ravikant to apply naval's major decision heuristics to hard choices. Use when the user asks for n-decision-rules, says \"Apply Naval's decision rules to this choice.\", or wants this Naval lens."
+description: "Naval decision rules: Apply Naval's major decision heuristics to hard choices. Trigger when the user asks \"Apply Naval's decision rules to this choice.\" or names n-decision-rules."
 ---
 
 # Naval Decision Rules

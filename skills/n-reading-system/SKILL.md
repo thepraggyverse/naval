@@ -1,6 +1,6 @@
 ---
 name: n-reading-system
-description: "Apply The Almanack of Naval Ravikant to design curiosity-led reading habits, rereading, skimming, and dropping weak books. Use when the user asks for n-reading-system, says \"Design my reading system.\", or wants this Naval lens."
+description: "Naval reading system: Design curiosity-led reading habits, rereading, skimming, and dropping weak books. Trigger when the user asks \"Design my reading system.\" or names n-reading-system."
 ---
 
 # Naval Reading System

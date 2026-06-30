@@ -12,7 +12,7 @@ Create a happiness habit plan.
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to build daily habits that support mood stability and long-term happiness. Use when the user asks for n-happiness-habits, says "Create a happiness habit plan.", or wants this Naval lens.
+Naval happiness habits: Build daily habits that support mood stability and long-term happiness. Trigger when the user asks "Create a happiness habit plan." or names n-happiness-habits.
 
 ## How To Use
 

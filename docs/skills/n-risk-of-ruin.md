@@ -12,7 +12,7 @@ What could ruin me in this plan?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to identify legal, health, financial, relationship, and reputation ruin risks. Use when the user asks for n-risk-of-ruin, says "What could ruin me in this plan?", or wants this Naval lens.
+Naval risk of ruin: Identify legal, health, financial, relationship, and reputation ruin risks. Trigger when the user asks "What could ruin me in this plan?" or names n-risk-of-ruin.
 
 ## How To Use
 

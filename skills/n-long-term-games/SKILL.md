@@ -1,6 +1,6 @@
 ---
 name: n-long-term-games
-description: "Apply The Almanack of Naval Ravikant to evaluate whether work, relationships, and markets can compound for years. Use when the user asks for n-long-term-games, says \"Is this a long-term game with long-term people?\", or wants this Naval lens."
+description: "Naval long term games: Evaluate whether work, relationships, and markets can compound for years. Trigger when the user asks \"Is this a long-term game with long-term people?\" or names n-long-term-games."
 ---
 
 # Naval Long Term Games

@@ -12,7 +12,7 @@ What desire is making me unhappy?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to identify desires that create suffering and decide whether to keep, drop, change, accept, or leave. Use when the user asks for n-desire-audit, says "What desire is making me unhappy?", or wants this Naval lens.
+Naval desire audit: Identify desires that create suffering and decide whether to keep, drop, change, accept, or leave. Trigger when the user asks "What desire is making me unhappy?" or names n-desire-audit.
 
 ## How To Use
 

@@ -61,6 +61,7 @@ The repo does not write project-local runtime files by default. Naval outputs st
 | `scripts/generate_skill_docs.py` | Builds GitHub-friendly pages for every skill. | Hand-maintained. |
 | `scripts/validate_public.py` | Public repo structural validation. | Hand-maintained. |
 | `scripts/check_coverage.py` | Coverage validation. | Generated. |
+| `scripts/audit_skill_quality.py` | Description, output, and skill-body quality audit. | Hand-maintained. |
 | `scripts/smoke_install.py` | Smoke-checks source, direct-copy bundle, and optional local install surfaces. | Hand-maintained. |
 | `scripts/validate_direct_install.py` | Simulates or validates direct-copy roots and verifies sibling `references/` paths. | Hand-maintained. |
 
@@ -123,6 +124,7 @@ These are the most useful entry points to remember:
 | Public structure | `python3 scripts/validate_public.py` | Missing docs, manifest issues, missing skill metadata, broken skill references. |
 | Skill docs freshness | `python3 scripts/generate_skill_docs.py && git diff --exit-code docs/skills` | Stale generated per-skill docs. |
 | Coverage | `python3 scripts/check_coverage.py` | Missing skill coverage, invalid mapped references, unmapped `n-*` skills. |
+| Skill quality | `python3 scripts/audit_skill_quality.py` | Long or broad descriptions, missing output bars, missing direct-copy fallbacks. |
 | Direct-copy export | `npm run export:direct` | Builds `dist/naval-direct-install` with sibling `skills/` and `references/`. |
 | Direct-copy portability | `python3 scripts/validate_direct_install.py --agent-root dist/naval-direct-install` | Missing skills, missing sibling `references/`, or broken `../../references/...` links. |
 | Install smoke | `python3 scripts/smoke_install.py` | Missing source skills, missing generated docs, or broken direct-copy export layout. |
@@ -147,6 +149,7 @@ python3 scripts/generate_skill_docs.py
 ```bash
 python3 scripts/validate_public.py
 python3 scripts/check_coverage.py
+python3 scripts/audit_skill_quality.py
 python3 scripts/validate_direct_install.py
 python3 scripts/smoke_install.py
 ```

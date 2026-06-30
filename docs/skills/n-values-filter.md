@@ -12,7 +12,7 @@ What values are being violated here?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to apply values: honesty, long-term thinking, peer relationships, low anger, and freedom. Use when the user asks for n-values-filter, says "What values are being violated here?", or wants this Naval lens.
+Naval values filter: Apply values: honesty, long-term thinking, peer relationships, low anger, and freedom. Trigger when the user asks "What values are being violated here?" or names n-values-filter.
 
 ## How To Use
 

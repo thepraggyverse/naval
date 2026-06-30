@@ -1,6 +1,6 @@
 ---
 name: n-relationship-scorecard
-description: "Apply The Almanack of Naval Ravikant to score collaborators, friends, partners, and teams for long-term compounding fit. Use when the user asks for n-relationship-scorecard, says \"Score this collaborator Naval-style.\", or wants this Naval lens."
+description: "Naval relationship scorecard: Score collaborators, friends, partners, and teams for long-term compounding fit. Trigger when the user asks \"Score this collaborator Naval-style.\" or names n-relationship-scorecard."
 ---
 
 # Naval Relationship Scorecard

@@ -12,7 +12,7 @@ Am I chasing wealth, money, or status here?
 
 ## What It Does
 
-Apply The Almanack of Naval Ravikant to separate wealth creation from income, cash, approval, prestige, and social hierarchy. Use when the user asks for n-wealth-vs-money-status, says "Am I chasing wealth, money, or status here?", or wants this Naval lens.
+Naval wealth vs money status. Trigger on "Am I chasing wealth, money, or status here?" or n-wealth-vs-money-status.
 
 ## How To Use
 

@@ -1,6 +1,6 @@
 ---
 name: n-diet-simplifier
-description: "Apply The Almanack of Naval Ravikant to simplify diet by subtracting processed food and appetite traps. Use when the user asks for n-diet-simplifier, says \"Simplify my diet Naval-style.\", or wants this Naval lens."
+description: "Naval diet simplifier: Simplify diet by subtracting processed food and appetite traps. Trigger when the user asks \"Simplify my diet Naval-style.\" or names n-diet-simplifier."
 ---
 
 # Naval Diet Simplifier
